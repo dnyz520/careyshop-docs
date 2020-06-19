@@ -17,6 +17,7 @@ module.exports = {
         docsDir: 'docs',
         editLinks: true,
         editLinkText: '帮助我们改善此页面',
+        lastUpdated: '上次更新',
         nav: [
             {
                 text: '主站',
@@ -45,19 +46,40 @@ module.exports = {
             {
                 text: '论坛',
                 link: 'https://carey.top'
+            },
+            {
+                text: '旧版',
+                link: 'https://olddoc.careyshop.cn'
             }
         ],
         sidebar: {
-            '/guide/': [
-                {
-                    title: '序言',
-                    path: '/guide/',
-                    children: ['white', 'gray']
-                },
-                'build',
-                'download',
-                'tree'
-            ]
+            '/guide/': getGuideSidebar()
         }
     }
+}
+
+function getGuideSidebar() {
+    return [
+        {
+            title: '序言',
+            path: '/guide/',
+            children: ['white', 'gray']
+        },
+        'build',
+        'download',
+        'tree',
+        {
+            title: '二次开发',
+            children: ['common', 'debug', 'version', 'controller']
+        },
+        'safety',
+        'hijack',
+        'enter',
+        'rewrite',
+        'timing',
+        'constant',
+        'ask',
+        'changelog',
+        'upgrade'
+    ]
 }

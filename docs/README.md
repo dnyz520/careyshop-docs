@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /image/logo@3x.png
-actionText: 后端手册 →
+actionText: 快速上手 →
 actionLink: /guide/
 features:
 - title: 极简
