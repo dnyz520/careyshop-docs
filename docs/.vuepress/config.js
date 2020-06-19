@@ -34,8 +34,8 @@ module.exports = {
                 text: 'API接口',
                 ariaLabel: 'Language Menu',
                 items: [
-                    { text: '客户组', link: '/client_api/' },
-                    { text: '管理组', link: '/admin_api/' }
+                    { text: '客户组', link: '/api/client/' },
+                    { text: '管理组', link: '/api/admin/' }
                 ]
             },
             {
