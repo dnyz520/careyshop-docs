@@ -1,3 +1,5 @@
+const { fs, path } = require('@vuepress/shared-utils')
+
 module.exports = {
     title: 'CareyShop 文档中心',
     description: 'CareyShop（简称CS）是一套基于ThinkPHP框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，对内使用面向对象模块化调用，多终端、跨平台采用REST API构架来面向移动网络趋势，可直接对接PC、移动设备、小程序、云部署，构建Android、IOS的APP。',
@@ -53,7 +55,8 @@ module.exports = {
             }
         ],
         sidebar: {
-            '/guide/': getGuideSidebar()
+            '/guide/': getGuideSidebar(),
+            '/data_dict/': ['']
         }
     }
 }
@@ -81,5 +84,14 @@ function getGuideSidebar() {
         'ask',
         'changelog',
         'upgrade'
+    ]
+}
+
+function getDataDictSidebar() {
+    return [
+        {
+            title: '数据库词典',
+            collapsable: false
+        }
     ]
 }

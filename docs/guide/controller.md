@@ -6,7 +6,7 @@
 所有的控制器都直接或间接的继承于`app\api\controller\CareyShop`做为基类。
 文件位置`application/api/controller/CareyShop.php`。
 
-#### 控制器：
+## 控制器
 每一个控制器默认都会绑定一个对应的模型，模型的存放目录是`application/common/model`。
 比如`App`控制器对应的模型也是`App`，实际导入的文件是`application/common/model/App.php`，您可以通过`static::$model`这样的方式在控制器中完成对模型的调用。注意：完成继承的控制器必须要有对应模型，否则会报错。
 ```php {16}
@@ -68,7 +68,7 @@ class App extends CareyShop
 * false：表示与控制器同名的`模型`不存在，直接在控制器内查找是否存在成员函数，找不到则报错。
 * 命名空间：在指定的命名空间类中查找成员函数，找不到则报错。
 
-#### 模型：
+## 模型
 控制器调用模型(或是指定的命名空间类成员函数)后会对函数首位参数进行赋值，值的内容由`请求参数`传递进来。
 所以在模型中类的成员函数定义也分多种。
 
