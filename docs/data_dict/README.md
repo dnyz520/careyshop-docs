@@ -1,7 +1,13 @@
-## cs_action_log
+---
+sidebar: auto
+---
+# 数据库词典
+::: tip 提示
+搜索时请把表的前缀去除，并且将表名中的下划线`_`替换为`-`
+:::
 
-#### 表注释： 操作日志
-
+## action-log
+表注释： 操作日志
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |action_log_id (主键)|int(11)|否| ||
@@ -18,21 +24,18 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|action_log_id|249|A|否||
-|client_type|BTREE|否|否|client_type|2|A|是||
-|path|BTREE|否|否|path|3|A|否||
-|status|BTREE|否|否|status|2|A|否|||
+|PRIMARY|BTREE|是|否|action_log_id|0|A|否||
+|client_type|BTREE|否|否|client_type|0|A|是||
+|path|BTREE|否|否|path (191)|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_admin
-
-#### 表注释： 管理组账号
-
+## admin
+表注释： 管理组账号
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |admin_id (主键)|int(11)|否| ||
@@ -49,23 +52,20 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|admin_id|53|A|否||
-|username|BTREE|否|否|username|53|A|否||
+|PRIMARY|BTREE|是|否|admin_id|1|A|否||
+|username|BTREE|否|否|username|1|A|否||
 |status|BTREE|否|否|status|1|A|否||
 |is_delete|BTREE|否|否|is_delete|1|A|否||
-|nickname|BTREE|否|否|nickname|52|A|否||
-|group_id|BTREE|否|否|group_id|3|A|否|||
+|nickname|BTREE|否|否|nickname|1|A|否||
+|group_id|BTREE|否|否|group_id|1|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_ads
-
-#### 表注释： 广告列表
-
+## ads
+表注释： 广告列表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |ads_id (主键)|int(11)|否| ||
@@ -84,25 +84,22 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|ads_id|106|A|否||
-|ads_position_id|BTREE|否|否|ads_position_id|3|A|否||
-|start_time|BTREE|否|否|begin_time|6|A|否||
-|end_time|BTREE|否|否|end_time|3|A|否||
-|sort|BTREE|否|否|sort|4|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|code|BTREE|否|否|code|7|A|否||
-|platform|BTREE|否|否|platform|3|A|否|||
+|PRIMARY|BTREE|是|否|ads_id|0|A|否||
+|ads_position_id|BTREE|否|否|ads_position_id|0|A|否||
+|start_time|BTREE|否|否|begin_time|0|A|否||
+|end_time|BTREE|否|否|end_time|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|code|BTREE|否|否|code|0|A|否||
+|platform|BTREE|否|否|platform|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_ads_position
-
-#### 表注释： 广告位
-
+## ads-position
+表注释： 广告位
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |ads_position_id (主键)|smallint(5)|否| ||
@@ -119,22 +116,19 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用 |
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|ads_position_id|160|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|name|BTREE|否|否|name|4|A|否||
-|code|BTREE|否|否|code|5|A|否||
-|platform|BTREE|否|否|platform|4|A|否|||
+|PRIMARY|BTREE|是|否|ads_position_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|name|BTREE|否|否|name|0|A|否||
+|code|BTREE|否|否|code|0|A|否||
+|platform|BTREE|否|否|platform|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_app
-
-#### 表注释： 应用列表
-
+## app
+表注释： 应用列表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |app_id (主键)|smallint(5)|否| ||
@@ -146,21 +140,18 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|app_id|3|A|否||
-|app_key|BTREE|否|否|app_key|3|A|否||
-|status|BTREE|否|否|status|2|A|否||
+|PRIMARY|BTREE|是|否|app_id|1|A|否||
+|app_key|BTREE|否|否|app_key|1|A|否||
+|status|BTREE|否|否|status|1|A|否||
 |is_delete|BTREE|否|否|is_delete|1|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_app_install
-
-#### 表注释： 应用安装包
-
+## app-install
+表注释： 应用安装包
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |app_install_id (主键)|smallint(5)|否| ||
@@ -173,20 +164,17 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|app_install_id|0|A|否||
 |user_agent|BTREE|否|否|user_agent|0|A|否||
 |name|BTREE|否|否|name|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_article
-
-#### 表注释： 文章管理
-
+## article
+表注释： 文章管理
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |article_id (主键)|int(11)|否| ||
@@ -207,21 +195,18 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|article_id|82|A|否||
-|article_cat_id|BTREE|否|否|article_cat_id|12|A|否||
-|is_top|BTREE|否|否|is_top|2|A|否||
-|status|BTREE|否|否|status|2|A|否|||
+|PRIMARY|BTREE|是|否|article_id|0|A|否||
+|article_cat_id|BTREE|否|否|article_cat_id|0|A|否||
+|is_top|BTREE|否|否|is_top|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_article_cat
-
-#### 表注释： 文章分类
-
+## article-cat
+表注释： 文章分类
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |article_cat_id (主键)|smallint(5)|否| ||
@@ -234,22 +219,19 @@
 |is_navi|tinyint(1)|否|0 |导航 0=否 1=是|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|article_cat_id|28|A|否||
-|parent_id|BTREE|否|否|parent_id|6|A|否||
-|cat_type|BTREE|否|否|cat_type|1|A|否||
-|sort|BTREE|否|否|sort|1|A|否||
-|is_navi|BTREE|否|否|is_navi|1|A|否|||
+|parent_id|BTREE|否|否|parent_id|14|A|否||
+|cat_type|BTREE|否|否|cat_type|2|A|否||
+|sort|BTREE|否|否|sort|2|A|否||
+|is_navi|BTREE|否|否|is_navi|2|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_ask
-
-#### 表注释： 咨询问答
-
+## ask
+表注释： 咨询问答
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |ask_id (主键)|int(11)|否| ||
@@ -265,23 +247,20 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|ask_id|152|A|否||
-|user_id|BTREE|否|否|user_id|4|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|parent_id|BTREE|否|否|parent_id|62|A|否||
-|ask_type|BTREE|否|否|ask_type|2|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否|||
+|PRIMARY|BTREE|是|否|ask_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|parent_id|BTREE|否|否|parent_id|0|A|否||
+|ask_type|BTREE|否|否|ask_type|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_auth_group
-
-#### 表注释： 用户组
-
+## auth-group
+表注释： 用户组
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |group_id (主键)|mediumint(9)|否| ||
@@ -293,21 +272,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|group_id|9|A|否||
-|module|BTREE|否|否|module|3|A|否||
-|sort|BTREE|否|否|sort|1|A|否||
-|status|BTREE|否|否|status|1|A|否|||
+|module|BTREE|否|否|module|9|A|否||
+|sort|BTREE|否|否|sort|2|A|否||
+|status|BTREE|否|否|status|2|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_auth_rule
-
-#### 表注释： 权限规则
-
+## auth-rule
+表注释： 权限规则
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |rule_id (主键)|mediumint(8)|否| ||
@@ -320,22 +296,19 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|rule_id|17|A|否||
-|module|BTREE|否|否|module|3|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|group_id|BTREE|否|否|group_id|9|A|否||
-|sort|BTREE|否|否|sort|1|A|否|||
+|module|BTREE|否|否|module|8|A|否||
+|status|BTREE|否|否|status|4|A|否||
+|group_id|BTREE|否|否|group_id|17|A|否||
+|sort|BTREE|否|否|sort|2|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_brand
-
-#### 表注释： 商品品牌
-
+## brand
+表注释： 商品品牌
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |brand_id (主键)|smallint(5)|否| ||
@@ -350,22 +323,19 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|brand_id|12|A|否||
-|is_show|BTREE|否|否|status|2|A|否||
-|name|BTREE|否|否|name|10|A|否||
-|goods_category_id|BTREE|否|否|goods_category_id|12|A|否||
-|sort|BTREE|否|否|sort|3|A|否|||
+|PRIMARY|BTREE|是|否|brand_id|0|A|否||
+|is_show|BTREE|否|否|status|0|A|否||
+|name|BTREE|否|否|name|0|A|否||
+|goods_category_id|BTREE|否|否|goods_category_id|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_card
-
-#### 表注释： 购物卡
-
+## card
+表注释： 购物卡
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |card_id (主键)|int(11)|否| ||
@@ -382,21 +352,18 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|card_id|42|A|否||
-|name|BTREE|否|否|name|6|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否|||
+|PRIMARY|BTREE|是|否|card_id|0|A|否||
+|name|BTREE|否|否|name|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_card_use
-
-#### 表注释： 购物卡使用
-
+## card-use
+表注释： 购物卡使用
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |card_use_id (主键)|int(11)|否| ||
@@ -411,23 +378,20 @@
 |active_time|int(11)|否|0 |激活日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|card_use_id|1023|A|否||
-|card_id|BTREE|否|否|card_id|3|A|否||
-|user_id|BTREE|否|否|user_id|2|A|否||
-|number|BTREE|否|否|number|1023|A|否||
-|money|BTREE|否|否|money|4|A|否||
-|is_invalid|BTREE|否|否|is_invalid|2|A|否|||
+|PRIMARY|BTREE|是|否|card_use_id|0|A|否||
+|card_id|BTREE|否|否|card_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|number|BTREE|否|否|number|0|A|否||
+|money|BTREE|否|否|money|0|A|否||
+|is_invalid|BTREE|否|否|is_invalid|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_cart
-
-#### 表注释： 购物车
-
+## cart
+表注释： 购物车
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |cart_id (主键)|int(11)|否| ||
@@ -441,23 +405,20 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|cart_id|3|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|goods_id|BTREE|否|否|goods_id|3|A|否||
-|key_name|BTREE|否|否|key_name|3|A|否||
-|update_time|BTREE|否|否|update_time|1|A|否||
-|is_show|BTREE|否|否|is_show|2|A|否|||
+|PRIMARY|BTREE|是|否|cart_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|goods_id|BTREE|否|否|goods_id|0|A|否||
+|key_name|BTREE|否|否|key_name|0|A|否||
+|update_time|BTREE|否|否|update_time|0|A|否||
+|is_show|BTREE|否|否|is_show|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_collect
-
-#### 表注释： 商品收藏夹
-
+## collect
+表注释： 商品收藏夹
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |collect_id (主键)|int(11)|否| ||
@@ -467,7 +428,6 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|collect_id|0|A|否||
@@ -475,13 +435,11 @@
 |is_top|BTREE|否|否|is_top|0|A|否||
 |goods_id|BTREE|否|否|goods_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_coupon
-
-#### 表注释： 优惠劵
-
+## coupon
+表注释： 优惠劵
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |coupon_id (主键)|smallint(5)|否| ||
@@ -508,25 +466,22 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删 |
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|coupon_id|66|A|否||
-|name|BTREE|否|否|name|6|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|type|BTREE|否|否|type|4|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|is_invalid|BTREE|否|否|is_invalid|2|A|否||
-|use_end_time|BTREE|否|否|use_end_time|6|A|否||
-|give_code|BTREE|否|否|give_code|4|A|否|||
+|PRIMARY|BTREE|是|否|coupon_id|0|A|否||
+|name|BTREE|否|否|name|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|type|BTREE|否|否|type|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|is_invalid|BTREE|否|否|is_invalid|0|A|否||
+|use_end_time|BTREE|否|否|use_end_time|0|A|否||
+|give_code|BTREE|否|否|give_code|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_coupon_give
-
-#### 表注释： 优惠劵发放
-
+## coupon-give
+表注释： 优惠劵发放
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |coupon_give_id (主键)|int(11)|否| ||
@@ -540,23 +495,20 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删 |
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|coupon_give_id|2093|A|否||
-|coupon_id|BTREE|否|否|coupon_id|3|A|否||
-|user_id|BTREE|否|否|user_id|45|A|否||
-|use_time|BTREE|否|否|use_time|4|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|exchange_code|BTREE|否|否|exchange_code|2093|A|否|||
+|PRIMARY|BTREE|是|否|coupon_give_id|0|A|否||
+|coupon_id|BTREE|否|否|coupon_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|use_time|BTREE|否|否|use_time|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|exchange_code|BTREE|否|否|exchange_code|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_delivery
-
-#### 表注释： 配送方式
-
+## delivery
+表注释： 配送方式
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |delivery_id (主键)|smallint(5)|否| ||
@@ -579,21 +531,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|delivery_id|4|A|否||
-|status|BTREE|否|否|status|1|A|否||
-|sort|BTREE|否|否|sort|4|A|否||
-|delivery_item_id|BTREE|否|否|delivery_item_id|4|A|否|||
+|PRIMARY|BTREE|是|否|delivery_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否||
+|delivery_item_id|BTREE|否|否|delivery_item_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_delivery_area
-
-#### 表注释： 配送区域
-
+## delivery-area
+表注释： 配送区域
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |delivery_area_id (主键)|smallint(5)|否| ||
@@ -608,19 +557,16 @@
 |second_volume_price|decimal(10,2)|否| |续体积运费|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|delivery_area_id|4|A|否||
-|delivery_id|BTREE|否|否|delivery_id|2|A|否|||
+|PRIMARY|BTREE|是|否|delivery_area_id|0|A|否||
+|delivery_id|BTREE|否|否|delivery_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_delivery_dist
-
-#### 表注释： 配送轨迹
-
+## delivery-dist
+表注释： 配送轨迹
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |delivery_dist_id (主键)|int(11)|否| ||
@@ -636,24 +582,21 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|delivery_dist_id|168|A|否||
-|user_id|BTREE|否|否|user_id|2|A|否||
-|state|BTREE|否|否|state|3|A|否||
-|delivery_code|BTREE|否|否|delivery_code|6|A|否||
-|logistic_code|BTREE|否|否|logistic_code|14|A|否||
-|order_code|BTREE|否|否|order_code|16|A|否||
-|is_sub|BTREE|否|否|is_sub|2|A|否|||
+|PRIMARY|BTREE|是|否|delivery_dist_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|state|BTREE|否|否|state|0|A|否||
+|delivery_code|BTREE|否|否|delivery_code|0|A|否||
+|logistic_code|BTREE|否|否|logistic_code|0|A|否||
+|order_code|BTREE|否|否|order_code|0|A|否||
+|is_sub|BTREE|否|否|is_sub|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_delivery_item
-
-#### 表注释： 快递公司列表
-
+## delivery-item
+表注释： 快递公司列表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |delivery_item_id (主键)|smallint(5)|否| ||
@@ -664,20 +607,17 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|delivery_item_id|511|A|否||
-|type|BTREE|否|否|type|4|A|否||
-|is_delete|BTREE|否|否|is_delete|1|A|否|||
+|PRIMARY|BTREE|是|否|delivery_item_id|144|A|否||
+|type|BTREE|否|否|type|1|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_discount
-
-#### 表注释： 商品折扣
-
+## discount
+表注释： 商品折扣
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |discount_id (主键)|int(11)|否| ||
@@ -688,21 +628,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|discount_id|41|A|否||
-|begin_time|BTREE|否|否|begin_time|8|A|否||
-|end_time|BTREE|否|否|end_time|7|A|否||
-|status|BTREE|否|否|status|2|A|否|||
+|PRIMARY|BTREE|是|否|discount_id|0|A|否||
+|begin_time|BTREE|否|否|begin_time|0|A|否||
+|end_time|BTREE|否|否|end_time|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_discount_goods
-
-#### 表注释： 折扣商品
-
+## discount-goods
+表注释： 折扣商品
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |discount_id|int(11)|否|0 |对应discount表|
@@ -711,19 +648,16 @@
 |description|varchar(255)|是| |描述|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|discount_id|BTREE|否|否|discount_id|15|A|否||
-|goods_id|BTREE|否|否|goods_id|8|A|否|||
+|discount_id|BTREE|否|否|discount_id|0|A|否||
+|goods_id|BTREE|否|否|goods_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_friend_link
-
-#### 表注释： 友情链接
-
+## friend-link
+表注释： 友情链接
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |friend_link_id (主键)|smallint(5)|否| ||
@@ -735,20 +669,17 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|friend_link_id|7|A|否||
-|is_show|BTREE|否|否|status|2|A|否||
-|sort|BTREE|否|否|sort|5|A|否|||
+|PRIMARY|BTREE|是|否|friend_link_id|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods
-
-#### 表注释： 商品表
-
+## goods
+表注释： 商品表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_id (主键)|int(11)|否| ||
@@ -791,33 +722,30 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_id|170|A|否||
-|goods_code|BTREE|否|否|goods_code|170|A|否||
-|name|BTREE|否|否|name (191)|26|A|否||
-|goods_category_id|BTREE|否|否|goods_category_id|11|A|否||
-|brand_id|BTREE|否|否|brand_id|5|A|否||
-|is_integral|BTREE|否|否|is_integral|4|A|否||
-|is_recommend|BTREE|否|否|is_recommend|2|A|否||
-|is_new|BTREE|否|否|is_new|2|A|否||
-|is_hot|BTREE|否|否|is_hot|2|A|否||
-|sort|BTREE|否|否|sort|2|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|shop_price|BTREE|否|否|shop_price|15|A|否||
-|is_delete|BTREE|否|否|is_delete|3|A|否||
-|store_qty|BTREE|否|否|store_qty|25|A|否||
-|is_postage|BTREE|否|否|is_postage|2|A|否||
-|bar_code|BTREE|否|否|bar_code|1|A|否|||
+|PRIMARY|BTREE|是|否|goods_id|0|A|否||
+|goods_code|BTREE|否|否|goods_code|0|A|否||
+|name|BTREE|否|否|name (191)|0|A|否||
+|goods_category_id|BTREE|否|否|goods_category_id|0|A|否||
+|brand_id|BTREE|否|否|brand_id|0|A|否||
+|is_integral|BTREE|否|否|is_integral|0|A|否||
+|is_recommend|BTREE|否|否|is_recommend|0|A|否||
+|is_new|BTREE|否|否|is_new|0|A|否||
+|is_hot|BTREE|否|否|is_hot|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|shop_price|BTREE|否|否|shop_price|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|store_qty|BTREE|否|否|store_qty|0|A|否||
+|is_postage|BTREE|否|否|is_postage|0|A|否||
+|bar_code|BTREE|否|否|bar_code|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_attr
-
-#### 表注释： 商品属性列表
-
+## goods-attr
+表注释： 商品属性列表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_id|int(11)|否| |对应goods表|
@@ -828,23 +756,20 @@
 |sort|tinyint(3)|否|50 |排序|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|goods_id|BTREE|否|否|goods_id|19|A|否||
-|is_important|BTREE|否|否|is_important|2|A|否||
-|parent_id|BTREE|否|否|parent_id|5|A|否||
-|attr_value|BTREE|否|否|attr_value|23|A|否||
-|goods_attribute_id|BTREE|否|否|goods_attribute_id|17|A|否||
-|sort|BTREE|否|否|sort|6|A|否|||
+|goods_id|BTREE|否|否|goods_id|0|A|否||
+|is_important|BTREE|否|否|is_important|0|A|否||
+|parent_id|BTREE|否|否|parent_id|0|A|否||
+|attr_value|BTREE|否|否|attr_value (191)|0|A|否||
+|goods_attribute_id|BTREE|否|否|goods_attribute_id|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_attr_config
-
-#### 表注释： 商品属性配置
-
+## goods-attr-config
+表注释： 商品属性配置
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_attr_config_id (主键)|int(11)|否| ||
@@ -852,19 +777,16 @@
 |config_data|text|否| |配置数据|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_attr_config_id|18|A|否||
-|goods_id|BTREE|否|否|goods_id|18|A|否|||
+|PRIMARY|BTREE|是|否|goods_attr_config_id|0|A|否||
+|goods_id|BTREE|否|否|goods_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_attribute
-
-#### 表注释： 商品属性
-
+## goods-attribute
+表注释： 商品属性
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_attribute_id (主键)|int(11)|否| ||
@@ -881,23 +803,20 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_attribute_id|34|A|否||
-|goods_type_id|BTREE|否|否|goods_type_id|4|A|否||
-|sort|BTREE|否|否|sort|8|A|否||
-|parent_id|BTREE|否|否|parent_id|6|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|attr_index|BTREE|否|否|attr_index|2|A|否|||
+|PRIMARY|BTREE|是|否|goods_attribute_id|0|A|否||
+|goods_type_id|BTREE|否|否|goods_type_id|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否||
+|parent_id|BTREE|否|否|parent_id|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|attr_index|BTREE|否|否|attr_index|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_category
-
-#### 表注释： 商品分类
-
+## goods-category
+表注释： 商品分类
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_category_id (主键)|smallint(5)|否| ||
@@ -916,23 +835,20 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_category_id|843|A|否||
-|parent_id|BTREE|否|否|parent_id|95|A|否||
+|PRIMARY|BTREE|是|否|goods_category_id|852|A|否||
+|parent_id|BTREE|否|否|parent_id|213|A|否||
 |category_type|BTREE|否|否|category_type|1|A|否||
 |status|BTREE|否|否|status|1|A|否||
 |sort|BTREE|否|否|sort|1|A|否||
 |is_navi|BTREE|否|否|is_navi|1|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_comment
-
-#### 表注释： 商品评价
-
+## goods-comment
+表注释： 商品评价
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_comment_id (主键)|int(11)|否| ||
@@ -958,30 +874,27 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_comment_id|79|A|否||
-|type|BTREE|否|否|type|4|A|否||
-|parent_id|BTREE|否|否|parent_id|15|A|否||
-|goods_id|BTREE|否|否|goods_id|5|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|is_top|BTREE|否|否|is_top|2|A|否||
-|score|BTREE|否|否|score|5|A|否||
-|is_show|BTREE|否|否|is_show|2|A|否||
-|is_image|BTREE|否|否|is_image|2|A|否||
-|order_no|BTREE|否|否|order_no|13|A|否||
-|user_id|BTREE|否|否|user_id|5|A|否||
-|order_goods_id|BTREE|否|否|order_goods_id|5|A|否||
-|is_append|BTREE|否|否|is_append|2|A|否|||
+|PRIMARY|BTREE|是|否|goods_comment_id|0|A|否||
+|type|BTREE|否|否|type|0|A|否||
+|parent_id|BTREE|否|否|parent_id|0|A|否||
+|goods_id|BTREE|否|否|goods_id|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|is_top|BTREE|否|否|is_top|0|A|否||
+|score|BTREE|否|否|score|0|A|否||
+|is_show|BTREE|否|否|is_show|0|A|否||
+|is_image|BTREE|否|否|is_image|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|order_goods_id|BTREE|否|否|order_goods_id|0|A|否||
+|is_append|BTREE|否|否|is_append|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_consult
-
-#### 表注释： 商品咨询
-
+## goods-consult
+表注释： 商品咨询
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_consult_id (主键)|int(11)|否| ||
@@ -997,22 +910,19 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_consult_id|79|A|否||
-|parent_id|BTREE|否|否|parent_id|11|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|is_show|BTREE|否|否|is_show|2|A|否||
-|status|BTREE|否|否|status|2|A|否|||
+|PRIMARY|BTREE|是|否|goods_consult_id|0|A|否||
+|parent_id|BTREE|否|否|parent_id|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|is_show|BTREE|否|否|is_show|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_reply
-
-#### 表注释： 商品评价回复
-
+## goods-reply
+表注释： 商品评价回复
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_reply_id (主键)|int(11)|否| ||
@@ -1024,35 +934,30 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|goods_reply_id|0|A|否||
 |goods_comment_id|BTREE|否|否|goods_comment_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_goods_type
-
-#### 表注释： 商品模型
-
+## goods-type
+表注释： 商品模型
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_type_id (主键)|smallint(5)|否| ||
 |type_name|varchar(60)|否| |类型名称|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|goods_type_id|8|A|否|||
+|PRIMARY|BTREE|是|否|goods_type_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_help
-
+## help
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |help_id (主键)|int(11)|否| ||
@@ -1063,20 +968,17 @@
 |url|varchar(255)|否| |外部链接|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|help_id|9|A|否||
 |router|BTREE|否|否|router|9|A|否||
-|module|BTREE|否|否|module|1|A|否|||
+|module|BTREE|否|否|module|2|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_history
-
-#### 表注释： 浏览历史
-
+## history
+表注释： 浏览历史
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |history_id (主键)|int(11)|否| ||
@@ -1085,7 +987,6 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|history_id|0|A|否||
@@ -1093,13 +994,11 @@
 |goods_id|BTREE|否|否|goods_id|0|A|否||
 |update_time|BTREE|否|否|update_time|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_menu
-
-#### 表注释： 菜单管理
-
+## menu
+表注释： 菜单管理
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |menu_id (主键)|smallint(5)|否| ||
@@ -1118,23 +1017,20 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|menu_id|1040|A|否||
-|parent_id|BTREE|否|否|parent_id|152|A|否||
-|sort|BTREE|否|否|sort|63|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|module|BTREE|否|否|module|2|A|否||
-|is_navi|BTREE|否|否|is_navi|2|A|否|||
+|PRIMARY|BTREE|是|否|menu_id|1049|A|否||
+|parent_id|BTREE|否|否|parent_id|349|A|否||
+|sort|BTREE|否|否|sort|131|A|否||
+|status|BTREE|否|否|status|4|A|否||
+|module|BTREE|否|否|module|4|A|否||
+|is_navi|BTREE|否|否|is_navi|4|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_message
-
-#### 表注释： 消息管理
-
+## message
+表注释： 消息管理
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |message_id (主键)|int(11)|否| ||
@@ -1152,24 +1048,21 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|message_id|114|A|否||
-|type|BTREE|否|否|type|4|A|否||
-|is_top|BTREE|否|否|is_top|2|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|member|BTREE|否|否|member|3|A|否||
-|create_time|BTREE|否|否|create_time|35|A|否|||
+|PRIMARY|BTREE|是|否|message_id|0|A|否||
+|type|BTREE|否|否|type|0|A|否||
+|is_top|BTREE|否|否|is_top|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|member|BTREE|否|否|member|0|A|否||
+|create_time|BTREE|否|否|create_time|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_message_user
-
-#### 表注释： 用户消息通知
-
+## message-user
+表注释： 用户消息通知
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |message_user_id (主键)|int(11)|否| ||
@@ -1181,23 +1074,20 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|message_user_id|259|A|否||
-|message_id|BTREE|否|否|message_id|55|A|否||
-|user_id|BTREE|否|否|user_id|1|A|是||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|is_read|BTREE|否|否|is_read|2|A|否||
-|admin_id|BTREE|否|否|admin_id|12|A|是|||
+|PRIMARY|BTREE|是|否|message_user_id|0|A|否||
+|message_id|BTREE|否|否|message_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|是||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|is_read|BTREE|否|否|is_read|0|A|否||
+|admin_id|BTREE|否|否|admin_id|0|A|是|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_navigation
-
-#### 表注释： 导航
-
+## navigation
+表注释： 导航
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |navigation_id (主键)|smallint(5)|否| ||
@@ -1208,18 +1098,15 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|navigation_id|8|A|否|||
+|PRIMARY|BTREE|是|否|navigation_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_notice_item
-
-#### 表注释： 通知系统可用变量
-
+## notice-item
+表注释： 通知系统可用变量
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |notice_item_id (主键)|smallint(5)|否| ||
@@ -1228,19 +1115,16 @@
 |type|tinyint(1)|否| |通知类型|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|notice_item_id|34|A|否||
-|type|BTREE|否|否|type|7|A|否|||
+|type|BTREE|否|否|type|17|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_notice_tpl
-
-#### 表注释： 通知系统模板
-
+## notice-tpl
+表注释： 通知系统模板
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |notice_tpl_id (主键)|smallint(5)|否| ||
@@ -1253,21 +1137,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|notice_tpl_id|14|A|否||
-|status|BTREE|否|否|status|1|A|否||
-|code|BTREE|否|否|code|2|A|否||
-|type|BTREE|否|否|type|7|A|否|||
+|status|BTREE|否|否|status|2|A|否||
+|code|BTREE|否|否|code|4|A|否||
+|type|BTREE|否|否|type|14|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_order
-
-#### 表注释： 订单管理
-
+## order
+表注释： 订单管理
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |order_id (主键)|int(11)|否| ||
@@ -1322,28 +1203,25 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=回收站 2=删除|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|order_id|143|A|否||
-|parent_id|BTREE|否|否|parent_id|1|A|否||
-|order_no|BTREE|否|否|order_no|35|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|trade_status|BTREE|否|否|trade_status|5|A|否||
-|delivery_status|BTREE|否|否|delivery_status|3|A|否||
-|payment_status|BTREE|否|否|payment_status|2|A|否||
-|create_user_id|BTREE|否|否|create_user_id|1|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|create_time|BTREE|否|否|create_time|22|A|否||
-|delivery_time|BTREE|否|否|delivery_time|6|A|否|||
+|PRIMARY|BTREE|是|否|order_id|0|A|否||
+|parent_id|BTREE|否|否|parent_id|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|trade_status|BTREE|否|否|trade_status|0|A|否||
+|delivery_status|BTREE|否|否|delivery_status|0|A|否||
+|payment_status|BTREE|否|否|payment_status|0|A|否||
+|create_user_id|BTREE|否|否|create_user_id|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否||
+|create_time|BTREE|否|否|create_time|0|A|否||
+|delivery_time|BTREE|否|否|delivery_time|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_order_goods
-
-#### 表注释： 订单商品
-
+## order-goods
+表注释： 订单商品
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |order_goods_id (主键)|int(11)|否| ||
@@ -1366,27 +1244,24 @@
 |status|tinyint(1)|否|0 |0=未发 1=已发 2=收货 3=取消|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|order_goods_id|54|A|否||
-|order_id|BTREE|否|否|order_id|31|A|否||
-|order_no|BTREE|否|否|order_no|31|A|否||
-|goods_name|BTREE|否|否|goods_name|7|A|否||
-|goods_id|BTREE|否|否|goods_id|5|A|否||
-|key_name|BTREE|否|否|key_name|5|A|否||
-|is_comment|BTREE|否|否|is_comment|2|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|status|BTREE|否|否|status|4|A|否||
-|is_service|BTREE|否|否|is_service|3|A|否|||
+|PRIMARY|BTREE|是|否|order_goods_id|0|A|否||
+|order_id|BTREE|否|否|order_id|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否||
+|goods_name|BTREE|否|否|goods_name (191)|0|A|否||
+|goods_id|BTREE|否|否|goods_id|0|A|否||
+|key_name|BTREE|否|否|key_name|0|A|否||
+|is_comment|BTREE|否|否|is_comment|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|is_service|BTREE|否|否|is_service|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_order_log
-
-#### 表注释： 订单日志
-
+## order-log
+表注释： 订单日志
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |order_log_id (主键)|int(11)|否| ||
@@ -1402,20 +1277,17 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|order_log_id|289|A|否||
-|order_id|BTREE|否|否|order_id|33|A|否||
-|order_no|BTREE|否|否|order_no|34|A|否|||
+|PRIMARY|BTREE|是|否|order_log_id|0|A|否||
+|order_id|BTREE|否|否|order_id|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_order_refund
-
-#### 表注释： 订单退款
-
+## order-refund
+表注释： 订单退款
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |order_refund_id (主键)|int(11)|否| ||
@@ -1433,22 +1305,19 @@
 |status|tinyint(1)|否|0 |0=待处理 1=已处理 2=失败 3=撤销|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|order_refund_id|99|A|否||
-|refund_no|BTREE|否|否|refund_no|3|A|否||
-|order_no|BTREE|否|否|order_no|1|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|status|BTREE|否|否|status|4|A|否|||
+|PRIMARY|BTREE|是|否|order_refund_id|0|A|否||
+|refund_no|BTREE|否|否|refund_no|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_order_service
-
-#### 表注释： 售后服务
-
+## order-service
+表注释： 售后服务
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |order_service_id (主键)|int(11)|否| ||
@@ -1482,27 +1351,24 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|order_service_id|28|A|否||
-|service_no|BTREE|否|否|service_no|28|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|order_no|BTREE|否|否|order_no|3|A|否||
-|status|BTREE|否|否|status|5|A|否||
-|type|BTREE|否|否|type|4|A|否||
-|order_goods_id|BTREE|否|否|order_goods_id|3|A|否||
-|admin_event|BTREE|否|否|admin_event|2|A|否||
-|user_event|BTREE|否|否|user_event|2|A|否||
-|admin_id|BTREE|否|否|admin_id|3|A|否|||
+|PRIMARY|BTREE|是|否|order_service_id|0|A|否||
+|service_no|BTREE|否|否|service_no|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|type|BTREE|否|否|type|0|A|否||
+|order_goods_id|BTREE|否|否|order_goods_id|0|A|否||
+|admin_event|BTREE|否|否|admin_event|0|A|否||
+|user_event|BTREE|否|否|user_event|0|A|否||
+|admin_id|BTREE|否|否|admin_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_payment
-
-#### 表注释： 支付配置
-
+## payment
+表注释： 支付配置
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |payment_id (主键)|smallint(5)|否| ||
@@ -1519,21 +1385,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|payment_id|7|A|否||
 |code|BTREE|否|否|code|7|A|否||
-|sort|BTREE|否|否|sort|1|A|否||
-|status|BTREE|否|否|status|1|A|否|||
+|sort|BTREE|否|否|sort|2|A|否||
+|status|BTREE|否|否|status|2|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_payment_log
-
-#### 表注释： 支付日志
-
+## payment-log
+表注释： 支付日志
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |payment_log_id (主键)|int(11)|否| ||
@@ -1550,24 +1413,21 @@
 |status|tinyint(1)|否|0 |0=待付款 1=已完成 2=已关闭|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|payment_log_id|206|A|否||
-|payment_no|BTREE|否|否|payment_no|36|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|order_no|BTREE|否|否|order_no|9|A|否||
-|type|BTREE|否|否|type|2|A|否||
-|status|BTREE|否|否|status|3|A|否||
-|trade_no|BTREE|否|否|out_trade_no|8|A|否|||
+|PRIMARY|BTREE|是|否|payment_log_id|0|A|否||
+|payment_no|BTREE|否|否|payment_no|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|order_no|BTREE|否|否|order_no|0|A|否||
+|type|BTREE|否|否|type|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|trade_no|BTREE|否|否|out_trade_no|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_praise
-
-#### 表注释： 点赞记录
-
+## praise
+表注释： 点赞记录
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |praise_id (主键)|int(11)|否| ||
@@ -1575,20 +1435,17 @@
 |goods_comment_id|int(11)|否| |对应goods_comment表|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|praise_id|0|A|否||
 |user_id|BTREE|否|否|user_id|0|A|否||
 |goods_comment_id|BTREE|否|否|goods_comment_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_promotion
-
-#### 表注释： 订单促销
-
+## promotion
+表注释： 订单促销
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |promotion_id (主键)|int(11)|否| ||
@@ -1598,21 +1455,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|promotion_id|26|A|否||
-|begin_time|BTREE|否|否|begin_time|16|A|否||
-|end_time|BTREE|否|否|end_time|15|A|否||
-|status|BTREE|否|否|status|2|A|否|||
+|PRIMARY|BTREE|是|否|promotion_id|0|A|否||
+|begin_time|BTREE|否|否|begin_time|0|A|否||
+|end_time|BTREE|否|否|end_time|0|A|否||
+|status|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_promotion_item
-
-#### 表注释： 订单促销项
-
+## promotion-item
+表注释： 订单促销项
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |promotion_id|int(11)|否|0 |对应promotion表|
@@ -1621,19 +1475,16 @@
 |description|varchar(255)|否| |描述|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|promotion_id|BTREE|否|否|promotion_id|30|A|否||
-|quota|BTREE|否|否|quota|4|A|否|||
+|promotion_id|BTREE|否|否|promotion_id|0|A|否||
+|quota|BTREE|否|否|quota|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_qrcode
-
-#### 表注释： 二维码管理
-
+## qrcode
+表注释： 二维码管理
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |qrcode_id (主键)|mediumint(8)|否| ||
@@ -1644,18 +1495,15 @@
 |logo|varchar(512)|否| |logo|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|qrcode_id|12|A|否|||
+|PRIMARY|BTREE|是|否|qrcode_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_region
-
-#### 表注释： 区域
-
+## region
+表注释： 区域
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |region_id (主键)|smallint(5)|否| ||
@@ -1665,21 +1513,18 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|region_id|4047|A|否||
-|parent_id|BTREE|否|否|parent_id|398|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否||
-|sort|BTREE|否|否|sort|41|A|否|||
+|PRIMARY|BTREE|是|否|region_id|4022|A|否||
+|parent_id|BTREE|否|否|parent_id|670|A|否||
+|is_delete|BTREE|否|否|is_delete|4|A|否||
+|sort|BTREE|否|否|sort|201|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_service_log
-
-#### 表注释： 售后日志
-
+## service-log
+表注释： 售后日志
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |service_log_id (主键)|int(11)|否| ||
@@ -1692,20 +1537,17 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|service_log_id|164|A|否||
-|order_service_id|BTREE|否|否|order_service_id|24|A|否||
-|service_no|BTREE|否|否|service_no|25|A|否|||
+|PRIMARY|BTREE|是|否|service_log_id|0|A|否||
+|order_service_id|BTREE|否|否|order_service_id|0|A|否||
+|service_no|BTREE|否|否|service_no|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_setting
-
-#### 表注释： 系统配置
-
+## setting
+表注释： 系统配置
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |setting_id (主键)|smallint(5)|否| ||
@@ -1716,20 +1558,17 @@
 |help_text|varchar(255)|否| |帮助|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|setting_id|70|A|否||
 |code|BTREE|否|否|code|70|A|否||
-|module|BTREE|否|否|module|8|A|否|||
+|module|BTREE|否|否|module|17|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_spec
-
-#### 表注释： 商品规格
-
+## spec
+表注释： 商品规格
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |spec_id (主键)|int(11)|否| ||
@@ -1740,21 +1579,18 @@
 |sort|tinyint(3)|否|50 |排序|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|spec_id|18|A|否||
-|goods_type_id|BTREE|否|否|goods_type_id|4|A|否||
-|sort|BTREE|否|否|sort|4|A|否||
-|spec_index|BTREE|否|否|spec_index|2|A|否|||
+|PRIMARY|BTREE|是|否|spec_id|0|A|否||
+|goods_type_id|BTREE|否|否|goods_type_id|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否||
+|spec_index|BTREE|否|否|spec_index|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_spec_config
-
-#### 表注释： 商品规格配置
-
+## spec-config
+表注释： 商品规格配置
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |spec_config_id (主键)|int(11)|否| ||
@@ -1762,19 +1598,16 @@
 |config_data|text|否| |配置数据|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|spec_config_id|18|A|否||
-|goods_id|BTREE|否|否|goods_id|18|A|否|||
+|PRIMARY|BTREE|是|否|spec_config_id|0|A|否||
+|goods_id|BTREE|否|否|goods_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_spec_goods
-
-#### 表注释： 商品规格列表
-
+## spec-goods
+表注释： 商品规格列表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_id|int(11)|否|0 |对应goods表|
@@ -1786,19 +1619,16 @@
 |goods_sku|varchar(50)|否| |商品SKU|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|goods_id|BTREE|否|否|goods_id|27|A|否||
-|key_name|BTREE|否|否|key_name|350|A|否|||
+|goods_id|BTREE|否|否|goods_id|0|A|否||
+|key_name|BTREE|否|否|key_name (191)|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_spec_image
-
-#### 表注释： 商品规格图片
-
+## spec-image
+表注释： 商品规格图片
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |goods_id|int(11)|否|0 |对应goods表|
@@ -1808,19 +1638,16 @@
 |color|varchar(50)|否| |商品规格颜色|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|goods_id|BTREE|否|否|goods_id|24|A|否||
-|spec_item_id|BTREE|否|否|spec_item_id|27|A|否|||
+|goods_id|BTREE|否|否|goods_id|0|A|否||
+|spec_item_id|BTREE|否|否|spec_item_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_spec_item
-
-#### 表注释： 商品规格项
-
+## spec-item
+表注释： 商品规格项
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |spec_item_id (主键)|int(11)|否| ||
@@ -1830,21 +1657,18 @@
 |sort|tinyint(3)|否|50 |排序|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|spec_item_id|121|A|否||
-|spec_id|BTREE|否|否|spec_id|25|A|否||
-|is_contact|BTREE|否|否|is_contact|2|A|否||
-|sort|BTREE|否|否|sort|8|A|否|||
+|PRIMARY|BTREE|是|否|spec_item_id|0|A|否||
+|spec_id|BTREE|否|否|spec_id|0|A|否||
+|is_contact|BTREE|否|否|is_contact|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_storage
-
-#### 表注释： 资源管理器
-
+## storage
+表注释： 资源管理器
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |storage_id (主键)|int(11)|否| ||
@@ -1867,26 +1691,23 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|storage_id|278|A|否||
-|parent_id|BTREE|否|否|parent_id|9|A|否||
+|PRIMARY|BTREE|是|否|storage_id|23|A|否||
+|parent_id|BTREE|否|否|parent_id|7|A|否||
 |type|BTREE|否|否|type|4|A|否||
-|sort|BTREE|否|否|sort|1|A|否||
-|hash|BTREE|否|否|hash|245|A|否||
-|path|BTREE|否|否|path|270|A|否||
-|name|BTREE|否|否|name|268|A|否||
-|protocol|BTREE|否|否|protocol|2|A|否||
-|priority|BTREE|否|否|priority|2|A|否|||
+|sort|BTREE|否|否|sort|2|A|否||
+|hash|BTREE|否|否|hash|23|A|否||
+|path|BTREE|否|否|path (191)|23|A|否||
+|name|BTREE|否|否|name (191)|23|A|否||
+|protocol|BTREE|否|否|protocol|4|A|否||
+|priority|BTREE|否|否|priority|4|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_storage_style
-
-#### 表注释： 资源样式
-
+## storage-style
+表注释： 资源样式
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |storage_style_id (主键)|int(11)|否| ||
@@ -1901,21 +1722,18 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|storage_style_id|12|A|否||
 |code|BTREE|否|否|code|12|A|否||
-|platform|BTREE|否|否|platform|1|A|否||
-|status|BTREE|否|否|status|1|A|否|||
+|platform|BTREE|否|否|platform|2|A|否||
+|status|BTREE|否|否|status|2|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_support
-
-#### 表注释： 客服
-
+## support
+表注释： 客服
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |support_id (主键)|smallint(5)|否| ||
@@ -1926,20 +1744,17 @@
 |status|tinyint(1)|否|1 |0=禁用 1=启用|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|support_id|6|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|sort|BTREE|否|否|sort|4|A|否|||
+|PRIMARY|BTREE|是|否|support_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|sort|BTREE|否|否|sort|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_token
-
-#### 表注释： token
-
+## token
+表注释： token
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |token_id (主键)|int(11)|否| ||
@@ -1955,22 +1770,19 @@
 |refresh_expires|int(11)|否| |刷新授权码过期时间|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|token_id|42|A|否||
-|user_id|BTREE|否|否|client_id|42|A|否||
-|admin_id|BTREE|否|否|platform|1|A|否||
-|client_type|BTREE|否|否|client_type|1|A|否||
-|token|BTREE|否|否|token|42|A|否|||
+|PRIMARY|BTREE|是|否|token_id|0|A|否||
+|user_id|BTREE|否|否|client_id|0|A|否||
+|admin_id|BTREE|否|否|platform|0|A|否||
+|client_type|BTREE|否|否|client_type|0|A|否||
+|token|BTREE|否|否|token|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_topic
-
-#### 表注释： 专题
-
+## topic
+表注释： 专题
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |topic_id (主键)|int(11)|否| ||
@@ -1984,19 +1796,16 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|topic_id|102|A|否||
-|is_show|BTREE|否|否|status|2|A|否|||
+|PRIMARY|BTREE|是|否|topic_id|0|A|否||
+|is_show|BTREE|否|否|status|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_transaction
-
-#### 表注释： 交易结算日志
-
+## transaction
+表注释： 交易结算日志
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |transaction_id (主键)|int(11)|否| ||
@@ -2014,24 +1823,21 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|transaction_id|296|A|否||
-|user_id|BTREE|否|否|user_id|1|A|是||
-|type|BTREE|否|否|type|2|A|否||
-|order_no|BTREE|否|否|source_no|17|A|否||
-|module|BTREE|否|否|module|3|A|否||
-|create_time|BTREE|否|否|create_time|17|A|否||
-|card_number|BTREE|否|否|card_number|2|A|否|||
+|PRIMARY|BTREE|是|否|transaction_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|是||
+|type|BTREE|否|否|type|0|A|否||
+|order_no|BTREE|否|否|source_no|0|A|否||
+|module|BTREE|否|否|module|0|A|否||
+|create_time|BTREE|否|否|create_time|0|A|否||
+|card_number|BTREE|否|否|card_number|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_user
-
-#### 表注释： 顾客组账号
-
+## user
+表注释： 顾客组账号
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |user_id (主键)|int(11)|否| ||
@@ -2057,25 +1863,22 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|user_id|72|A|否||
-|username|BTREE|否|否|username|50|A|否||
-|mobile|BTREE|否|否|mobile|15|A|否||
-|email|BTREE|否|否|email|2|A|否||
-|nickname|BTREE|否|否|nickname|9|A|否||
-|user_level_id|BTREE|否|否|user_level_id|4|A|否||
-|status|BTREE|否|否|status|2|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否|||
+|PRIMARY|BTREE|是|否|user_id|0|A|否||
+|username|BTREE|否|否|username|0|A|否||
+|mobile|BTREE|否|否|mobile|0|A|否||
+|email|BTREE|否|否|email|0|A|否||
+|nickname|BTREE|否|否|nickname|0|A|否||
+|user_level_id|BTREE|否|否|user_level_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_user_address
-
-#### 表注释： 账号收货地址
-
+## user-address
+表注释： 账号收货地址
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |user_address_id (主键)|int(11)|否| ||
@@ -2091,20 +1894,17 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|user_address_id|42|A|否||
-|user_id|BTREE|否|否|user_id|2|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否|||
+|PRIMARY|BTREE|是|否|user_address_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_user_level
-
-#### 表注释： 账号等级
-
+## user-level
+表注释： 账号等级
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |user_level_id (主键)|smallint(5)|否| ||
@@ -2115,19 +1915,16 @@
 |description|varchar(200)|是| |等级描述|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
 |PRIMARY|BTREE|是|否|user_level_id|6|A|否||
 |amount|BTREE|否|否|amount|6|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_user_money
-
-#### 表注释： 账号资金表
-
+## user-money
+表注释： 账号资金表
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |user_money_id (主键)|int(11)|否| ||
@@ -2139,19 +1936,16 @@
 |lock_points|int(11)|否|0 |锁定积分|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|user_money_id|14|A|否||
-|user_id|BTREE|否|否|user_id|14|A|否|||
+|PRIMARY|BTREE|是|否|user_money_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_verification
-
-#### 表注释： 验证码
-
+## verification
+表注释： 验证码
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |verification_id (主键)|int(11)|否| ||
@@ -2162,20 +1956,17 @@
 |create_time|int(11)|否|0 |创建日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|verification_id|3|A|否||
-|number|BTREE|否|否|number|3|A|否||
-|code|BTREE|否|否|code|3|A|否|||
+|PRIMARY|BTREE|是|否|verification_id|0|A|否||
+|number|BTREE|否|否|number|0|A|否||
+|code|BTREE|否|否|code|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_withdraw
-
-#### 表注释： 提现申请
-
+## withdraw
+表注释： 提现申请
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |withdraw_id (主键)|int(11)|否| ||
@@ -2194,22 +1985,19 @@
 |update_time|int(11)|否|0 |更新日期|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|withdraw_id|10|A|否||
-|user_id|BTREE|否|否|user_id|1|A|否||
-|status|BTREE|否|否|status|5|A|否||
-|withdraw_no|BTREE|否|否|withdraw_no|10|A|否||
-|create_time|BTREE|否|否|create_time|10|A|否|||
+|PRIMARY|BTREE|是|否|withdraw_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|status|BTREE|否|否|status|0|A|否||
+|withdraw_no|BTREE|否|否|withdraw_no|0|A|否||
+|create_time|BTREE|否|否|create_time|0|A|否|||
 
-#### 备注：无
+#### 备注
+无
 
-
-## cs_withdraw_user
-
-#### 表注释： 提现账号
-
+## withdraw-user
+表注释： 提现账号
 |字段|类型|空|默认|注释|
 |:---- |:------- |:--- |:----|:------ |
 |withdraw_user_id (主键)|int(11)|否| ||
@@ -2221,11 +2009,11 @@
 |is_delete|tinyint(1)|否|0 |0=未删 1=已删|
 
 #### 索引
-
 |键名|类型|唯一|紧凑|字段|基数|排序规则|空|注释|
 |:---|:--|:---|:---|:--|:--|:-------|:-|:--|
-|PRIMARY|BTREE|是|否|withdraw_user_id|8|A|否||
-|user_id|BTREE|否|否|user_id|3|A|否||
-|is_delete|BTREE|否|否|is_delete|2|A|否|||
+|PRIMARY|BTREE|是|否|withdraw_user_id|0|A|否||
+|user_id|BTREE|否|否|user_id|0|A|否||
+|is_delete|BTREE|否|否|is_delete|0|A|否|||
 
-#### 备注：无
+#### 备注
+无

@@ -86,12 +86,3 @@ function getGuideSidebar() {
         'upgrade'
     ]
 }
-
-function getDataDictSidebar() {
-    return [
-        {
-            title: '数据库词典',
-            collapsable: false
-        }
-    ]
-}
