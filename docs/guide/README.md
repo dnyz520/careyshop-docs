@@ -9,7 +9,7 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能商城�
 **CareyShop（QQ）交流一群：714593455**
 
 ## 预览
-[后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [经典配套款](./WHITE.md) | [深灰商务款](./GRAY.md)
+[后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [经典配套款](./white/) | [深灰商务款](./gray/)
 
 ## 文档
 [文档中心](https://doc.careyshop.cn "CareyShop文档中心")
@@ -100,11 +100,11 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能商城�
 ## 常见问题
 - 不习惯将入口文件部署在`public`或部署环境不支持怎么办?  
 可以灵活变动，请参见：  
-[https://doc.careyshop.cn/guide/rewrite.html](/guide/rewrite.md)
+[https://doc.careyshop.cn/guide/rewrite/](./rewrite/)
 
 - 如何隐藏`index.php`入口文件?  
 建议采用`PATH_INFO`访问地址，隐藏入口文件可做伪静态，请参见：  
-[https://doc.careyshop.cn/guide/rewrite.html](/guide/rewrite.md)
+[https://doc.careyshop.cn/guide/rewrite/](./rewrite/)
 
 ## 功能预览
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8-%E7%81%B0.png)

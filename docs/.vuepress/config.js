@@ -43,7 +43,7 @@ module.exports = {
             },
             {
                 text: '数据词典',
-                link: '/data_dict/'
+                link: '/dict/'
             },
             {
                 text: '论坛',
@@ -56,7 +56,7 @@ module.exports = {
         ],
         sidebar: {
             '/guide/': getGuideSidebar(),
-            '/data_dict/': ['']
+            '/dict/': ['']
         }
     }
 }
@@ -66,23 +66,23 @@ function getGuideSidebar() {
         {
             title: '序言',
             path: '/guide/',
-            children: ['white', 'gray']
+            children: ['white/', 'gray/']
         },
-        'build',
-        'download',
-        'tree',
+        'build/',
+        'download/',
+        'tree/',
         {
             title: '二次开发',
-            children: ['common', 'debug', 'version', 'controller']
+            children: ['common/', 'debug/', 'version/', 'controller/']
         },
-        'safety',
-        'hijack',
-        'enter',
-        'rewrite',
-        'timing',
-        'constant',
-        'ask',
-        'changelog',
-        'upgrade'
+        'safety/',
+        'hijack/',
+        'enter/',
+        'rewrite/',
+        'timing/',
+        'constant/',
+        'ask/',
+        'changelog/',
+        'upgrade/'
     ]
 }

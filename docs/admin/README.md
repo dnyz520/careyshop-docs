@@ -15,7 +15,7 @@ CareyShop 整体的架构理念为前后端分离，这样更容易创建出私�
 ### 导航向导
 > CareyShop 交流一群（QQ）：714593455
 
-[官方网站](https://www.careyshop.cn "CareyShop官方网站") | [Demo 后台预览](https://demo.careyshop.cn/admin "Demo 后台预览") | [Demo API 沙盒](https://demo.careyshop.cn/api "Demo API 沙盒") | [文档中心](https://doc.careyshop.cn "CareyShop文档中心") | [客户组 API 文档](https://doc.careyshop.cn/docs/client_api/a-61295176156 "客户组 API 使用手册") | [管理组 API 文档](https://doc.careyshop.cn/docs/admin_api/a-11523287990 "管理组 API 使用手册") | [数据库词典](https://doc.careyshop.cn/docs/data_dict "数据库词典")
+[官方网站](https://www.careyshop.cn "CareyShop官方网站") | [Demo 后台预览](https://demo.careyshop.cn/admin "Demo 后台预览") | [Demo API 沙盒](https://demo.careyshop.cn/api "Demo API 沙盒") | [文档中心](https://doc.careyshop.cn "CareyShop文档中心") | [客户组 API 文档](https://doc.careyshop.cn/docs/client_api/a-61295176156 "客户组 API 使用手册") | [管理组 API 文档](https://doc.careyshop.cn/docs/admin_api/a-11523287990 "管理组 API 使用手册") | [数据库词典](https://doc.careyshop.cn/docs/dict "数据库词典")
 
 后端项目 Git
 
