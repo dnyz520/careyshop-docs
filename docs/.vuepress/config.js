@@ -45,10 +45,10 @@ module.exports = {
                 text: '数据词典',
                 link: '/dict/'
             },
-            {
+/*             {
                 text: '论坛',
                 link: 'https://carey.top'
-            },
+            }, */
             {
                 text: '旧版',
                 link: 'https://olddoc.careyshop.cn'
