@@ -9,7 +9,7 @@
 **执行定时任务的方法多种多样，这里再推荐一个通过「批量接口请求」+ 阿里云「云监控」来完成定时任务。**
 
 1. 进入到云监控，进入到「站点管理」，选择「新建监控点」。
-    ![Image from alias](/uploads/attach_153e8a2f1b52449d.png)
+    ![Image from alias](../image/attach_153e8a2f1b52449d.png)
 
 2. 「监控地址」填写`https://host/api/batch.html`，其中`host`是您自己的网站地址。
 
@@ -30,12 +30,12 @@
         ]
     }
     ```
-    ![](/uploads/attach_153e8a6370daf825.png)
+    ![](../image/attach_153e8a6370daf825.png)
 
 4. 「监控频率」根据实际情况来定，一般选择`1分钟`或`5分钟`。
 
 5. 「检测站点」选择***一个***，并且选择离您服务器最近的站点。
-    ![](/uploads/attach_153e8a7f63192b21.png)
+    ![](../image/attach_153e8a7f63192b21.png)
 
 6. 记得启动检测。
-    ![](/uploads/attach_153e8a8ac19434d1.png)
+    ![](../image/attach_153e8a8ac19434d1.png)

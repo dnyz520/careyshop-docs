@@ -112,7 +112,7 @@ export default {
   transition color .15s ease
   cursor pointer
   font-size 1.1em
-  font-weight bold
+  // font-weight bold
   // text-transform uppercase
   padding 0.35rem 1.5rem 0.35rem 1.25rem
   width 100%
@@ -127,7 +127,7 @@ export default {
     left 0.5em
   &.clickable
     &.active
-      font-weight 600
+      // font-weight 600
       color $accentColor
       border-left-color $accentColor
     &:hover

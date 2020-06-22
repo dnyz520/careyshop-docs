@@ -12,7 +12,7 @@ module.exports = {
         '@vuepress/nprogress'
     ],
     themeConfig: {
-        logo: '/image/logo@2x.png',
+        logo: '/assets/img/logo@2x.png',
         repo: 'https://github.com/dnyz520',
         repoLabel: 'Github',
         docsRepo: 'dnyz520/careyshop-docs',
@@ -26,7 +26,7 @@ module.exports = {
                 link: 'https://www.careyshop.cn'
             },
             {
-                text: '开发手册',
+                text: '开发',
                 ariaLabel: 'Language Menu',
                 items: [
                     { text: '后端', link: '/guide/' },
@@ -34,15 +34,15 @@ module.exports = {
                 ]
             },
             {
-                text: 'API接口',
+                text: '接口',
                 ariaLabel: 'Language Menu',
                 items: [
-                    { text: '客户组', link: '/api/client/' },
-                    { text: '管理组', link: '/api/admin/' }
+                    { text: '顾客组', link: 'https://olddoc.careyshop.cn/docs/client_api' },
+                    { text: '管理组', link: 'https://olddoc.careyshop.cn/docs/admin_api' }
                 ]
             },
             {
-                text: '数据词典',
+                text: '词典',
                 link: '/dict/'
             },
 /*             {

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>接口版本 | CareyShop 文档中心</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/favicon.ico">
+    <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?e325e60ca4cd358f2b424f5aecb8021a";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>
+    <meta name="description" content="CareyShop（简称CS）是一套基于ThinkPHP框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，对内使用面向对象模块化调用，多终端、跨平台采用REST API构架来面向移动网络趋势，可直接对接PC、移动设备、小程序、云部署，构建Android、IOS的APP。">
+    <link rel="preload" href="/assets/css/0.styles.2d07a101.css" as="style"><link rel="preload" href="/assets/js/app.161e3ffd.js" as="script"><link rel="preload" href="/assets/js/2.ed504ed9.js" as="script"><link rel="preload" href="/assets/js/27.ce9c57db.js" as="script"><link rel="prefetch" href="/assets/js/10.9aa38206.js"><link rel="prefetch" href="/assets/js/11.d1d26846.js"><link rel="prefetch" href="/assets/js/12.0b25a08c.js"><link rel="prefetch" href="/assets/js/13.0b7493f8.js"><link rel="prefetch" href="/assets/js/14.5004f4f6.js"><link rel="prefetch" href="/assets/js/15.64cd7af5.js"><link rel="prefetch" href="/assets/js/16.f7e48569.js"><link rel="prefetch" href="/assets/js/17.dd54efbf.js"><link rel="prefetch" href="/assets/js/18.a8421e91.js"><link rel="prefetch" href="/assets/js/19.9df0e70c.js"><link rel="prefetch" href="/assets/js/20.6da3c48e.js"><link rel="prefetch" href="/assets/js/21.1a5de037.js"><link rel="prefetch" href="/assets/js/22.45fea41e.js"><link rel="prefetch" href="/assets/js/23.b0f8bb4a.js"><link rel="prefetch" href="/assets/js/24.f2f53f37.js"><link rel="prefetch" href="/assets/js/25.32ce79a1.js"><link rel="prefetch" href="/assets/js/26.ffc88521.js"><link rel="prefetch" href="/assets/js/28.379cc397.js"><link rel="prefetch" href="/assets/js/3.8b601b2c.js"><link rel="prefetch" href="/assets/js/4.e9ce0d04.js"><link rel="prefetch" href="/assets/js/5.1baaaaee.js"><link rel="prefetch" href="/assets/js/6.5a058d61.js"><link rel="prefetch" href="/assets/js/7.47a97219.js"><link rel="prefetch" href="/assets/js/8.67f7a31b.js"><link rel="prefetch" href="/assets/js/9.39017bfd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d07a101.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo@2x.png" alt="CareyShop 文档中心" class="logo"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  主站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link router-link-active">
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/admin/" class="nav-link">
+  后台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">接口</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/client_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  顾客组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/admin_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  管理组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/dict/" class="nav-link">
+  词典
+</a></div><div class="nav-item"><a href="https://olddoc.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  旧版
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dnyz520" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://www.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  主站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link router-link-active">
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/admin/" class="nav-link">
+  后台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">接口</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/client_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  顾客组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/admin_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  管理组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/dict/" class="nav-link">
+  词典
+</a></div><div class="nav-item"><a href="https://olddoc.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  旧版
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dnyz520" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/guide/" class="sidebar-heading clickable router-link-active"><span>序言</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/guide/build/" class="sidebar-link">环境搭建</a></li><li><a href="/guide/download/" class="sidebar-link">下载安装</a></li><li><a href="/guide/tree/" class="sidebar-link">目录结构</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>二次开发</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/common/" class="sidebar-link">公共函数</a></li><li><a href="/guide/debug/" class="sidebar-link">调试模式</a></li><li><a href="/guide/version/" aria-current="page" class="active sidebar-link">接口版本</a></li><li><a href="/guide/controller/" class="sidebar-link">接口控制器</a></li></ul></section></li><li><a href="/guide/safety/" class="sidebar-link">安全相关</a></li><li><a href="/guide/hijack/" class="sidebar-link">防止劫持</a></li><li><a href="/guide/enter/" class="sidebar-link">入口地址</a></li><li><a href="/guide/rewrite/" class="sidebar-link">URL重写</a></li><li><a href="/guide/timing/" class="sidebar-link">定时任务</a></li><li><a href="/guide/constant/" class="sidebar-link">系统常量</a></li><li><a href="/guide/ask/" class="sidebar-link">常见问题</a></li><li><a href="/guide/changelog/" class="sidebar-link">更新日志</a></li><li><a href="/guide/upgrade/" class="sidebar-link">升级指导</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="接口版本"><a href="#接口版本" class="header-anchor">#</a> 接口版本</h1> <p>Api 接口调用控制器默认占用 v1 版本号，在二次开发中您都应该另起一个版本号进行新增或修改。</p> <p>下面将举例对<code>App</code>控制器进行「新增接口」和「修改接口」的操作：</p> <p><strong>[ 新增接口 ]</strong></p> <ol><li><p>在<code>application\api\controller</code>目录下新建<code>v2</code>目录。</p></li> <li><p>在<code>v2</code>目录下创建控制器类<code>App</code>，文件名为<code>App.php</code>，并且继承于<code>\app\api\controller\v1\App</code>。</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>v2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token punctuation">\</span>app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>v1<span class="token punctuation">\</span>App</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+    * 方法路由器
+    * @access protected
+    * @return array
+    */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">initMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            <span class="token comment">// 添加一个广告</span>
+            <span class="token single-quoted-string string">'test.app.item'</span>    <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'testAppItem'</span><span class="token punctuation">,</span> <span class="token boolean constant">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">testAppItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token single-quoted-string string">'v2新增接口调用成功'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div></li> <li><p>调用并测试接口：<code>http://localhost:8080/api/v2/app/method/test.app.item</code>，返回请求结果。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;v2新增接口调用成功&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>如果不是对已有接口进行操作而是新建的话，则应该继承<code>\app\api\controller\CareyShop</code>。</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>v2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>CareyShop</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">NewApi</span> <span class="token keyword">extends</span> <span class="token class-name">CareyShop</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 方法路由器
+     * @access protected
+     * @return array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">initMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div></li></ol> <p><strong>[ 修改接口 ]</strong></p> <ol><li><p>在<code>application\api\controller</code>目录下新建<code>v2</code>目录。</p></li> <li><p>在<code>v2</code>目录下创建控制器类<code>App</code>，文件名为<code>App.php</code>，并且继承于<code>\app\api\controller\CareyShop</code>。</p></li> <li><p>修改控制器方法路由，以<code>命名空间</code>的方式指向待新建的模型。</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>v2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>CareyShop</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">NewApi</span> <span class="token keyword">extends</span> <span class="token class-name">CareyShop</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 方法路由器
+     * @access protected
+     * @return array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">initMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            <span class="token comment">// 获取应用列表</span>
+            <span class="token single-quoted-string string">'get.app.list'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'getAppList'</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'app\api\model\App'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div></li> <li><p>新建一个模型后继承<code>\app\common\model\CareyShop</code>，或继承被修改的模型。</p> <blockquote><p>之所以新建一个模型是不建议对框架的模型进行改动，用新建或继承模型的方式比较稳妥。</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>model</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">app<span class="token punctuation">\</span>common<span class="token punctuation">\</span>model<span class="token punctuation">\</span>CareyShop</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">CareyShop</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/*
+     * 获取应用列表
+     * @access public
+     * @param  array $data 外部数据
+     * @return bool
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getAppList</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'修改后的接口'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div></li> <li><p>调用并测试接口：<code>http://localhost:8080/api/v2/app/method/get.app.list</code>，返回请求结果。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;修改后的接口&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>确认 v1 版本号的接口是否也正常：<code>http://localhost:8080/api/v1/app/method/get.app.list</code>，返回请求结果。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;app_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;app_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ol> <p><strong>备注：</strong>
+在示例中<code>方法路由器</code>的具体使用可以查阅，<a href="/guide/controller/" title="接口控制器">接口控制器</a>。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dnyz520/careyshop-docs/edit/master/docs/guide/version/README.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/20/2020, 12:33:43 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/debug/" class="prev">
+        调试模式
+      </a></span> <span class="next"><a href="/guide/controller/">
+        接口控制器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.161e3ffd.js" defer></script><script src="/assets/js/2.ed504ed9.js" defer></script><script src="/assets/js/27.ce9c57db.js" defer></script>
+  </body>
+</html>

@@ -49,7 +49,7 @@ export default {
     & > li > a.sidebar-link
       font-size 1.1em
       line-height 1.7
-      font-weight bold
+      // font-weight bold
     & > li:not(:first-child)
       margin-top .75rem
 

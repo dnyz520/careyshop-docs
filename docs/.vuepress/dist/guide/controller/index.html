@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>接口控制器 | CareyShop 文档中心</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/favicon.ico">
+    <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?e325e60ca4cd358f2b424f5aecb8021a";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>
+    <meta name="description" content="CareyShop（简称CS）是一套基于ThinkPHP框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，对内使用面向对象模块化调用，多终端、跨平台采用REST API构架来面向移动网络趋势，可直接对接PC、移动设备、小程序、云部署，构建Android、IOS的APP。">
+    <link rel="preload" href="/assets/css/0.styles.2d07a101.css" as="style"><link rel="preload" href="/assets/js/app.161e3ffd.js" as="script"><link rel="preload" href="/assets/js/2.ed504ed9.js" as="script"><link rel="preload" href="/assets/js/17.dd54efbf.js" as="script"><link rel="prefetch" href="/assets/js/10.9aa38206.js"><link rel="prefetch" href="/assets/js/11.d1d26846.js"><link rel="prefetch" href="/assets/js/12.0b25a08c.js"><link rel="prefetch" href="/assets/js/13.0b7493f8.js"><link rel="prefetch" href="/assets/js/14.5004f4f6.js"><link rel="prefetch" href="/assets/js/15.64cd7af5.js"><link rel="prefetch" href="/assets/js/16.f7e48569.js"><link rel="prefetch" href="/assets/js/18.a8421e91.js"><link rel="prefetch" href="/assets/js/19.9df0e70c.js"><link rel="prefetch" href="/assets/js/20.6da3c48e.js"><link rel="prefetch" href="/assets/js/21.1a5de037.js"><link rel="prefetch" href="/assets/js/22.45fea41e.js"><link rel="prefetch" href="/assets/js/23.b0f8bb4a.js"><link rel="prefetch" href="/assets/js/24.f2f53f37.js"><link rel="prefetch" href="/assets/js/25.32ce79a1.js"><link rel="prefetch" href="/assets/js/26.ffc88521.js"><link rel="prefetch" href="/assets/js/27.ce9c57db.js"><link rel="prefetch" href="/assets/js/28.379cc397.js"><link rel="prefetch" href="/assets/js/3.8b601b2c.js"><link rel="prefetch" href="/assets/js/4.e9ce0d04.js"><link rel="prefetch" href="/assets/js/5.1baaaaee.js"><link rel="prefetch" href="/assets/js/6.5a058d61.js"><link rel="prefetch" href="/assets/js/7.47a97219.js"><link rel="prefetch" href="/assets/js/8.67f7a31b.js"><link rel="prefetch" href="/assets/js/9.39017bfd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d07a101.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo@2x.png" alt="CareyShop 文档中心" class="logo"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  主站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link router-link-active">
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/admin/" class="nav-link">
+  后台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">接口</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/client_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  顾客组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/admin_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  管理组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/dict/" class="nav-link">
+  词典
+</a></div><div class="nav-item"><a href="https://olddoc.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  旧版
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dnyz520" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://www.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  主站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link router-link-active">
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/admin/" class="nav-link">
+  后台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">接口</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/client_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  顾客组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://olddoc.careyshop.cn/docs/admin_api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  管理组
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/dict/" class="nav-link">
+  词典
+</a></div><div class="nav-item"><a href="https://olddoc.careyshop.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  旧版
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dnyz520" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/guide/" class="sidebar-heading clickable router-link-active"><span>序言</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/guide/build/" class="sidebar-link">环境搭建</a></li><li><a href="/guide/download/" class="sidebar-link">下载安装</a></li><li><a href="/guide/tree/" class="sidebar-link">目录结构</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>二次开发</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/common/" class="sidebar-link">公共函数</a></li><li><a href="/guide/debug/" class="sidebar-link">调试模式</a></li><li><a href="/guide/version/" class="sidebar-link">接口版本</a></li><li><a href="/guide/controller/" aria-current="page" class="active sidebar-link">接口控制器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/controller/#控制器" class="sidebar-link">控制器</a></li><li class="sidebar-sub-header"><a href="/guide/controller/#模型" class="sidebar-link">模型</a></li></ul></li></ul></section></li><li><a href="/guide/safety/" class="sidebar-link">安全相关</a></li><li><a href="/guide/hijack/" class="sidebar-link">防止劫持</a></li><li><a href="/guide/enter/" class="sidebar-link">入口地址</a></li><li><a href="/guide/rewrite/" class="sidebar-link">URL重写</a></li><li><a href="/guide/timing/" class="sidebar-link">定时任务</a></li><li><a href="/guide/constant/" class="sidebar-link">系统常量</a></li><li><a href="/guide/ask/" class="sidebar-link">常见问题</a></li><li><a href="/guide/changelog/" class="sidebar-link">更新日志</a></li><li><a href="/guide/upgrade/" class="sidebar-link">升级指导</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="接口控制器"><a href="#接口控制器" class="header-anchor">#</a> 接口控制器</h1> <p>不管是前后台分离，还是 APP 调用接口。所有的入口都是由<code>api/v1/controller</code>等同于<code>api/版本号/控制器</code>组成。</p> <blockquote><p>举个例子，比如<code>http://host/api/v1/order_service/method/get.order.service.list</code></p></blockquote> <p>所有的控制器都直接或间接的继承于<code>app\api\controller\CareyShop</code>做为基类。
+文件位置<code>application/api/controller/CareyShop.php</code>。</p> <h2 id="控制器"><a href="#控制器" class="header-anchor">#</a> 控制器</h2> <p>每一个控制器默认都会绑定一个对应的模型，模型的存放目录是<code>application/common/model</code>。
+比如<code>App</code>控制器对应的模型也是<code>App</code>，实际导入的文件是<code>application/common/model/App.php</code>，您可以通过<code>static::$model</code>这样的方式在控制器中完成对模型的调用。注意：完成继承的控制器必须要有对应模型，否则会报错。</p> <div class="language-php extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br></div><pre class="language-php"><code>    <span class="token comment">/**
+     * 获取所有子级分类
+     * @access protected
+     * @return array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">getCategorySon</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$catData</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$validate</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token variable">$catData</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'GoodsCategory.son'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean constant">true</span> <span class="token operator">!==</span> <span class="token variable">$validate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setError</span><span class="token punctuation">(</span><span class="token variable">$validate</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// ↓↓↓ 注意看这一句 ↓↓↓</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token variable">$model</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getCategorySon</span><span class="token punctuation">(</span><span class="token variable">$catData</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>基类主要完成请求参数验证、整理请求参数、数据初始化、验证身份、验证签名、验证权限、调度方法路由、返回数据结果。
+控制器中的<code>调度方法路由</code>是二次开发必定会接触到的，他的定义如下：</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">namespace</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>v1</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">app<span class="token punctuation">\</span>api<span class="token punctuation">\</span>controller<span class="token punctuation">\</span>CareyShop</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">CareyShop</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 方法路由器
+     * @access protected
+     * @return array
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">initMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            <span class="token comment">// 添加一个应用</span>
+            <span class="token single-quoted-string string">'add.app.item'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'addAppItem'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 编辑一个应用</span>
+            <span class="token single-quoted-string string">'set.app.item'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'setAppItem'</span><span class="token punctuation">,</span> <span class="token boolean constant">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 获取一个应用</span>
+            <span class="token single-quoted-string string">'get.app.item'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'getAppItem'</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'app\common\model\AppName'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">setAppItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token single-quoted-string string">'编辑成功'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><p>可以看到他是一个数组，<code>键名</code>表示业务方法。<code>键值</code>也是一个数组，首位表示<strong>成员函数的名称</strong>，第二位是附带参数，含义如下：</p> <ul><li>空：在无值的情况下，首先查找控制器内是否存在成员函数，否则查找与控制器同名的<code>模型</code>下是否存在成员函数，如果还找不到则报错。</li> <li>false：表示与控制器同名的<code>模型</code>不存在，直接在控制器内查找是否存在成员函数，找不到则报错。</li> <li>命名空间：在指定的命名空间类中查找成员函数，找不到则报错。</li></ul> <h2 id="模型"><a href="#模型" class="header-anchor">#</a> 模型</h2> <p>控制器调用模型(或是指定的命名空间类成员函数)后会对函数首位参数进行赋值，值的内容由<code>请求参数</code>传递进来。
+所以在模型中类的成员函数定义也分多种。</p> <ol><li>不需要参数的成员函数</li></ol> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">/**
+ * 添加或编辑购物车商品
+ * @access public
+ * @return false|array
+ * @throws
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">setCartItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>只需要<code>请求参数</code>的成员函数</li></ol> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">/**
+ * 添加或编辑购物车商品
+ * @access public
+ * @param  array $data 外部数据
+ * @return false|array
+ * @throws
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">setCartItem</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li>带有<code>请求参数</code>和自定义参数的成员函数</li></ol> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">/**
+ * 添加或编辑购物车商品
+ * @access public
+ * @param  array $data     外部数据
+ * @param  bool  $isBuyNow 是否立即购买
+ * @return false|array
+ * @throws
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">setCartItem</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">,</span> <span class="token variable">$isBuyNow</span> <span class="token operator">=</span> <span class="token boolean constant">false</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>只要成员函数带有参数，那么第一个参数必定是属于<code>请求参数</code>，他是一个数组。
+添加其他参数可以是任意类型，这个特点可以在框架内部调用时十分方便。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dnyz520/careyshop-docs/edit/master/docs/guide/controller/README.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/20/2020, 12:33:43 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/version/" class="prev">
+        接口版本
+      </a></span> <span class="next"><a href="/guide/safety/">
+        安全相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.161e3ffd.js" defer></script><script src="/assets/js/2.ed504ed9.js" defer></script><script src="/assets/js/17.dd54efbf.js" defer></script>
+  </body>
+</html>

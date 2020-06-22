@@ -92,7 +92,7 @@ export default {
     text-align center
     img
       max-width: 100%
-      max-height 280px
+      max-height 400px
       display block
       margin 3rem auto 1.5rem
     h1
@@ -145,6 +145,7 @@ export default {
     color lighten($textColor, 25%)
   .beian
     text-align center
+    padding-bottom 1.0rem
     a {
       color lighten($textColor, 25%)
       font-weight 400

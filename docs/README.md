@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /image/logo@3x.png
+heroImage: /assets/img/banner.png
 actionText: 快速上手 →
 actionLink: /guide/
 features:
