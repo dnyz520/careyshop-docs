@@ -19,6 +19,9 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能商城�
 [Github 仓库](https://github.com/dnyz520/careyshop-admin "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-admin "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-admin.git "Coding 仓库")
 
 ## 功能
+* REST API内置调试工具（开发中）
+* 升级至TP6.0（计划）
+* uniapp小程序（计划）
 * 商品管理
 * 商品分类
 * 商品品牌
