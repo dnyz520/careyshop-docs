@@ -88,6 +88,45 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/user/address', './user/address/')
                 }
             ]
+        },
+        {
+            title: '权限',
+            children: [
+                {
+                    title: '菜单管理',
+                    children: getChildren('../api/client/authority/menu', './authority/menu/')
+                }
+            ]
+        },
+        {
+            title: '提现',
+            children: [
+                {
+                    title: '提现管理',
+                    children: getChildren('../api/client/withdraw/withdraw', './withdraw/withdraw/')
+                },
+                {
+                    title: '提现账号',
+                    children: getChildren('../api/client/withdraw/user', './withdraw/user/')
+                }
+            ]
+        },
+        {
+            title: '文章',
+            children: [
+                {
+                    title: '文章管理',
+                    children: getChildren('../api/client/article/article', './article/article/')
+                },
+                {
+                    title: '文章分类',
+                    children: getChildren('../api/client/article/cat', './article/cat/')
+                },
+                {
+                    title: '专题管理',
+                    children: getChildren('../api/client/article/topic', './article/topic/')
+                }
+            ]
         }
     ]
 }
