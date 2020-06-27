@@ -71,7 +71,24 @@ function getClientApiSidebar() {
         'batch/',
         'response/',
         'reach/',
-        'noun/'
+        'noun/',
+        {
+            title: '账号',
+            children: [
+                {
+                    title: '顾客组账号',
+                    children: getChildren('../api/client/user/user', './user/user/')
+                },
+                {
+                    title: '账号资金',
+                    children: getChildren('../api/client/user/money', './user/money/')
+                },
+                {
+                    title: '收货地址',
+                    children: getChildren('../api/client/user/address', './user/address/')
+                }
+            ]
+        }
     ]
 }
 
@@ -99,4 +116,13 @@ function getGuideSidebar() {
         'changelog/',
         'upgrade/'
     ]
+}
+
+function getChildren(p, s) {
+    const children = fs
+    .readdirSync(path.resolve(__dirname, p))
+    .map(filename => s + filename.slice(0, -3))
+    .sort()
+
+    return children
 }
