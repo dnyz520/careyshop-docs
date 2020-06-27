@@ -45,7 +45,7 @@ module.exports = {
                 text: '词典',
                 link: '/dict/'
             },
-/*             {
+            /* {
                 text: '论坛',
                 link: 'https://carey.top'
             }, */
