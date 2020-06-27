@@ -127,6 +127,23 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/article/topic', './article/topic/')
                 }
             ]
+        },
+        {
+            title: '问答',
+            children: getChildren('../api/client/ask', './ask/')
+        },
+        {
+            title: '广告',
+            children: [
+                {
+                    title: '广告位置',
+                    children: getChildren('../api/client/ads/position', './ads/position/')
+                },
+                {
+                    title: '广告列表',
+                    children: getChildren('../api/client/ads/ads', './ads/ads/')
+                }
+            ]
         }
     ]
 }
