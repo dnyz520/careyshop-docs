@@ -227,6 +227,23 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/market/card', './market/card/')
                 }
             ]
+        },
+        {
+            title: '订单',
+            children: [
+                {
+                    title: '购物车',
+                    children: getChildren('../api/client/order/cart', './order/cart/')
+                },
+                {
+                    title: '订单管理',
+                    children: getChildren('../api/client/order/order', './order/order/')
+                },
+                {
+                    title: '订单退款',
+                    children: getChildren('../api/client/order/refund', './order/refund/')
+                }
+            ]
         }
     ]
 }
