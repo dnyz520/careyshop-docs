@@ -307,6 +307,19 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/upload/storage', './upload/storage/')
                 }
             ]
+        },
+        {
+            title: '消息',
+            children: [
+                {
+                    title: '验证码',
+                    children: getChildren('../api/client/message/verification', './message/verification/')
+                },
+                {
+                    title: '消息管理',
+                    children: getChildren('../api/client/message/message', './message/message/')
+                }
+            ]
         }
     ]
 }
