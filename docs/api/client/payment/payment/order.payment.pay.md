@@ -16,7 +16,7 @@
 #### 业务参数：
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
 |:----|:---|:---:|:-----|:-----|:-----|-----|
-|to_payment |integer |是 |egt:0 | |2 |支付方式，详见[「Code常量」](https://doc.careyshop.cn/docs/client_api/a-31529478226 "「Code常量」") |
+|to_payment |integer |是 |egt:0 | |2 |支付方式，详见[「Code常量」](/api/client/payment/payment/documents.md#code常量-支付方式 "「Code常量」") |
 |order_no |string |是 |max:50 | |PO_I104955047 |订单号 |
 |request_type |string |是 |in:web,app | |web |请求来源 |
 

@@ -54,6 +54,6 @@
 
 #### 备注:
 立即购买示意图：
-![](https://doc.careyshop.cn/uploads/201806/client_api/attach_153ad67aff27fa1d.png)
+![](../image/attach_153ad67aff27fa1d.png)
 
-1. 接口返回数据后应当再次调用[「获取订单确认或提交订单」](https://doc.careyshop.cn/docs/client_api/a-52849534499 "「获取订单确认或提交订单」")接口，进行`订单确认`操作。
+1. 接口返回数据后应当再次调用[「获取订单确认或提交订单」](/api/client/order/order/confirm.order.list.md "「获取订单确认或提交订单」")接口，进行`订单确认`操作。

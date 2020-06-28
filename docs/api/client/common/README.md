@@ -15,9 +15,9 @@
 
 |参数名|类型|是否必须|默认值|描述|
 |:----|:---|:-----:|-----|-----|
-|appkey |string |是 | |应用的 appkey，具体请参见`管理组 API`的 [应用列表](https://olddoc.careyshop.cn/docs/admin_api/a-21523288726 "应用列表")|
-|token |string |是 | |账号登录授权成功后，颁发给应用的授权信息，具体请参见 [权限](https://olddoc.careyshop.cn/docs/client_api/a-18991782559 "权限")|
-|sign |string |是 | |API 输入参数签名结果，签名算法请参见 [签名](https://olddoc.careyshop.cn/docs/client_api/a-44381536327 "签名") |
+|appkey |string |是 | |应用的 appkey，具体请参见`管理组 API`的 [应用列表](/api/admin/setting/app/get.app.list.md "应用列表")|
+|token |string |是 | |账号登录授权成功后，颁发给应用的授权信息，具体请参见 [权限](/api/client/authority/menu/get.menu.auth.list.md "权限")|
+|sign |string |是 | |API 输入参数签名结果，签名算法请参见 [签名](/api/client/signature/ "签名") |
 |timestamp |string |是 | |请求时间戳，时区 GMT+8，例如：1523553249 最大误差为 10 分钟。 |
 |format |string |否 |json |响应格式。可选值：json，jsonp，xml|
 |method |string |是 | |业务方法，每个接口的业务方法都不同，具体请参考文档。|

@@ -38,13 +38,13 @@ refund=支持原路退款
 |:-----|:-----|:---:|:-----|-----|
 |payment_id |integer |是 |3 |支付编号 |
 |name |string |是 |支付宝 |支付名称 |
-|code |integer |是 |2 |支付编码，详见[「Code常量」](https://doc.careyshop.cn/docs/client_api/a-31529478226 "「Code常量」")|
+|code |integer |是 |2 |支付编码，详见[「Code常量」](/api/client/payment/payment/documents.md#code常量-支付方式 "「Code常量」")|
 |image |string |是 |//image.jpg |支付图片 |
 |is_deposit |integer |是 |1 |是否用于财务充值 0=否 1=是 |
 |is_inpour |integer |是 |1 |是否用于账号充值 0=否 1=是 |
 |is_payment |integer |是 |1 |是否用于订单支付 0=否 1=是 |
 |is_refund |integer |是 |1 |是否支持原路退款 0=否 1=是 |
-|model |string |是 |alipay |支付配置对应模型，详见[「Model模块驱动」](https://doc.careyshop.cn/docs/client_api/a-31529478254 "「Model模块驱动」") |
+|model |string |是 |alipay |支付配置对应模型，详见[「Model模块驱动」](/api/client/payment/payment/documents.md#model模块驱动 "「Model模块驱动」") |
 |sort |integer |是 |50 |支付排序值 |
 |status |integer |是 |1 |支付状态 0=禁用 1=启用 |
 

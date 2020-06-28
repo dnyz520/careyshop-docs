@@ -41,14 +41,14 @@ in:jpg,png,svg,gif,bmp,tiff,webp
 ```
 
 #### 原始图片：
-![](https://doc.careyshop.cn/uploads/201806/admin_api/attach_1534b101c21543a7.jpg)
+![](../image/attach_1534b101c21543a7.jpg)
 
 #### 处理后的图片：
-![](https://doc.careyshop.cn/uploads/201806/admin_api/attach_1534b1038da77eb6.png)
+![](../image/attach_1534b1038da77eb6.png)
 
 #### 备注:
 1. 参数`style`值不为空时表示启用`第三方OSS样式`功能，所以其余`参数`都被会忽略。
 
 2. 参数`code`所获取的系统设置参数权限小于`请求参数`，如果`请求参数`也存在相同参数则会被覆盖。
 
-3. 部分备注可参考`管理组 API`中的[「添加一个资源样式」](https://doc.careyshop.cn/docs/admin_api/a-21527953475 "「添加一个资源样式」")。
+3. 部分备注可参考`管理组 API`中的[「添加一个资源样式」](/api/admin/upload/style/add.storage.style.item.md "「添加一个资源样式」")。

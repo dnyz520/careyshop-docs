@@ -22,11 +22,11 @@
 |logo |string |否 |max:255 | |//logo.png |二维码LOGO |
 
 #### 响应示例：
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_153249bab5b38bb4.png)
+![](../image/attach_153249bab5b38bb4.png)
 
 #### 备注:
 1. 参数`text`的值可以是任意内容，例：URL 地址、文本、协议等等。
 
-2. 参数`logo`的值可以是本地上传的资源，例：`static/images/logo.png`。也可以是网络上的任意资源，例：`https://careyshop.cn/image/logo.png`。如不填或为空，则使用系统配置的数值，具体参见`管理组 API`中的[「设置系统配置」](https://doc.careyshop.cn/docs/admin_api/a-21523337599 "「设置系统配置」")。
+2. 参数`logo`的值可以是本地上传的资源，例：`static/images/logo.png`。也可以是网络上的任意资源，例：`https://careyshop.cn/image/logo.png`。如不填或为空，则使用系统配置的数值，具体参见`管理组 API`中的[「设置系统配置」](/api/admin/setting/system/set.system.list.md "「设置系统配置」")。
 
 3. 当使用参数`qrcode_id`生成二维码时，其余的参数将不再有效。

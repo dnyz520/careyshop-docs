@@ -17,7 +17,7 @@
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |money |number |是 |egt:0.01 | |0.01 |金额 |
-|to_payment |integer |是 |egt:0 | |2 |支付方式，详见[「Code常量」](https://doc.careyshop.cn/docs/client_api/a-31529478226 "「Code常量」") |
+|to_payment |integer |是 |egt:0 | |2 |支付方式，详见[「Code常量」](/api/client/payment/payment/documents.md#code常量-支付方式 "「Code常量」") |
 |payment_no |string |否 |max:50 | |801047643752535 |交易流水号 |
 |request_type |string |是 |in:web,app | |web |请求来源 |
 

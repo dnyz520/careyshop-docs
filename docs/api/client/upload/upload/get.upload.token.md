@@ -16,7 +16,7 @@
 #### 业务参数：
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
 |:----|:---|:---:|:-----|:-----|:-----|-----|
-|type |string |否 |in:web,app |web |app |终端类型，详见[「SDK或APP调用」](https://doc.careyshop.cn/docs/client_api/a-51433795194 "「SDK或APP调用」") |
+|type |string |否 |in:web,app |web |app |终端类型，详见[「SDK或APP调用」](/api/client/upload/upload/get.upload.token.md#sdk或app调用 "「SDK或APP调用」") |
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|
@@ -32,7 +32,7 @@
 
 |token|类型|是否返回|示例值|描述|
 |:-----|:-----|:---:|:-----|-----|
-|upload_url |object |是 |[] |上传地址对象，详见[「获取上传地址」](https://doc.careyshop.cn/docs/client_api/a-66857849179 "「获取上传地址」") |
+|upload_url |object |是 |[] |上传地址对象，详见[「获取上传地址」](/api/client/upload/upload/get.upload.url.md "「获取上传地址」") |
 |token |string |是 |... |上传令牌，`aliyun`模块稍有不同 |
 |N... |string |是 |... |其余参数，见`备注`|
 
