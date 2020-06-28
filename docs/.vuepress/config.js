@@ -294,6 +294,19 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/assist/system', './assist/system/')
                 }
             ]
+        },
+        {
+            title: '上传',
+            children: [
+                {
+                    title: '资源上传',
+                    children: getChildren('../api/client/upload/upload', './upload/upload/')
+                },
+                {
+                    title: '资源管理',
+                    children: getChildren('../api/client/upload/storage', './upload/storage/')
+                }
+            ]
         }
     ]
 }
