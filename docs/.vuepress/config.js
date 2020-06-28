@@ -269,6 +269,31 @@ function getClientApiSidebar() {
         {
             title: '客服',
             children: getChildren('../api/client/support', './support/')
+        },
+        {
+            title: '辅助',
+            children: [
+                {
+                    title: '收藏夹',
+                    children: getChildren('../api/client/assist/collect', './assist/collect/')
+                },
+                {
+                    title: '我的足迹',
+                    children: getChildren('../api/client/assist/history', './assist/history/')
+                },
+                {
+                    title: '二维码',
+                    children: getChildren('../api/client/assist/qrcode', './assist/qrcode/')
+                },
+                {
+                    title: '友情链接',
+                    children: getChildren('../api/client/assist/friendlink', './assist/friendlink/')
+                },
+                {
+                    title: 'API协助接口',
+                    children: getChildren('../api/client/assist/system', './assist/system/')
+                }
+            ]
         }
     ]
 }
