@@ -248,6 +248,19 @@ function getClientApiSidebar() {
         {
             title: '售后',
             children: getChildren('../api/client/service', './service/')
+        },
+        {
+            title: '支付',
+            children: [
+                {
+                    title: '支付配置',
+                    children: getChildren('../api/client/payment/payment', './payment/payment/')
+                },
+                {
+                    title: '支付日志',
+                    children: getChildren('../api/client/payment/log', './payment/log/')
+                }
+            ]
         }
     ]
 }
