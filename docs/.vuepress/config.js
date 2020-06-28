@@ -261,6 +261,14 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/payment/log', './payment/log/')
                 }
             ]
+        },
+        {
+            title: '结算',
+            children: getChildren('../api/client/transaction', './transaction/')
+        },
+        {
+            title: '客服',
+            children: getChildren('../api/client/support', './support/')
         }
     ]
 }
