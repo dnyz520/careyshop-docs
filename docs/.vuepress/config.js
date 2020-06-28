@@ -244,6 +244,10 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/order/refund', './order/refund/')
                 }
             ]
+        },
+        {
+            title: '售后',
+            children: getChildren('../api/client/service', './service/')
         }
     ]
 }
