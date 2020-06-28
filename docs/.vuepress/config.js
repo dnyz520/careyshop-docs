@@ -202,6 +202,31 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/goods/goods', './goods/goods/')
                 }
             ]
+        },
+        {
+            title: '营销',
+            children: [
+                {
+                    title: '优惠劵',
+                    children: getChildren('../api/client/market/coupon', './market/coupon/')
+                },
+                {
+                    title: '优惠劵发放',
+                    children: getChildren('../api/client/market/give', './market/give/')
+                },
+                {
+                    title: '商品折扣',
+                    children: getChildren('../api/client/market/discount', './market/discount/')
+                },
+                {
+                    title: '订单促销',
+                    children: getChildren('../api/client/market/promotion', './market/promotion/')
+                },
+                {
+                    title: '购物卡使用',
+                    children: getChildren('../api/client/market/card', './market/card/')
+                }
+            ]
         }
     ]
 }
