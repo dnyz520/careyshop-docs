@@ -165,6 +165,43 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/delivery/dist', './delivery/dist/')
                 }
             ]
+        },
+        {
+            title: '商品',
+            children: [
+                {
+                    title: '商品分类',
+                    children: getChildren('../api/client/goods/category', './goods/category/')
+                },
+                {
+                    title: '商品品牌',
+                    children: getChildren('../api/client/goods/brand', './goods/brand/')
+                },
+                {
+                    title: '商品属性',
+                    children: getChildren('../api/client/goods/attribute', './goods/attribute/')
+                },
+                {
+                    title: '商品规格',
+                    children: getChildren('../api/client/goods/spec', './goods/spec/')
+                },
+                {
+                    title: '商品评价',
+                    children: getChildren('../api/client/goods/comment', './goods/comment/')
+                },
+                {
+                    title: '商品评价回复',
+                    children: getChildren('../api/client/goods/reply', './goods/reply/')
+                },
+                {
+                    title: '商品咨询',
+                    children: getChildren('../api/client/goods/consult', './goods/consult/')
+                },
+                {
+                    title: '商品管理',
+                    children: getChildren('../api/client/goods/goods', './goods/goods/')
+                }
+            ]
         }
     ]
 }
