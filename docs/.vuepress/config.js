@@ -144,6 +144,27 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/ads/ads', './ads/ads/')
                 }
             ]
+        },
+        {
+            title: '物流',
+            children: [
+                {
+                    title: '区域管理',
+                    children: getChildren('../api/client/delivery/region', './delivery/region/')
+                },
+                {
+                    title: '快递公司',
+                    children: getChildren('../api/client/delivery/company', './delivery/company/')
+                },
+                {
+                    title: '配送方式',
+                    children: getChildren('../api/client/delivery/delivery', './delivery/delivery/')
+                },
+                {
+                    title: '配送轨迹',
+                    children: getChildren('../api/client/delivery/dist', './delivery/dist/')
+                }
+            ]
         }
     ]
 }
