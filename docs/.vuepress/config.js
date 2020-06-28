@@ -320,6 +320,19 @@ function getClientApiSidebar() {
                     children: getChildren('../api/client/message/message', './message/message/')
                 }
             ]
+        },
+        {
+            title: '配置',
+            children: [
+                {
+                    title: '应用安装包',
+                    children: getChildren('../api/client/setting/app', './setting/app/')
+                },
+                {
+                    title: '前台导航栏',
+                    children: getChildren('../api/client/setting/navigation', './setting/navigation/')
+                }
+            ]
         }
     ]
 }
