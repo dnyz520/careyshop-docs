@@ -159,6 +159,10 @@ function getAdminApiSidebar() {
                 {
                     title: '广告列表',
                     children: getChildren('../api/admin/ads/ads', './ads/ads/')
+                },
+                {
+                    title: '前端调用',
+                    children: getChildren('../api/admin/ads/home', './ads/home/')
                 }
             ]
         }
