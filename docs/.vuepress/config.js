@@ -114,6 +114,19 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/authority/menu', './authority/menu/')
                 }
             ]
+        },
+        {
+            title: '提现',
+            children: [
+                {
+                    title: '提现管理',
+                    children: getChildren('../api/admin/withdraw/withdraw', './withdraw/withdraw/')
+                },
+                {
+                    title: '提现账号',
+                    children: getChildren('../api/admin/withdraw/user', './withdraw/user/')
+                }
+            ]
         }
     ]
 }
