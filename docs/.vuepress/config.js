@@ -171,7 +171,32 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/ads/home', './ads/home/')
                 }
             ]
-        }
+        },
+        {
+            title: '物流',
+            children: [
+                {
+                    title: '区域管理',
+                    children: getChildren('../api/admin/delivery/region', './delivery/region/')
+                },
+                {
+                    title: '快递公司',
+                    children: getChildren('../api/admin/delivery/company', './delivery/company/')
+                },
+                {
+                    title: '配送方式',
+                    children: getChildren('../api/admin/delivery/delivery', './delivery/delivery/')
+                },
+                {
+                    title: '配送区域',
+                    children: getChildren('../api/admin/delivery/area', './delivery/area/')
+                },
+                {
+                    title: '配送轨迹',
+                    children: getChildren('../api/admin/delivery/dist', './delivery/dist/')
+                }
+            ]
+        },
     ]
 }
 
