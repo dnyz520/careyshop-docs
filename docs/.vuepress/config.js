@@ -127,6 +127,23 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/withdraw/user', './withdraw/user/')
                 }
             ]
+        },
+        {
+            title: '文章',
+            children: [
+                {
+                    title: '文章管理',
+                    children: getChildren('../api/admin/article/article', './article/article/')
+                },
+                {
+                    title: '文章分类',
+                    children: getChildren('../api/admin/article/cat', './article/cat/')
+                },
+                {
+                    title: '专题管理',
+                    children: getChildren('../api/admin/article/topic', './article/topic/')
+                }
+            ]
         }
     ]
 }
