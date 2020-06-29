@@ -144,6 +144,23 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/article/topic', './article/topic/')
                 }
             ]
+        },
+        {
+            title: '问答',
+            children: getChildren('../api/admin/ask', './ask/')
+        },
+        {
+            title: '广告',
+            children: [
+                {
+                    title: '广告位置',
+                    children: getChildren('../api/admin/ads/position', './ads/position/')
+                },
+                {
+                    title: '广告列表',
+                    children: getChildren('../api/admin/ads/ads', './ads/ads/')
+                }
+            ]
         }
     ]
 }
