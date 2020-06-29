@@ -73,6 +73,31 @@ function getAdminApiSidebar() {
         'response/',
         'reach/',
         'noun/',
+        {
+            title: '账号',
+            children: [
+                {
+                    title: '管理组账号',
+                    children: getChildren('../api/admin/user/admin', './user/admin/')
+                },
+                {
+                    title: '顾客组账号',
+                    children: getChildren('../api/admin/user/user', './user/user/')
+                },
+                {
+                    title: '账号资金',
+                    children: getChildren('../api/admin/user/money', './user/money/')
+                },
+                {
+                    title: '账号等级',
+                    children: getChildren('../api/admin/user/level', './user/level/')
+                },
+                {
+                    title: '收货地址',
+                    children: getChildren('../api/admin/user/address', './user/address/')
+                }
+            ]
+        }
     ]
 }
 
