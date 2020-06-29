@@ -3,7 +3,7 @@
 CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
 ::: warning 注意
-注：该文档主要面向后台<abbr title="后台管理人员，比如超级管理员、财务、客服、运营等">管理组</abbr>，<abbr title="前台客户群体，一般指购物顾客、游客等">顾客组</abbr>请参见[「CareyShop 客户组API 使用手册 」](/api/client/ "「CareyShop 客户组API 使用手册 」")。
+该文档主要面向后台<abbr title="后台管理人员，比如超级管理员、财务、客服、运营等">管理组</abbr>，<abbr title="前台客户群体，一般指购物顾客、游客等">顾客组</abbr>请参见[「CareyShop 客户组API 使用手册 」](/api/client/ "「CareyShop 客户组API 使用手册 」")。
 :::
 
 **CareyShop（QQ）交流一群：714593455**
