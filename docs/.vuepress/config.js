@@ -192,43 +192,47 @@ function getAdminApiSidebar() {
                 }
             ]
         },
-        // {
-        //     title: '商品',
-        //     children: [
-        //         {
-        //             title: '商品分类',
-        //             children: getChildren('../api/admin/goods/category', './goods/category/')
-        //         },
-        //         {
-        //             title: '商品品牌',
-        //             children: getChildren('../api/admin/goods/brand', './goods/brand/')
-        //         },
-        //         {
-        //             title: '商品属性',
-        //             children: getChildren('../api/admin/goods/attribute', './goods/attribute/')
-        //         },
-        //         {
-        //             title: '商品规格',
-        //             children: getChildren('../api/admin/goods/spec', './goods/spec/')
-        //         },
-        //         {
-        //             title: '商品评价',
-        //             children: getChildren('../api/admin/goods/comment', './goods/comment/')
-        //         },
-        //         {
-        //             title: '商品评价回复',
-        //             children: getChildren('../api/admin/goods/reply', './goods/reply/')
-        //         },
-        //         {
-        //             title: '商品咨询',
-        //             children: getChildren('../api/admin/goods/consult', './goods/consult/')
-        //         },
-        //         {
-        //             title: '商品管理',
-        //             children: getChildren('../api/admin/goods/goods', './goods/goods/')
-        //         }
-        //     ]
-        // },
+        {
+            title: '商品',
+            children: [
+                {
+                    title: '商品分类',
+                    children: getChildren('../api/admin/goods/category', './goods/category/')
+                },
+                {
+                    title: '商品品牌',
+                    children: getChildren('../api/admin/goods/brand', './goods/brand/')
+                },
+                {
+                    title: '商品模型',
+                    children: getChildren('../api/admin/goods/type', './goods/type/')
+                },
+                {
+                    title: '商品属性',
+                    children: getChildren('../api/admin/goods/attribute', './goods/attribute/')
+                },
+                {
+                    title: '商品规格',
+                    children: getChildren('../api/admin/goods/spec', './goods/spec/')
+                },
+                {
+                    title: '商品评价',
+                    children: getChildren('../api/admin/goods/comment', './goods/comment/')
+                },
+                {
+                    title: '商品评价回复',
+                    children: getChildren('../api/admin/goods/reply', './goods/reply/')
+                },
+                {
+                    title: '商品咨询',
+                    children: getChildren('../api/admin/goods/consult', './goods/consult/')
+                },
+                {
+                    title: '商品管理',
+                    children: getChildren('../api/admin/goods/goods', './goods/goods/')
+                }
+            ]
+        },
     ]
 }
 
