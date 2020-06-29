@@ -38,7 +38,7 @@ module.exports = {
                 ariaLabel: 'Language Menu',
                 items: [
                     { text: '顾客组', link: '/api/client/' },
-                    { text: '管理组', link: 'https://olddoc.careyshop.cn/docs/admin_api' }
+                    { text: '管理组', link: '/api/admin/' }
                 ]
             },
             {
@@ -57,9 +57,23 @@ module.exports = {
         sidebar: {
             '/guide/': getGuideSidebar(),
             '/dict/': [''],
-            '/api/client/': getClientApiSidebar()
+            '/api/client/': getClientApiSidebar(),
+            '/api/admin/': getAdminApiSidebar()
         }
     }
+}
+
+function getAdminApiSidebar() {
+    return [
+        '',
+        'common/',
+        'signature/',
+        'calling/',
+        'batch/',
+        'response/',
+        'reach/',
+        'noun/',
+    ]
 }
 
 function getClientApiSidebar() {
