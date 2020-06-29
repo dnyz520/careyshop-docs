@@ -20,6 +20,6 @@
 |beforeTime|某个字段的值必须小于某个字段(时间) |`beforeTime:end_time`某个值的时间必须小于`end_time`字段的时间|
 |afterTime |某个字段的值必须大于某个字段(时间) |`afterTime:begin_time`某个值的时间必须大于`begin_time`字段的时间|
 
-::: tip
+::: tip 提示
 如果范围值后面增加了`[]`代表该字段需要数组参数，例如：`gt[]:0`则表示`[]`内的每个值都必须大于 0。
 :::

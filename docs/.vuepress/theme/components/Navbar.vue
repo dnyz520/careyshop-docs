@@ -2,9 +2,10 @@
   <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
-    <RouterLink
-      :to="$localePath"
+    <a
       class="home-link"
+      href="//www.careyshop.cn"
+      target="_blank"
     >
       <img
         v-if="$site.themeConfig.logo"
@@ -12,7 +13,7 @@
         :src="$withBase($site.themeConfig.logo)"
         :alt="$siteTitle"
       >
-    </RouterLink>
+    </a>
 
     <div
       class="links"

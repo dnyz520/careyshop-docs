@@ -1,7 +1,6 @@
 const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = {
-    lang: 'zh-CN',
     title: 'CareyShop 文档中心',
     description: 'CareyShop（简称CS）是一套基于ThinkPHP框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，对内使用面向对象模块化调用，多终端、跨平台采用REST API构架来面向移动网络趋势，可直接对接PC、移动设备、小程序、云部署，构建Android、IOS的APP。',
     head: [
@@ -26,10 +25,6 @@ module.exports = {
             {
                 text: '首页',
                 link: '/'
-            },
-            {
-                text: '主站',
-                link: 'https://www.careyshop.cn'
             },
             {
                 text: '开发',
@@ -197,6 +192,43 @@ function getAdminApiSidebar() {
                 }
             ]
         },
+        // {
+        //     title: '商品',
+        //     children: [
+        //         {
+        //             title: '商品分类',
+        //             children: getChildren('../api/admin/goods/category', './goods/category/')
+        //         },
+        //         {
+        //             title: '商品品牌',
+        //             children: getChildren('../api/admin/goods/brand', './goods/brand/')
+        //         },
+        //         {
+        //             title: '商品属性',
+        //             children: getChildren('../api/admin/goods/attribute', './goods/attribute/')
+        //         },
+        //         {
+        //             title: '商品规格',
+        //             children: getChildren('../api/admin/goods/spec', './goods/spec/')
+        //         },
+        //         {
+        //             title: '商品评价',
+        //             children: getChildren('../api/admin/goods/comment', './goods/comment/')
+        //         },
+        //         {
+        //             title: '商品评价回复',
+        //             children: getChildren('../api/admin/goods/reply', './goods/reply/')
+        //         },
+        //         {
+        //             title: '商品咨询',
+        //             children: getChildren('../api/admin/goods/consult', './goods/consult/')
+        //         },
+        //         {
+        //             title: '商品管理',
+        //             children: getChildren('../api/admin/goods/goods', './goods/goods/')
+        //         }
+        //     ]
+        // },
     ]
 }
 
