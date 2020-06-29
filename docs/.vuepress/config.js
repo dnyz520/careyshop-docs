@@ -97,6 +97,23 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/user/address', './user/address/')
                 }
             ]
+        },
+        {
+            title: '权限',
+            children: [
+                {
+                    title: '用户组',
+                    children: getChildren('../api/admin/authority/group', './authority/group/')
+                },
+                {
+                    title: '权限规则',
+                    children: getChildren('../api/admin/authority/rule', './authority/rule/')
+                },
+                {
+                    title: '菜单管理',
+                    children: getChildren('../api/admin/authority/menu', './authority/menu/')
+                }
+            ]
         }
     ]
 }
