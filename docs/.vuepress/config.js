@@ -358,6 +358,27 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/message/message', './message/message/')
                 }
             ]
+        },
+        {
+            title: '配置',
+            children: [
+                {
+                    title: '应用列表',
+                    children: getChildren('../api/admin/setting/app', './setting/app/')
+                },
+                {
+                    title: '应用安装包',
+                    children: getChildren('../api/admin/setting/install', './setting/install/')
+                },
+                {
+                    title: '前台导航栏',
+                    children: getChildren('../api/admin/setting/navigation', './setting/navigation/')
+                },
+                {
+                    title: '系统配置',
+                    children: getChildren('../api/admin/setting/system', './setting/system/')
+                }
+            ]
         }
     ]
 }
@@ -626,7 +647,7 @@ function getClientApiSidebar() {
             children: [
                 {
                     title: '应用安装包',
-                    children: getChildren('../api/client/setting/app', './setting/app/')
+                    children: getChildren('../api/client/setting/install', './setting/install/')
                 },
                 {
                     title: '前台导航栏',
