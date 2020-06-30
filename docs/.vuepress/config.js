@@ -46,6 +46,10 @@ module.exports = {
                 text: '词典',
                 link: '/dict/'
             },
+            {
+                text: '记录',
+                link: '/blog/'
+            },
             /* {
                 text: '论坛',
                 link: 'https://carey.top'
@@ -233,6 +237,35 @@ function getAdminApiSidebar() {
                 }
             ]
         },
+        {
+            title: '营销',
+            children: [
+                {
+                    title: '优惠劵',
+                    children: getChildren('../api/admin/market/coupon', './market/coupon/')
+                },
+                {
+                    title: '优惠劵发放',
+                    children: getChildren('../api/admin/market/give', './market/give/')
+                },
+                {
+                    title: '商品折扣',
+                    children: getChildren('../api/admin/market/discount', './market/discount/')
+                },
+                {
+                    title: '订单促销',
+                    children: getChildren('../api/admin/market/promotion', './market/promotion/')
+                },
+                {
+                    title: '购物卡',
+                    children: getChildren('../api/admin/market/card', './market/card/')
+                },
+                {
+                    title: '购物卡使用',
+                    children: getChildren('../api/admin/market/card_use', './market/card_use/')
+                }
+            ]
+        }
     ]
 }
 
@@ -398,7 +431,7 @@ function getClientApiSidebar() {
                 },
                 {
                     title: '购物卡使用',
-                    children: getChildren('../api/client/market/card', './market/card/')
+                    children: getChildren('../api/client/market/card_use', './market/card_use/')
                 }
             ]
         },
