@@ -320,6 +320,23 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/assist/system', './assist/system/')
                 }
             ]
+        },
+        {
+            title: '上传',
+            children: [
+                {
+                    title: '资源上传',
+                    children: getChildren('../api/admin/upload/upload', './upload/upload/')
+                },
+                {
+                    title: '资源样式',
+                    children: getChildren('../api/admin/upload/style', './upload/style/')
+                },
+                {
+                    title: '资源管理',
+                    children: getChildren('../api/admin/upload/storage', './upload/storage/')
+                }
+            ]
         }
     ]
 }
