@@ -7,6 +7,22 @@ sidebar: auto
 
 <h1 align="center">CareyShop 商城后台管理系统</h1>
 
+<p align="center">
+    <a href="https://www.careyshop.cn">
+        <img src="https://img.shields.io/badge/website-CareyShop-yellow.svg" />
+    </a>
+    <a href="https://www.careyshop.cn">
+        <img src="https://img.shields.io/github/license/dnyz520/careyshop-admin.svg" />
+    </a>
+    <a href="https://www.careyshop.cn/download.html">
+        <img src="https://img.shields.io/github/release/dnyz520/careyshop-admin.svg" />
+    </a>
+    <a href="https://www.careyshop.cn">
+        <img src="https://img.shields.io/github/last-commit/dnyz520/careyshop-admin.svg" />
+    </a>
+</p>
+
+## 介绍
 CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
 **CareyShop（QQ）交流一群：714593455**

@@ -337,6 +337,27 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/upload/storage', './upload/storage/')
                 }
             ]
+        },
+        {
+            title: '消息',
+            children: [
+                {
+                    title: '通知系统',
+                    children: getChildren('../api/admin/message/notice', './message/notice/')
+                },
+                {
+                    title: '通知系统模板',
+                    children: getChildren('../api/admin/message/tpl', './message/tpl/')
+                },
+                {
+                    title: '验证码',
+                    children: getChildren('../api/admin/message/verification', './message/verification/')
+                },
+                {
+                    title: '消息管理',
+                    children: getChildren('../api/admin/message/message', './message/message/')
+                }
+            ]
         }
     ]
 }
