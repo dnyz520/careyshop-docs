@@ -9,8 +9,7 @@ module.exports = {
     ],
     plugins: [
         '@vuepress/back-to-top',
-        '@vuepress/nprogress',
-        ['@vuepress/search', { searchMaxSuggestions: 10 }]
+        '@vuepress/nprogress'
     ],
     themeConfig: {
         logo: '/assets/img/logo@2x.png',
