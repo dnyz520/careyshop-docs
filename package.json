@@ -2,7 +2,7 @@
   "name": "careyshop-docs",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "cc by-nc-nd",
+  "license": "CC-BY-NC-ND-4.0",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
