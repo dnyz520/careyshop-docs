@@ -21,6 +21,10 @@ module.exports = {
         editLinks: true,
         editLinkText: '帮助我们改善此页面',
         lastUpdated: '上次更新',
+        algolia: {
+            apiKey: '509227e97bf414692caa4172b47c126a',
+            indexName: 'careyshop'
+        },
         nav: [
             {
                 text: '首页',
