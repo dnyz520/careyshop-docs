@@ -300,6 +300,10 @@ function getAdminApiSidebar() {
             title: '结算',
             children: getChildren('../api/admin/transaction', './transaction/')
         },
+        {
+            title: '客服',
+            children: getChildren('../api/admin/support', './support/')
+        },
     ]
 }
 
