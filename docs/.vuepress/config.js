@@ -296,6 +296,10 @@ function getAdminApiSidebar() {
                 }
             ]
         },
+        {
+            title: '结算',
+            children: getChildren('../api/admin/transaction', './transaction/')
+        },
     ]
 }
 
