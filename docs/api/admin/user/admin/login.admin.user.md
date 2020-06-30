@@ -87,7 +87,7 @@
 
 2. 获取到`token`之后，调用`需要授权`的接口时，需要将该值进行传递，与`公共参数`中的`token`对应。
 
-3. `token`与`refresh`都有过期时间，在未过期期间内如果需要增长授权时间可调用接口 [刷新Token](https://doc.careyshop.cn/docs/admin_api/a-21523288106 "刷新Token")。
+3. `token`与`refresh`都有过期时间，在未过期期间内如果需要增长授权时间可调用接口 [刷新Token](/api/admin/user/admin/refresh.admin.token.md "刷新Token")。
 
 4. `token`与`refresh`的值固定为 32 个十六进制字符的长度，并且是小写字母。
 

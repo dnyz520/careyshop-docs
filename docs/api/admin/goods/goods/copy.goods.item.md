@@ -117,4 +117,4 @@
 ```
 
 #### 备注:
-1. 返回的数据结构可参见[「添加一个商品」](https://doc.careyshop.cn/docs/admin_api/a-21523327819 "「添加一个商品」")
+1. 返回的数据结构可参见[「添加一个商品」](/api/admin/goods/goods/add.goods.item.md "「添加一个商品」")

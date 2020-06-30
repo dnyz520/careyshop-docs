@@ -35,7 +35,7 @@
 |notice_tpl_id |integer |是 |2 |通知系统模板编号 |
 |name |string |是 |注册成功 |通知系统模板名称 |
 |code |string |是 |sms |通知系统编码 sms=短信 email=邮件 |
-|type |integer |是 |1 |通知类型，详见[「Type常量」](https://doc.careyshop.cn/docs/admin_api/a-21528214476 "「Type常量」") |
+|type |integer |是 |1 |通知类型，详见[「Type常量」](/api/admin/message/tpl/get.notice.tpl.item.md#type常量-通知类型 "「Type常量」") |
 |sms_code |string |是 |SMS_126357841 |阿里云短信模板编号 |
 |title |string |是 |欧瑞 |阿里云短信签名 |
 |template |string |是 |{商城名称}{用户昵称} |通知系统模板 |
@@ -60,7 +60,7 @@
 ```
 
 #### 使用示例：
-假设用户收到完整的内容是`尊敬的carey您好，您在CareyShop注册的账号已生效。`，则参数`template`的值实际只需要填`{用户昵称}{商城名称}`(前后顺序不影响)，而在阿里云的模板内容中需要填写`尊敬的${nick_name}您好，您在${shop_name}注册的账号已生效。`。`${}`是阿里云短信模板内容中变量的格式，至于`nick_name`的来源请参考[「获取一个通知系统模板」](https://doc.careyshop.cn/docs/admin_api/a-21523330943 "「获取一个通知系统模板」")。
+假设用户收到完整的内容是`尊敬的carey您好，您在CareyShop注册的账号已生效。`，则参数`template`的值实际只需要填`{用户昵称}{商城名称}`(前后顺序不影响)，而在阿里云的模板内容中需要填写`尊敬的${nick_name}您好，您在${shop_name}注册的账号已生效。`。`${}`是阿里云短信模板内容中变量的格式，至于`nick_name`的来源请参考[「获取一个通知系统模板」](/api/admin/message/tpl/get.notice.tpl.item.md "「获取一个通知系统模板」")。
 
 #### 备注:
 1. 短信与邮件共用同一个结构，所以返回时存在多余字段则按需索取。
@@ -101,7 +101,7 @@
 |notice_tpl_id |integer |是 |9 |通知系统模板编号 |
 |name |string |是 |注册成功 |通知系统模板名称 |
 |code |string |是 |email |通知系统编码 sms=短信 email=邮件 |
-|type |integer |是 |1 |通知类型，详见[「Type常量」](https://doc.careyshop.cn/docs/admin_api/a-21528214476 "「Type常量」") |
+|type |integer |是 |1 |通知类型，详见[「Type常量」](/api/admin/message/tpl/get.notice.tpl.item.md#type常量-通知类型 "「Type常量」") |
 |sms_code |string |是 | |阿里云短信模板编号 |
 |title |string |是 |账号注册成功 |通知系统标题 |
 |template |string |是 |尊敬的{用户昵称}... |通知系统模板 |
@@ -125,7 +125,7 @@
 }
 ```
 #### 使用示例：
-假设用户收到完整的内容是`尊敬的carey您好，您在CareyShop注册的账号已生效。`，则参数`template`的值实际需要填`尊敬的{用户昵称}您好，您在{商城名称}注册的账号已生效`。`{用户昵称}`的来源请参考[「获取一个通知系统模板」](https://doc.careyshop.cn/docs/admin_api/a-21523330943 "「获取一个通知系统模板」")。
+假设用户收到完整的内容是`尊敬的carey您好，您在CareyShop注册的账号已生效。`，则参数`template`的值实际需要填`尊敬的{用户昵称}您好，您在{商城名称}注册的账号已生效`。`{用户昵称}`的来源请参考[「获取一个通知系统模板」](/api/admin/message/tpl/get.notice.tpl.item.md "「获取一个通知系统模板」")。
 
 #### 备注:
 1. 短信与邮件共用同一个结构，所以返回时存在多余字段则按需索取。

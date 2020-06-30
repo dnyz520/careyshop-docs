@@ -17,7 +17,7 @@
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |name |string |否 |max:50 | |六一 |优惠劵名称 |
-|type |integer |否 |in:0,1,2,3 | |2 |优惠劵类型，详见[「备注1」](https://doc.careyshop.cn/docs/admin_api/a-21523325752 "「备注1」") |
+|type |integer |否 |in:0,1,2,3 | |2 |优惠劵类型，详见[「备注1」](/api/admin/market/coupon/add.coupon.item.md "「备注1」") |
 |status |integer |否 |in:0,1 | |1 |优惠劵状态 0=禁用 1=启用 |
 |is_invalid |integer |否 |in:0,1 | |0 |优惠劵是否作废 0=正常 1=作废 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
@@ -46,7 +46,7 @@ in:coupon_id,name,type,give_num,receive_num,use_num,status,is_invalid
 |name |string |是 |六一快乐 |优惠劵名称 |
 |description |string |是 |活动描述 |优惠劵描述 |
 |guide |string |是 |//careyshop.cn |优惠劵引导地址 |
-|type |integer |是 |2 |优惠劵类型，详见[「备注1」](https://doc.careyshop.cn/docs/admin_api/a-21523325752 "「备注1」") |
+|type |integer |是 |2 |优惠劵类型，详见[「备注1」](/api/admin/market/coupon/add.coupon.item.md "「备注1」") |
 |give_code |string |是 |DjEU0GtU9t |优惠劵领取码 |
 |money |number |是 |100 |优惠金额 |
 |quota |number |是 |1000 |限制使用金额(0则不限) |

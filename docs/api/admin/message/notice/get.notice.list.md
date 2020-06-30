@@ -102,6 +102,6 @@
 ```
 
 #### 备注:
-1. `sms`模块配置格式可参考[「sms配置格式」](https://doc.careyshop.cn/docs/admin_api/a-21528124161 "「sms配置格式」")。
+1. `sms`模块配置格式可参考[「sms配置格式」](/api/admin/message/notice/get.notice.item.md#sms配置格式 "「sms配置格式」")。
 
-2. `email`模块配置格式可参考[「email配置格式」](https://doc.careyshop.cn/docs/admin_api/a-21528124204 "「email配置格式」")。
+2. `email`模块配置格式可参考[「email配置格式」](/api/admin/message/notice/get.notice.item.md#email配置格式 "「email配置格式」")。

@@ -61,5 +61,5 @@
 ```
 
 #### 备注:
-1. 接口 [获取分类导航数据](https://doc.careyshop.cn/docs/admin_api/a-21523289121 "获取分类导航数据") 不受参数`is_navi`的影响，这里说的`是否显示到导航`一般指的是前端中面包屑数据的获取。
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_152ed9f769abb8a5.png)
+1. 接口 [获取分类导航数据](/api/admin/article/cat/get.article.cat.navi.md "获取分类导航数据") 不受参数`is_navi`的影响，这里说的`是否显示到导航`一般指的是前端中面包屑数据的获取。
+![](../image/attach_152ed9f769abb8a5.png)

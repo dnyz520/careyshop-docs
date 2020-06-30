@@ -46,5 +46,5 @@
 ```
 
 #### 备注:
-1. 修改菜单状态后受影响的菜单编号其实与勾选 Tree 结构相同，没有特殊要求都不需要对 Tree 做特殊处理。
-![](https://doc.careyshop.cn/uploads/201804/admin_api/attach_152975989140dc19.png)
+1. 修改菜单状态后受影响的菜单编号其实与勾选 Tree 结构相同，没有特殊要求都不需要对 Tree 做特殊处理。   
+![](../image/attach_152975989140dc19.png)

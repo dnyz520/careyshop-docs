@@ -119,4 +119,4 @@ in:goods_comment_id,is_image,score,is_show,is_top,status,create_time
 #### 备注:
 1. 该接口支持条件搜索，如果不带入业务参数则使用默认值。
 
-2. 如果传入`goods_id`参数，则会返回`get_main_reply` `get_addition` `get_addition_reply`字段，含义可参考 [获取某个评价的明细](https://doc.careyshop.cn/docs/admin_api/a-21523328525 "获取某个评价的明细")。
+2. 如果传入`goods_id`参数，则会返回`get_main_reply` `get_addition` `get_addition_reply`字段，含义可参考 [获取某个评价的明细](/api/admin/goods/comment/get.goods.comment.item.md "获取某个评价的明细")。

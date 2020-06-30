@@ -84,4 +84,4 @@
 ```
 
 #### 备注:
-1. 请参考[「添加一个订单促销」](https://doc.careyshop.cn/docs/admin_api/a-21523337289 "「添加一个订单促销」")中的备注说明。
+1. 请参考[「添加一个订单促销」](/api/admin/market/promotion/add.promotion.item.md "「添加一个订单促销」")中的备注说明。

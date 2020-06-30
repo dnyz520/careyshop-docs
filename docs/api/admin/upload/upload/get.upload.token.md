@@ -17,10 +17,10 @@
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |module |string |否 |见附属 A | |aliyun |模块名 |
-|type |string |否 |in:web,app |web |app |终端类型，详见[「SDK或APP调用」](https://doc.careyshop.cn/docs/admin_api/a-21527500184 "「SDK或APP调用」") |
+|type |string |否 |in:web,app |web |app |终端类型，详见[「SDK或APP调用」](/api/admin/upload/upload/get.upload.token.md#sdk或app调用 "「SDK或APP调用」") |
 
 > 附属 A：
-参数`module`的值可从[「获取上传模块列表」](https://doc.careyshop.cn/docs/admin_api/a-21523337923 "「获取上传模块列表」")中获取，当`参数值`为`空或不传入`则默认取系统设置中配置的`默认上传模块`。
+参数`module`的值可从[「获取上传模块列表」](/api/admin/upload/upload/get.upload.module.md "「获取上传模块列表」")中获取，当`参数值`为`空或不传入`则默认取系统设置中配置的`默认上传模块`。
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|
@@ -36,7 +36,7 @@
 
 |token|类型|是否返回|示例值|描述|
 |:-----|:-----|:---:|:-----|-----|
-|upload_url |object |是 |[] |上传地址对象，详见[「获取上传地址」](https://doc.careyshop.cn/docs/admin_api/a-21523337928 "「获取上传地址」") |
+|upload_url |object |是 |[] |上传地址对象，详见[「获取上传地址」](/api/admin/upload/upload/get.upload.url.md "「获取上传地址」") |
 |token |string |是 |... |上传令牌，`aliyun`模块稍有不同 |
 |N... |string |是 |... |其余参数，见`备注`|
 
@@ -231,7 +231,7 @@
 
 3. 在`expires`有效期内`Token(包括其他返回参数)`可以重复使用。
 
-## SDK 或 APP 调用
+## SDK或APP调用
 
 默认上传都是以`表单`的形式进行，但`阿里云 OSS`对`APP`应用提供的`SDK`与`表单`上传需要的参数完全不同，所以`type`参数值只对`aliyun`模块有效，其他模块返回的还是`表单`所需要的参数。
 

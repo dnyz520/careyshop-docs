@@ -69,4 +69,4 @@ in:jpg,png,svg,gif,bmp,tiff,webp
 
 2. 参数`code`所获取的系统设置参数权限小于`请求参数`，如果`请求参数`也存在相同参数则会被覆盖。
 
-3. 部分备注可参考[「添加一个资源样式」](https://doc.careyshop.cn/docs/admin_api/a-21527953475 "「添加一个资源样式」")。
+3. 部分备注可参考[「添加一个资源样式」](/api/admin/upload/style/add.storage.style.item.md "「添加一个资源样式」")。

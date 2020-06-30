@@ -166,4 +166,4 @@
 ```
 
 #### 备注:
-1. 响应参数与 [获取商品分类列表](https://doc.careyshop.cn/docs/admin_api/a-21523328264 "获取商品分类列表") 相同，区别在于该接口是将`goods_category_id`中指定的编号的结果进行集合并按顺序返回。
+1. 响应参数与 [获取商品分类列表](/api/admin/goods/category/get.goods.category.list.md "获取商品分类列表") 相同，区别在于该接口是将`goods_category_id`中指定的编号的结果进行集合并按顺序返回。

@@ -285,4 +285,4 @@
 
 2. 参数`goods_code`传入，但值为空时系统自动生成一个。
 
-3. 其他备注与[「添加一个商品」](https://doc.careyshop.cn/docs/admin_api/a-21523327819 "「添加一个商品」")相同。
+3. 其他备注与[「添加一个商品」](/api/admin/goods/goods/add.goods.item.md "「添加一个商品」")相同。

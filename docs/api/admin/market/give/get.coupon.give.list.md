@@ -55,7 +55,7 @@ normal=正常状态优惠劵；used=已使用优惠劵；invalid=无效优惠劵
 |name |string |是 |六一快乐 |优惠劵名称 |
 |description |string |是 |活动描述 |优惠劵描述 |
 |guide |string |是 |//careyshop.cn |优惠劵引导地址 |
-|type |integer |是 |2 |优惠劵类型，详见[「备注1」](https://doc.careyshop.cn/docs/admin_api/a-21523325752 "「备注1」") |
+|type |integer |是 |2 |优惠劵类型，详见[「备注1」](/api/admin/market/coupon/add.coupon.item.md "「备注1」") |
 |give_code |string |是 |DjEU0GtU9t |优惠劵领取码 |
 |money |number |是 |100 |优惠金额 |
 |quota |number |是 |1000 |限制使用金额(0则不限) |

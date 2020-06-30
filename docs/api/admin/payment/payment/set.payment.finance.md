@@ -19,7 +19,7 @@
 |username |integer |是 |max:80 | |carey |账号 |
 |money |number |否 | | |99.99 |金额 |
 |points |integer |否 | | |500 |积分 |
-|to_payment |integer |是 |egt:0 | |4 |支付方式，详见[「Code常量」](https://doc.careyshop.cn/docs/admin_api/a-21528075108 "「Code常量」") |
+|to_payment |integer |是 |egt:0 | |4 |支付方式，详见[「Code常量」](/api/admin/payment/payment/set.payment.item.md#code常量-支付方式 "「Code常量」") |
 |source_no |string |否 |max:100 | |801047643752535 |来源订单号 |
 |cause |string |是 |max:255 | |演示 |操作原因 |
 

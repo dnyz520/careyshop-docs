@@ -30,7 +30,7 @@
 |notice_tpl_id |integer |是 |3 |通知系统模板编号 |
 |name |string |是 |充值成功 |通知系统模板名称 |
 |code |string |是 |sms |通知系统编码 sms=短信 email=邮件 |
-|type |integer |是 |2 |通知类型，详见[「Type常量」](https://doc.careyshop.cn/docs/admin_api/a-21528214476 "「Type常量」") |
+|type |integer |是 |2 |通知类型，详见[「Type常量」](/api/admin/message/tpl/get.notice.tpl.item.md#type常量-通知类型 "「Type常量」") |
 |sms_code |string |是 |SMS_126357840 |阿里云短信模板编号 |
 |title |string |是 |欧瑞 |标题或签名 |
 |template |string |是 |{商城名称} |通知系统模板 |

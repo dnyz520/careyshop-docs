@@ -83,5 +83,5 @@
 
 2. 不传入`alias_phonetic`参数，则默认取`alias`首位字符自动解析成首拼
 
-3. 接口 [获取分类导航数据](https://doc.careyshop.cn/docs/admin_api/a-21523328275 "获取分类导航数据") 不受参数`is_navi`的影响，这里说的`是否显示到导航`一般指的是前端中面包屑数据的获取。
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_152ed9f769abb8a5.png)
+3. 接口 [获取分类导航数据](/api/admin/goods/category/get.goods.category.navi.md "获取分类导航数据") 不受参数`is_navi`的影响，这里说的`是否显示到导航`一般指的是前端中面包屑数据的获取。   
+![](../image/attach_152ed9f769abb8a5.png)

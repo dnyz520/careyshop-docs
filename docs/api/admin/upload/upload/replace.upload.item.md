@@ -19,7 +19,7 @@
 |storage_id |integer |是 |gt:0 | |98 |资源编号 |
 
 #### 响应参数：
-结构和[「获取上传Token」](https://doc.careyshop.cn/docs/admin_api/a-21523337935 "「获取上传Token」")相同，不再做说明。
+结构和[「获取上传Token」](/api/admin/upload/upload/get.upload.token.md "「获取上传Token」")相同，不再做说明。
 
 #### 响应示例：
 ```json

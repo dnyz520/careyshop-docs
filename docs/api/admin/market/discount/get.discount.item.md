@@ -29,7 +29,7 @@
 |:-----|:-----|:---:|:-----|-----|
 |name |string |是 |端午促销 |折扣名称 |
 |discount_id |integer |是 |38 |折扣编号 |
-|type |integer |是 |0 |折扣方式，详见[「附属 A」](https://doc.careyshop.cn/docs/admin_api/a-21523327617 "「附属 A」") |
+|type |integer |是 |0 |折扣方式，详见[「附属 A」](/api/admin/market/discount/add.discount.item.md "「附属 A」") |
 |begin_time |datetime |是 |2018-05-24 23:00:00 |折扣开始时间 |
 |end_time |datetime |是 |2018-06-24 23:00:00 |折扣结束时间 |
 |status |integer |是 |1 |折扣状态 0=禁用 1=启用 |

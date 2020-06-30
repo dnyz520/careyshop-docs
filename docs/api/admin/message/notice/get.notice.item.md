@@ -60,7 +60,7 @@
 ```
 
 #### 备注:
-1. 参数`code`值为`sms`时返回的配置对象格式参考[「sms配置格式」](https://doc.careyshop.cn/docs/admin_api/a-21528124161 "「sms配置格式」")，值为`email`时的返回请参考[「email配置格式」](https://doc.careyshop.cn/docs/admin_api/a-21528124204 "「email配置格式」")。
+1. 参数`code`值为`sms`时返回的配置对象格式参考[「sms配置格式」](#sms配置格式 "「sms配置格式」")，值为`email`时的返回请参考[「email配置格式」](#email配置格式 "「email配置格式」")。
 
 ## sms配置格式
 

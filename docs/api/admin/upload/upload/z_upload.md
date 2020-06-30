@@ -11,7 +11,7 @@
 - `careyshop`模块，CareyShop(本地上传)。
 
 #### 请求 URL：
-- 可通过[「获取上传地址」](https://doc.careyshop.cn/docs/admin_api/a-21523337928 "「获取上传地址」")或[「获取上传Token」](https://doc.careyshop.cn/docs/admin_api/a-21523337935 "「获取上传Token」")获取。
+- 可通过[「获取上传地址」](/api/admin/upload/upload/get.upload.url.md "「获取上传地址」")或[「获取上传Token」](/api/admin/upload/upload/get.upload.token.md "「获取上传Token」")获取。
 - 示例地址 `https://careyshop.cn/api/v1/upload/method/add.upload.list.html`
 
 #### 请求方式：
@@ -21,11 +21,11 @@
 - 需要授权
 
 #### 请求参数：
-**单文件上传**
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_1532d5eb4d64b9ce.png)
+**单文件上传**   
+![](../image/attach_1532d5eb4d64b9ce.png)
 
-**多文件上传**
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_1532d5ec6027f51d.png)
+**多文件上传**   
+![](../image/attach_1532d5ec6027f51d.png)
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|
@@ -151,7 +151,7 @@
 - `qiniu`模块，七牛云 KODO 直传方式上传。
 
 #### 请求 URL：
-- 可通过[「获取上传地址」](https://doc.careyshop.cn/docs/admin_api/a-21523337928 "「获取上传地址」")或[「获取上传Token」](https://doc.careyshop.cn/docs/admin_api/a-21523337935 "「获取上传Token」")获取。
+- 可通过[「获取上传地址」](/api/admin/upload/upload/get.upload.url.md "「获取上传地址」")或[「获取上传Token」](/api/admin/upload/upload/get.upload.token.md "「获取上传Token」")获取。
 - 示例地址 `https://upload-jjh.qiniup.com`
 
 #### 请求方式：
@@ -161,7 +161,7 @@
 - 需要授权
 
 #### 请求参数：
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_1532d7f1f324de8b.png)
+![](../image/attach_1532d7f1f324de8b.png)
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|
@@ -246,7 +246,7 @@
 - `aliyun`模块，阿里云 OSS 直传方式上传。
 
 #### 请求 URL：
-- 可通过[「获取上传地址」](https://doc.careyshop.cn/docs/admin_api/a-21523337928 "「获取上传地址」")或[「获取上传Token」](https://doc.careyshop.cn/docs/admin_api/a-21523337935 "「获取上传Token」")获取。
+- 可通过[「获取上传地址」](/api/admin/upload/upload/get.upload.url.md "「获取上传地址」")或[「获取上传Token」](/api/admin/upload/upload/get.upload.token.md "「获取上传Token」")获取。
 - 示例地址 `http://careyshop.oss-cn-hangzhou.aliyuncs.com/`
 
 #### 请求方式：
@@ -256,7 +256,7 @@
 - 需要授权
 
 #### 请求参数：
-![](https://doc.careyshop.cn/uploads/201805/admin_api/attach_1532d81ddd47adbd.png)
+![](../image/attach_1532d81ddd47adbd.png)
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|

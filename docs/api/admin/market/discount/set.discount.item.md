@@ -95,4 +95,4 @@
 ```
 
 #### 备注:
-1. 请参考[「添加一个商品折扣」](https://doc.careyshop.cn/docs/admin_api/a-21523327617 "「添加一个商品折扣」")中的备注说明。
+1. 请参考[「添加一个商品折扣」](/api/admin/market/discount/add.discount.item.md "「添加一个商品折扣」")中的备注说明。

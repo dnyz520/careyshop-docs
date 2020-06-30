@@ -14,10 +14,10 @@
 - 需要授权
 
 #### 相关文档：
-- [支付宝配置格式](https://doc.careyshop.cn/docs/admin_api/a-21528074471 "支付宝配置格式")
-- [微信配置格式](https://doc.careyshop.cn/docs/admin_api/a-21528074483 "微信配置格式")
-- [Code常量(支付方式)](https://doc.careyshop.cn/docs/admin_api/a-21528075108 "Code常量(支付方式)")
-- [Model模块驱动](https://doc.careyshop.cn/docs/admin_api/a-21528078802 "Model模块驱动")
+- [支付宝配置格式](/api/admin/payment/payment/set.payment.item.md#支付宝配置格式 "支付宝配置格式")
+- [微信配置格式](/api/admin/payment/payment/set.payment.item.md#微信配置格式 "微信配置格式")
+- [Code常量(支付方式)](/api/admin/payment/payment/set.payment.item.md#code常量-支付方式 "Code常量(支付方式)")
+- [Model模块驱动](/api/admin/payment/payment/set.payment.item.md#code常量-支付方式 "Model模块驱动")
 
 #### 业务参数：
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
@@ -35,14 +35,14 @@
 |:-----|:-----|:---:|:-----|-----|
 |payment_id |integer |是 |3 |支付编号 |
 |name |string |是 |支付宝 |支付名称 |
-|code |integer |是 |2 |支付编码，详见[「Code常量(支付方式)」](https://doc.careyshop.cn/docs/admin_api/a-21528075108 "「Code常量(支付方式)」")|
+|code |integer |是 |2 |支付编码，详见[「Code常量(支付方式)」](/api/admin/payment/payment/set.payment.item.md#code常量-支付方式 "「Code常量(支付方式)」")|
 |image |string |是 |//image.jpg |支付图片 |
 |is_deposit |integer |是 |1 |是否用于财务充值 0=否 1=是 |
 |is_inpour |integer |是 |1 |是否用于账号充值 0=否 1=是 |
 |is_payment |integer |是 |1 |是否用于订单支付 0=否 1=是 |
 |is_refund |integer |是 |1 |是否支持原路退款 0=否 1=是 |
 |setting |array |是 |[] |支付配置，详见本页中的`相关文档` |
-|model |string |是 |alipay |支付配置对应模型，详见[「Model模块驱动」](https://doc.careyshop.cn/docs/admin_api/a-21528078802 "「Model模块驱动」") |
+|model |string |是 |alipay |支付配置对应模型，详见[「Model模块驱动」](/api/admin/payment/payment/set.payment.item.md#code常量-支付方式 "「Model模块驱动」") |
 |sort |integer |是 |50 |支付排序值 |
 |status |integer |是 |1 |支付状态 0=禁用 1=启用 |
 

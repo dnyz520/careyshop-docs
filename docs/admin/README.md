@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+title: 后台开发手册
 ---
 <p align="center">
     <img src="https://aliyun.oss.careyshop.cn/poster/banner.png" />
