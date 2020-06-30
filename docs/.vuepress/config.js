@@ -265,6 +265,23 @@ function getAdminApiSidebar() {
                     children: getChildren('../api/admin/market/card_use', './market/card_use/')
                 }
             ]
+        },
+        {
+            title: '订单',
+            children: [
+                {
+                    title: '订单管理',
+                    children: getChildren('../api/admin/order/order', './order/order/')
+                },
+                {
+                    title: '订单退款',
+                    children: getChildren('../api/admin/order/refund', './order/refund/')
+                }
+            ]
+        },
+        {
+            title: '售后',
+            children: getChildren('../api/admin/service', './service/')
         }
     ]
 }
