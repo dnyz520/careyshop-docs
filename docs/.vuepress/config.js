@@ -46,10 +46,6 @@ module.exports = {
                 text: '词典',
                 link: '/dict/'
             },
-            {
-                text: '记录',
-                link: '/blog/'
-            },
             /* {
                 text: '论坛',
                 link: 'https://carey.top'
