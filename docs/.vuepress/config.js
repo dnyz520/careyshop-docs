@@ -304,6 +304,23 @@ function getAdminApiSidebar() {
             title: '客服',
             children: getChildren('../api/admin/support', './support/')
         },
+        {
+            title: '辅助',
+            children: [
+                {
+                    title: '二维码',
+                    children: getChildren('../api/admin/assist/qrcode', './assist/qrcode/')
+                },
+                {
+                    title: '友情链接',
+                    children: getChildren('../api/admin/assist/friendlink', './assist/friendlink/')
+                },
+                {
+                    title: 'API协助接口',
+                    children: getChildren('../api/admin/assist/system', './assist/system/')
+                }
+            ]
+        }
     ]
 }
 
