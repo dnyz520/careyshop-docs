@@ -282,7 +282,20 @@ function getAdminApiSidebar() {
         {
             title: '售后',
             children: getChildren('../api/admin/service', './service/')
-        }
+        },
+        {
+            title: '支付',
+            children: [
+                {
+                    title: '支付配置',
+                    children: getChildren('../api/admin/payment/payment', './payment/payment/')
+                },
+                {
+                    title: '支付日志',
+                    children: getChildren('../api/admin/payment/log', './payment/log/')
+                }
+            ]
+        },
     ]
 }
 
