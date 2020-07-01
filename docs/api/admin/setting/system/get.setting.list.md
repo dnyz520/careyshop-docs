@@ -44,8 +44,8 @@
 |module |string |是 |... |所属模块 |
 |description |string |是 |... |描述 |
 
-#### 响应示例：
-**delivery_dist**
+### 响应示例：
+## delivery_dist
 ```json
 {
   "status": 200,
@@ -73,7 +73,7 @@
 }
 ```
 
-**payment**
+## payment
 ```json
 {
   "status": 200,
@@ -95,7 +95,7 @@
 }
 ```
 
-**delivery**
+## delivery
 ```json
 {
   "status": 200,
@@ -192,7 +192,7 @@
 }
 ```
 
-**system_shopping**
+## system_shopping
 ```json
 {
   "status": 200,
@@ -238,7 +238,7 @@
 }
 ```
 
-**service**
+## service
 ```json
 {
   "status": 200,
@@ -278,7 +278,7 @@
 }
 ```
 
-**system_info**
+## system_info
 ```json
 {
   "status": 200,
@@ -402,7 +402,7 @@
 }
 ```
 
-**upload**
+## upload
 ```json
 {
   "status": 200,
