@@ -30,32 +30,24 @@ module.exports = {
                 link: '/'
             },
             {
-                text: '开发',
+                text: '二次开发',
                 ariaLabel: 'Language Menu',
                 items: [
-                    { text: '后端', link: '/guide/' },
-                    { text: '后台', link: '/admin/' }
+                    { text: '商城框架系统', link: '/guide/' },
+                    { text: '后台管理模板', link: '/admin/' }
                 ]
             },
             {
-                text: '接口',
+                text: 'API接口',
                 ariaLabel: 'Language Menu',
                 items: [
-                    { text: '顾客组', link: '/api/client/' },
-                    { text: '管理组', link: '/api/admin/' }
+                    { text: '用户组->顾客', link: '/api/client/' },
+                    { text: '用户组->管理', link: '/api/admin/' }
                 ]
             },
             {
-                text: '词典',
+                text: '数据词典',
                 link: '/dict/'
-            },
-            /* {
-                text: '论坛',
-                link: 'https://carey.top'
-            }, */
-            {
-                text: '旧版',
-                link: 'https://olddoc.careyshop.cn'
             }
         ],
         sidebar: {

@@ -9,7 +9,7 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 该文档主要面向后台<abbr title="后台管理人员，比如超级管理员、财务、客服、运营等">管理组</abbr>，<abbr title="前台客户群体，一般指购物顾客、游客等">顾客组</abbr>请参见[「CareyShop 顾客组API 使用手册 」](/api/client/ "「CareyShop 顾客组API 使用手册 」")。
 :::
 
-**CareyShop（QQ）交流一群：714593455**
+**CareyShop（QQ）交流群：714593455**
 
 ## 设计理念
 放眼移动热潮、新零售概念、各类<abbr title="泛指各类终端机器或各类平台，终端机有IOS与Android为代表，平台以“微信小程序”为代表">终端</abbr>的增多，服务端会与各类前端进行交互，和第三方相互协作也更加紧密、频繁。出于这样的整体环境，我们摒弃传统开发方向，直接以 REST 架构为基础，将各类业务处理层模块化。
@@ -18,10 +18,14 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 
 ## 生态系统
 
-后端项目 Git
+商城框架系统 Git
 
 [Github 仓库](https://github.com/dnyz520/careyshop "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop.git "Coding 仓库")
 
-后台项目 Git
+后台管理模板 Git
 
 [Github 仓库](https://github.com/dnyz520/careyshop-admin "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-admin "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-admin.git "Coding 仓库")
+
+Rest接口调试 Git
+
+[Github 仓库](https://github.com/dnyz520/careyshop-rest "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-rest "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-rest.git "Coding 仓库")

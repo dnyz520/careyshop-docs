@@ -1,48 +1,50 @@
 ---
-title: 后端开发手册
+title: 商城框架系统开发手册
 ---
 <p align="center">
-    <img src="https://aliyun.oss.careyshop.cn/poster/banner.png" />
+    <img src="https://aliyun.oss.careyshop.cn/poster/banner.png"  alt="careyshop_banner"/>
 </p>
 
 <h1 align="center">CareyShop 商城框架系统</h1>
 
 <p align="center">
     <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/badge/website-CareyShop-yellow.svg" />
+        <img src="https://img.shields.io/badge/website-CareyShop-yellow.svg" alt="careyshop"/>
     </a>
     <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/license/dnyz520/careyshop.svg" />
+        <img src="https://img.shields.io/github/license/dnyz520/careyshop.svg" alt="careyshop_license"/>
     </a>
     <a href="https://www.careyshop.cn/download.html">
-        <img src="https://img.shields.io/github/release/dnyz520/careyshop.svg" />
+        <img src="https://img.shields.io/github/release/dnyz520/careyshop.svg" alt="careyshop_release"/>
     </a>
     <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/last-commit/dnyz520/careyshop.svg" />
+        <img src="https://img.shields.io/github/last-commit/dnyz520/careyshop.svg" alt="careyshop_last-commit"/>
     </a>
 </p>
 
 ## 介绍
 CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
-**CareyShop（QQ）交流一群：714593455**
+**CareyShop（QQ）交流群：714593455**
 
 ## 预览
-[后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [经典配套款](./white/) | [深灰商务款](./gray/)
+[后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [RestAPI 接口调试](https://demo.careyshop.cn/api "RestAPI 接口调试") | [经典配套款](./white/) | [深灰商务款](./gray/)
 
 ## 文档
 [文档中心](https://doc.careyshop.cn "CareyShop文档中心")
 
-## 仓库同步
+## 仓库
 [Github 仓库](https://github.com/dnyz520/careyshop "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop.git "Coding 仓库")
 
-## 生态 - 后台项目
-[Github 仓库](https://github.com/dnyz520/careyshop-admin "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-admin "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-admin.git "Coding 仓库")
+## 生态
+CareyShop 后台管理模板 [Github 仓库](https://github.com/dnyz520/careyshop-admin "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-admin "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-admin.git "Coding 仓库")
+
+CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-rest "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-rest "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-rest.git "Coding 仓库")
 
 ## 功能
-* REST API内置调试工具（开发中）
-* 升级至TP6.0（计划）
+* 升级至TP6.0（开发中）
 * uniapp小程序（计划）
+* REST API内置调试工具
 * 商品管理
 * 商品分类
 * 商品品牌
@@ -128,7 +130,10 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 建议采用`PATH_INFO`访问地址，隐藏入口文件可做伪静态，请参见：  
 [https://doc.careyshop.cn/guide/rewrite/](./rewrite/)
 
-## 功能预览
+## 内置调试
+![](https://aliyun.oss.careyshop.cn/poster/rest_api.png)
+
+## 管理后台
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E8%A7%84%E6%A0%BC-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%AA%92%E4%BD%93%E8%AE%BE%E7%BD%AE-%E7%81%B0.png)
