@@ -32,6 +32,7 @@
 |app_key |integer |是 |29456296 |钥匙 |
 |app_secret |string |是 |c73800b2c9d5ec51bf36e8e5e4e20129 |密钥 |
 |status |integer |是 |1 |应用状态 0=禁用 1=启用 |
+|captcha |integer |是 |0 |启用验证码 0=禁用 1=启用 |
 
 #### 响应示例：
 ```json
@@ -43,7 +44,8 @@
     "app_name": "IOS",
     "app_key": 29456296,
     "app_secret": "c73800b2c9d5ec51bf36e8e5e4e20129",
-    "status": 1
+    "status": 1,
+    "captcha": 0
   }
 }
 ```

@@ -32,7 +32,8 @@
 |app_name |string |是 |IOS |应用名称 |
 |app_key |integer |是 |29456296 |钥匙 |
 |app_secret |string |是 |c73800b2c9d5ec51bf36e8e5e4e20129 |密钥 |
-|status |integer |否 |1 |应用状态 0=禁用 1=启用 |
+|status |integer |是 |1 |应用状态 0=禁用 1=启用 |
+|captcha |integer |是 |0 |启用验证码 0=禁用 1=启用 |
 
 #### 响应示例：
 ```json
@@ -45,21 +46,24 @@
       "app_name": "IOS",
       "app_key": 29456296,
       "app_secret": "c73800b2c9d5ec51bf36e8e5e4e20129",
-      "status": 1
+      "status": 1,
+      "captcha": 0
     },
     {
       "app_id": 2,
       "app_name": "Android",
       "app_key": 95496356,
       "app_secret": "48b1f53c3c02f2a66390fe0e89e5ec3c",
-      "status": 1
+      "status": 1,
+      "captcha": 0
     },
     {
       "app_id": 3,
       "app_name": "PC",
       "app_key": 81242699,
       "app_secret": "2df4ea3c17a1decfaae46bdc47ab875d",
-      "status": 1
+      "status": 1,
+      "captcha": 0
     }
   ]
 }

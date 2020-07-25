@@ -637,6 +637,10 @@ function getClientApiSidebar() {
             title: '配置',
             children: [
                 {
+                    title: '应用列表',
+                    children: getChildren('../api/client/setting/app', './setting/app/')
+                },
+                {
                     title: '应用安装包',
                     children: getChildren('../api/client/setting/install', './setting/install/')
                 },

@@ -44,6 +44,436 @@ URL + 参数的各种组合：
 * 参数有被标注为`(自定义)`时说明此参数对框架无意义，值的意义由前端进行协商定义。
 :::
 
+## 接口调试
+默认状态下，当接口出现异常或错误时给出的数据结构如下
+```json
+{
+    "status": 500,
+    "message": "应用编号不能为空",
+    "data": null
+}
+```
+
+此时如果需要知道错误详情可在`请求参数`中增加字段`is_debug`并且赋值为`1`，系统将给出如下数据结构。
+
+::: tip 提示
+版本号 >= v1.3.0，生成环境下无效
+:::
+
+```json
+{
+    "code": 0,
+    "message": "应用编号不能为空",
+    "traces": [
+        {
+            "name": "think\\exception\\HttpException",
+            "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\helper.php",
+            "line": 53,
+            "code": 0,
+            "message": "应用编号不能为空",
+            "trace": [
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\app\\api\\controller\\CareyShop.php",
+                    "line": 582,
+                    "function": "abort",
+                    "args": [
+                        500,
+                        "应用编号不能为空"
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\app\\api\\controller\\CareyShop.php",
+                    "line": 377,
+                    "function": "outputError",
+                    "class": "app\\api\\controller\\CareyShop",
+                    "type": "->",
+                    "args": [
+                        "应用编号不能为空"
+                    ]
+                },
+                {
+                    "function": "index",
+                    "class": "app\\api\\controller\\CareyShop",
+                    "type": "->",
+                    "args": []
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Container.php",
+                    "line": 342,
+                    "function": "invokeArgs",
+                    "class": "ReflectionMethod",
+                    "type": "->",
+                    "args": [
+                        {
+                            "error": "应用编号不能为空",
+                            "appkey": "76472358",
+                            "appSecret": null,
+                            "token": "",
+                            "sign": "d0a1be55ee9d94d379caa9767d006ee7",
+                            "timestamp": 1595674426,
+                            "format": "json",
+                            "method": "get.app.item",
+                            "params": {
+                                "is_debug": 1,
+                                "sign": "d0a1be55ee9d94d379caa9767d006ee7"
+                            },
+                            "apiDebug": "1"
+                        },
+                        []
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\route\\dispatch\\Controller.php",
+                    "line": 110,
+                    "function": "invokeReflectMethod",
+                    "class": "think\\Container",
+                    "type": "->",
+                    "args": [
+                        {
+                            "error": "应用编号不能为空",
+                            "appkey": "76472358",
+                            "appSecret": null,
+                            "token": "",
+                            "sign": "d0a1be55ee9d94d379caa9767d006ee7",
+                            "timestamp": 1595674426,
+                            "format": "json",
+                            "method": "get.app.item",
+                            "params": {
+                                "is_debug": 1,
+                                "sign": "d0a1be55ee9d94d379caa9767d006ee7"
+                            },
+                            "apiDebug": "1"
+                        },
+                        {
+                            "name": "index",
+                            "class": "app\\api\\controller\\CareyShop"
+                        },
+                        {
+                            "method": "get.app.item",
+                            "is_debug": 1,
+                            "appkey": "76472358",
+                            "timestamp": 1595674426,
+                            "sign": "d0a1be55ee9d94d379caa9767d006ee7",
+                            "version": "v1",
+                            "controller": "app"
+                        }
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 59,
+                    "function": "think\\route\\dispatch\\{closure}",
+                    "class": "think\\route\\dispatch\\Controller",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 65,
+                    "function": "think\\{closure}",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\route\\dispatch\\Controller.php",
+                    "line": 113,
+                    "function": "then",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\route\\Dispatch.php",
+                    "line": 89,
+                    "function": "exec",
+                    "class": "think\\route\\dispatch\\Controller",
+                    "type": "->",
+                    "args": []
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Route.php",
+                    "line": 760,
+                    "function": "run",
+                    "class": "think\\route\\Dispatch",
+                    "type": "->",
+                    "args": []
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 59,
+                    "function": "think\\{closure}",
+                    "class": "think\\Route",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 65,
+                    "function": "think\\{closure}",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Route.php",
+                    "line": 761,
+                    "function": "then",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Http.php",
+                    "line": 210,
+                    "function": "dispatch",
+                    "class": "think\\Route",
+                    "type": "->",
+                    "args": [
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Http.php",
+                    "line": 200,
+                    "function": "dispatchToRoute",
+                    "class": "think\\Http",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 59,
+                    "function": "think\\{closure}",
+                    "class": "think\\Http",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\think-multi-app\\src\\MultiApp.php",
+                    "line": 71,
+                    "function": "think\\{closure}",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 59,
+                    "function": "think\\app\\{closure}",
+                    "class": "think\\app\\MultiApp",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 65,
+                    "function": "think\\{closure}",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\think-multi-app\\src\\MultiApp.php",
+                    "line": 72,
+                    "function": "then",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "function": "handle",
+                    "class": "think\\app\\MultiApp",
+                    "type": "->",
+                    "args": [
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Middleware.php",
+                    "line": 142,
+                    "function": "call_user_func",
+                    "args": [
+                        [
+                            {},
+                            "handle"
+                        ],
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 84,
+                    "function": "think\\{closure}",
+                    "class": "think\\Middleware",
+                    "type": "->",
+                    "args": [
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Pipeline.php",
+                    "line": 65,
+                    "function": "think\\{closure}",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Http.php",
+                    "line": 201,
+                    "function": "then",
+                    "class": "think\\Pipeline",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\vendor\\topthink\\framework\\src\\think\\Http.php",
+                    "line": 162,
+                    "function": "runWithRequest",
+                    "class": "think\\Http",
+                    "type": "->",
+                    "args": [
+                        {}
+                    ]
+                },
+                {
+                    "file": "E:\\CareyShop Projects\\CareyShop\\trunk\\public\\index.php",
+                    "line": 24,
+                    "function": "run",
+                    "class": "think\\Http",
+                    "type": "->",
+                    "args": []
+                }
+            ],
+            "source": {
+                "first": 44,
+                "source": [
+                    "     * @param integer|Response $code    状态码 或者 Response对象实例\r\n",
+                    "     * @param string           $message 错误信息\r\n",
+                    "     * @param array            $header  参数\r\n",
+                    "     */\r\n",
+                    "    function abort($code, string $message = '', array $header = [])\r\n",
+                    "    {\r\n",
+                    "        if ($code instanceof Response) {\r\n",
+                    "            throw new HttpResponseException($code);\r\n",
+                    "        } else {\r\n",
+                    "            throw new HttpException($code, $message, null, $header);\r\n",
+                    "        }\r\n",
+                    "    }\r\n",
+                    "}\r\n",
+                    "\r\n",
+                    "if (!function_exists('app')) {\r\n",
+                    "    /**\r\n",
+                    "     * 快速获取容器中的实例 支持依赖注入\r\n",
+                    "     * @param string $name        类名或标识 默认获取当前应用实例\r\n",
+                    "     * @param array  $args        参数\r\n"
+                ]
+            }
+        }
+    ],
+    "datas": [],
+    "tables": {
+        "GET Data": [],
+        "POST Data": {
+            "method": "get.app.item",
+            "is_debug": 1,
+            "appkey": "76472358",
+            "timestamp": 1595674426,
+            "sign": "d0a1be55ee9d94d379caa9767d006ee7"
+        },
+        "Files": null,
+        "Cookies": {
+            "careyshop-lang": "en",
+            "Hm_lvt_e325e60ca4cd358f2b424f5aecb8021a": "1595609487,1595613998,1595673376,1595674041",
+            "Hm_lpvt_e325e60ca4cd358f2b424f5aecb8021a": "1595674041"
+        },
+        "Session": [],
+        "Server/Request Data": {
+            "PATH": "D:\\NetSarang\\Xftp 6\\;D:\\NetSarang\\Xshell 6\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;d:\\Git\\cmd;D:\\phpStudy2018\\PHPTutorial\\php\\php-7.1.13-nts;d:\\Microsoft VS Code\\bin;d:\\UltraCompare;D:\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Yarn\\bin\\;D:\\nodejs\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps",
+            "SYSTEMROOT": "C:\\WINDOWS",
+            "COMSPEC": "C:\\WINDOWS\\system32\\cmd.exe",
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+            "WINDIR": "C:\\WINDOWS",
+            "PHP_FCGI_MAX_REQUESTS": "1000",
+            "PHPRC": "D:/phpStudy2018/PHPTutorial/php/php-7.1.13-nts/",
+            "_FCGI_SHUTDOWN_EVENT_": "2260",
+            "SCRIPT_NAME": "/index.php",
+            "REQUEST_URI": "/api/v1/app",
+            "QUERY_STRING": "/api/v1/app",
+            "REQUEST_METHOD": "POST",
+            "SERVER_PROTOCOL": "HTTP/1.1",
+            "GATEWAY_INTERFACE": "CGI/1.1",
+            "REDIRECT_QUERY_STRING": "/api/v1/app",
+            "REDIRECT_URL": "/api/v1/app",
+            "REMOTE_PORT": "51295",
+            "SCRIPT_FILENAME": "E:/CareyShop Projects/CareyShop/trunk/public/index.php",
+            "SERVER_ADMIN": "admin@php.cn",
+            "CONTEXT_DOCUMENT_ROOT": "E:/CareyShop Projects/CareyShop/trunk/public",
+            "CONTEXT_PREFIX": "",
+            "REQUEST_SCHEME": "http",
+            "DOCUMENT_ROOT": "E:/CareyShop Projects/CareyShop/trunk/public",
+            "REMOTE_ADDR": "127.0.0.1",
+            "SERVER_PORT": "80",
+            "SERVER_ADDR": "127.0.0.1",
+            "SERVER_NAME": "careyshop.oruei.com",
+            "SERVER_SOFTWARE": "Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9",
+            "SERVER_SIGNATURE": "",
+            "SystemRoot": "C:\\WINDOWS",
+            "HTTP_COOKIE": "careyshop-lang=en; Hm_lvt_e325e60ca4cd358f2b424f5aecb8021a=1595609487,1595613998,1595673376,1595674041; Hm_lpvt_e325e60ca4cd358f2b424f5aecb8021a=1595674041",
+            "HTTP_ACCEPT_LANGUAGE": "zh-CN,zh;q=0.9",
+            "HTTP_ACCEPT_ENCODING": "gzip, deflate",
+            "HTTP_REFERER": "http://careyshop.oruei.com/api",
+            "HTTP_ORIGIN": "http://careyshop.oruei.com",
+            "CONTENT_TYPE": "application/json;charset=UTF-8",
+            "HTTP_USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+            "HTTP_DNT": "1",
+            "HTTP_ACCEPT": "application/json, text/plain, */*",
+            "CONTENT_LENGTH": "123",
+            "HTTP_CONNECTION": "close",
+            "HTTP_HOST": "careyshop.oruei.com",
+            "REDIRECT_STATUS": "200",
+            "FCGI_ROLE": "RESPONDER",
+            "PHP_SELF": "/index.php",
+            "REQUEST_TIME_FLOAT": 1595674326.40294,
+            "REQUEST_TIME": 1595674326
+        }
+    }
+}
+```
+
 ## 调用示例
 URL 地址使用`PATH_INFO`访问方式，向`AppInstall`控制器`POST`请求，业务方法是`get.app.install.list`，数据如下：
 

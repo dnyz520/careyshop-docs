@@ -19,6 +19,7 @@
 |username |string |是 |length:4,20 | |admin |账号 |
 |password |string |是 |min:6 | |admin888 |密码 |
 |platform |string |是 |max:50 | |ios |来源平台，该字段值由客户端指定 |
+|login_code |string |否 |min:4 | |8888 |当应用启用验证码时必须 |
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|
