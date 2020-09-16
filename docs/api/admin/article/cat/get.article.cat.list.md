@@ -38,7 +38,7 @@
 |sort |integer |是 |50 |文章分类排序值 |
 |is_navi |integer |是 |0 |是否显示到导航 0=否 1=是 |
 |children_total |integer |是 |0 |该分类下子级分类数的合计 |
-|aricle_total |integer |是 |12 |该分类下关联文章的合计 |
+|article_total |integer |是 |12 |该分类下关联文章的合计 |
 |level |integer |是 |0 |该分类的层级深度 |
 
 #### 响应示例：
@@ -57,7 +57,7 @@
       "sort": 50,
       "is_navi": 0,
       "children_total": 0,
-      "aricle_total": 12,
+      "article_total": 12,
       "level": 0
     },
     {
@@ -70,7 +70,7 @@
       "sort": 50,
       "is_navi": 0,
       "children_total": 0,
-      "aricle_total": 0,
+      "article_total": 0,
       "level": 0
     }
   ]
