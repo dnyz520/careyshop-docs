@@ -18,7 +18,7 @@
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |service_no |string |是 |max:50 | |SH_I6264796358679190001 |售后单号 |
 |logistic_code |string |是 |max:50 | |0123456 |快递单号 |
-|delivery_id |integer |是 |gt:0 | |1 |配送方式编号 |
+|delivery_item_id |integer |是 |gt:0 | |1 |快递公司编号 |
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|

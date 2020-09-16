@@ -22,7 +22,7 @@
 |zipcode |string |否 |max:20 | |315000 |邮编 |
 |mobile |string |是 |length:7,15 | |87487585 |电话 |
 |logistic_code |string |是 |max:50 | |0123456 |快递单号 |
-|delivery_id |integer |是 |gt:0 | |1 |配送方式编号 |
+|delivery_item_id |integer |是 |gt:0 | |1 |快递公司编号 |
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|
