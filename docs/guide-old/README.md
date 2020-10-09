@@ -1,5 +1,5 @@
 ---
-title: 商城框架系统开发手册
+title: 商城框架系统开发手册 - 基于 ThinkPHP5.0 旧版文档
 ---
 <p align="center">
     <img src="https://aliyun.oss.careyshop.cn/poster/banner.png"  alt="careyshop_banner"/>
@@ -33,6 +33,10 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 ## 文档
 [文档中心](https://doc.careyshop.cn "CareyShop文档中心")
 
+::: tip 新版文档
+[基于 ThinkPHP6.0 新版文档](/guide/)
+:::
+
 ## 仓库
 [Github 仓库](https://github.com/dnyz520/careyshop "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop.git "Coding 仓库")
 
@@ -42,8 +46,6 @@ CareyShop 后台管理模板 [Github 仓库](https://github.com/dnyz520/careysho
 CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-rest "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-rest "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-rest.git "Coding 仓库")
 
 ## 功能
-* 升级至TP6.0（开发中）
-* uniapp小程序（计划）
 * REST API内置调试工具
 * 商品管理
 * 商品分类

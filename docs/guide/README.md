@@ -23,19 +23,19 @@ title: 商城框架系统开发手册
 </p>
 
 ## 介绍
-CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
+CareyShop（简称 CS）是一套基于 ThinkPHP6.0 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多个终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
 **CareyShop（QQ）交流群：714593455**
-
-::: tip 历史文档
-[基于 ThinkPHP5.0 旧版文档](/guide-old/)
-:::
 
 ## 预览
 [后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [RestAPI 接口调试](https://demo.careyshop.cn/api "RestAPI 接口调试") | [经典配套款](./white/) | [深灰商务款](./gray/)
 
 ## 文档
 [文档中心](https://doc.careyshop.cn "CareyShop文档中心")
+
+::: tip 历史文档
+[基于 ThinkPHP5.0 旧版文档](/guide-old/)
+:::
 
 ## 仓库
 [Github 仓库](https://github.com/dnyz520/careyshop "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop.git "Coding 仓库")
@@ -46,8 +46,10 @@ CareyShop 后台管理模板 [Github 仓库](https://github.com/dnyz520/careysho
 CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-rest "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-rest "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-rest.git "Coding 仓库")
 
 ## 功能
-* 升级至TP6.0（开发中）
-* uniapp小程序（计划）
+* 微信公众号（开发中）
+* uniapp小程序（内测中）
+* 数据统计
+* 重构至ThinkPHP6.0
 * REST API内置调试工具
 * 商品管理
 * 商品分类
@@ -118,18 +120,15 @@ CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-
 * 接口批量调用
 
 ## 安装
-将项目下的`public`目录设为`web访问`目录，第一次访问时会进入`安装向导`，通过向导完成安装。
+必须将项目下的`public`目录设为`web访问`目录，第一次访问首页时会进入`安装向导`，务必请通过向导完成安装。
 
 ## 快速启动
-切换到项目`public`目录下，输入命令行`php -S 127.0.0.1:8080 router.php`，便可使用 PHP 自带的`webserver`服务快速访问，按键`Ctrl + C`退出服务。
+切换到项目根目录，在命令行输入`php think run -H 127.0.0.1 -p 8080`，启动 PHP 自带的`webserver`服务，  
+按键`Ctrl + C`退出服务。
 
 > 建议使用`IP`启动，避免使用`localhost`，并且此方法只适合调试环境。
 
 ## 常见问题
-- 不习惯将入口文件部署在`public`或部署环境不支持怎么办?  
-可以灵活变动，请参见：  
-[https://doc.careyshop.cn/guide/enter/](./enter/)
-
 - 如何隐藏`index.php`入口文件?  
 建议采用`PATH_INFO`访问地址，隐藏入口文件可做伪静态，请参见：  
 [https://doc.careyshop.cn/guide/rewrite/](./rewrite/)
@@ -138,6 +137,7 @@ CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-
 ![](https://aliyun.oss.careyshop.cn/poster/rest_api.png)
 
 ## 管理后台
+![](https://aliyun.oss.careyshop.cn/poster/gray/%E9%A6%96%E9%A1%B5-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E8%A7%84%E6%A0%BC-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%AA%92%E4%BD%93%E8%AE%BE%E7%BD%AE-%E7%81%B0.png)
@@ -158,5 +158,6 @@ CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E7%BC%A9%E7%95%A5%E5%9B%BE%E8%AE%BE%E8%AE%A1-%E7%81%B0.png)
 
 #### 声明
-CareyShop 原则上使用 AGPLv3 开源，请遵守 AGPLv3 的相关条款，或者与我们联系获取商业授权，   
+CareyShop 使用 AGPLv3 开源协议，请遵守 AGPLv3 的相关条款，商用需进行授权，
+
 本项目包含的源码（包括第三方）和二进制文件存在版权信息另行标注的情况。
