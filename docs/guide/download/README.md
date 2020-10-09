@@ -34,9 +34,10 @@
 	https://coding.net/u/careyshop/p/careyshop/git/releases
 
 ## 安装
-将项目下的`public`目录设为`web访问`目录，第一次访问时会进入`安装向导`，通过向导完成安装。
+必须将项目下的`public`目录设为`web访问`目录，第一次访问首页时会进入`安装向导`，务必请通过向导完成安装。
 
 ## 测试
-切换到项目`public`目录下，输入命令行`php -S 127.0.0.1:8080 router.php`，便可使用 PHP 自带的`webserver`服务快速访问，按键`Ctrl + C`退出服务。
+切换到项目根目录，在命令行输入`php think run -H 127.0.0.1 -p 8080`，启动 PHP 自带的`webserver`服务，  
+按键`Ctrl + C`退出服务。
 
 > 建议使用`IP`启动，避免使用`localhost`，并且此方法只适合调试环境。

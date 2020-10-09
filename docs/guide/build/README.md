@@ -22,7 +22,7 @@
 链接地址：https://www.mamp.info/en/
 
 ## 环境要求
-* PHP >= 5.6.0
+* PHP >= 7.1.0
 * PDO PHP Extension
 * MBstring PHP Extension
 * CURL PHP Extension
