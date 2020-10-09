@@ -41,8 +41,8 @@ module.exports = {
                 text: 'API接口',
                 ariaLabel: 'Language Menu',
                 items: [
-                    { text: '用户组->顾客', link: '/api/client/' },
-                    { text: '用户组->管理', link: '/api/admin/' }
+                    { text: '顾客组', link: '/api/client/' },
+                    { text: '管理组', link: '/api/admin/' }
                 ]
             },
             {
@@ -52,6 +52,7 @@ module.exports = {
         ],
         sidebar: {
             '/guide/': getGuideSidebar(),
+            '/guide-old/': getGuideSidebarOld(),
             '/dict/': [''],
             '/api/client/': getClientApiSidebar(),
             '/api/admin/': getAdminApiSidebar()
@@ -658,6 +659,32 @@ function getGuideSidebar() {
         {
             title: '序言',
             path: '/guide/',
+            children: ['white/', 'gray/']
+        },
+        'build/',
+        'download/',
+        'tree/',
+        {
+            title: '二次开发',
+            children: ['common/', 'debug/', 'version/', 'controller/']
+        },
+        'safety/',
+        'hijack/',
+        'enter/',
+        'rewrite/',
+        'timing/',
+        'constant/',
+        'ask/',
+        'changelog/',
+        'upgrade/'
+    ]
+}
+
+function getGuideSidebarOld() {
+    return [
+        {
+            title: '序言(ThinkPHP5.0)',
+            path: '/guide-old/',
             children: ['white/', 'gray/']
         },
         'build/',
