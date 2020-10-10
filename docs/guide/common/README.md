@@ -1,6 +1,6 @@
 # 公共函数
 
-系统所有的公共函数都存放在`application/common.php`，
-但在二次开发中建议将需要的函数存放到`application/function.php`。
+根目录下的`app/common.php`用于存放`全局公共函数`，尽量不要改动 common.php 文件。   
+如果您需要二次发开`全局公共函数`，那么请在`app/function.php`中进行操作。
 
-而调用的方式依旧不变。
+调用的方式依旧不变。
