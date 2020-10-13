@@ -20,24 +20,26 @@
 </p>
 
 ## 介绍
-CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
+CareyShop（简称 CS）是一套基于 ThinkPHP6.0 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多个终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
-## 预览
-[后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [经典配套款](https://doc.careyshop.cn/guide/white/) | [深灰商务款](https://doc.careyshop.cn/guide/gray/)
+## 在线体验
+[后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [RestAPI 接口调试](https://demo.careyshop.cn/api "RestAPI 接口调试") | [经典配套款](https://doc.careyshop.cn/guide/white/) | [深灰商务款](https://doc.careyshop.cn/guide/gray/)
 
-## 文档
-[文档中心](https://doc.careyshop.cn "CareyShop文档中心")
+## 商业授权
+现在订购“B2C单商户商城”获赠“uniapp小程序”编译版
 
-## 仓库同步
-[Github 仓库](https://github.com/dnyz520/careyshop "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop.git "Coding 仓库")
+|后台管理模板|B2C单商户商城|uniapp小程序|
+| ------------ | ------------ | ------------ |
+|原价 ￥6890 优惠价 **￥2680**|原价 ￥9890 优惠价 **￥2880**|原价 ￥18800 优惠价 **￥3980**|
+|基于Vue构建的商城后台管理模板，适合自有后端，并且是前后端分离的系统搭配使用。|单商户商城完整版，包含后端(php)、后台(vue)、前端(uniapp)，适合全新部署。|开源版，所见所得界面布局，多终端小程序一步全通。现在众筹预约享优惠，过时恢复原价。|
+|√ 免费更新<br>√ 永久授权<br>√ 二次开发<br>√ 去除版权<br>√ 商业用途<br>√ 授权域名绑定（1个域名）<br>√ 高级技术支持（1年）<br>√ 升级服务支持（1年）<br>√ 快速技术响应（7*12小时）<br>√ 项目定制服务（另计）<br>√ 项目二次定制（另计）| √ 免费更新<br>√ 永久授权<br>√ 二次开发<br>√ 去除版权<br>√ 商业用途<br>√ 授权域名绑定（1个顶级域名）<br>√ 高级技术支持（1年）<br>√ 升级服务支持（1年）<br>√ 快速技术响应（7*12小时）<br>√ 项目定制服务（另计）<br>√ 项目二次定制（另计）|开发结束，内测中...<br>接受众筹预约提前购<br>正式发布后恢复正常授权价<br>含"后台管理系统"、"商城框架系统"|
 
-## 生态 - 后台项目
-[Github 仓库](https://github.com/dnyz520/careyshop-admin "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-admin "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-admin.git "Coding 仓库")
-
-## 功能
-* REST API内置调试工具（开发中）
-* 升级至TP6.0（计划）
-* uniapp小程序（计划）
+## 功能列表
+* 微信公众号（开发中）
+* uniapp小程序（内测中）
+* 数据统计
+* 重构至ThinkPHP6.0
+* REST API内置调试工具
 * 商品管理
 * 商品分类
 * 商品品牌
@@ -106,24 +108,11 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 * 邮件消息
 * 接口批量调用
 
-## 安装
-将项目下的`public`目录设为`web访问`目录，第一次访问时会进入`安装向导`，通过向导完成安装。
-
-## 快速启动
-切换到项目`public`目录下，输入命令行`php -S 127.0.0.1:8080 router.php`，便可使用 PHP 自带的`webserver`服务快速访问，按键`Ctrl + C`退出服务。
-
-> 建议使用`IP`启动，避免使用`localhost`，并且此方法只适合调试环境。
-
-## 常见问题
-- 不习惯将入口文件部署在`public`或部署环境不支持怎么办?  
-可以灵活变动，请参见：  
-[https://doc.careyshop.cn/guide/enter/](https://doc.careyshop.cn/guide/enter/)
-
-- 如何隐藏`index.php`入口文件?  
-建议采用`PATH_INFO`访问地址，隐藏入口文件可做伪静态，请参见：  
-[https://doc.careyshop.cn/guide/rewrite/](https://doc.careyshop.cn/guide/rewrite/)
+## 内置调试
+![](https://aliyun.oss.careyshop.cn/poster/rest_api.png)
 
 ## 功能预览
+![](https://aliyun.oss.careyshop.cn/poster/gray/%E9%A6%96%E9%A1%B5-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%95%86%E5%93%81%E8%A7%84%E6%A0%BC-%E7%81%B0.png)
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E5%AA%92%E4%BD%93%E8%AE%BE%E7%BD%AE-%E7%81%B0.png)
