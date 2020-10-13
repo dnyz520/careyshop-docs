@@ -70,7 +70,7 @@ Api 接口调用控制器默认占用 v1 版本号，在二次开发中您都应
 
 2. 在`v2`目录下创建控制器类`App`，文件名为`App.php`，并且继承于`\app\api\controller\CareyShop`。
 
-3. 修改控制器方法路由，以`命名空间`的方式指向待新建的模型。
+3. 修改控制器方法路由器，以`命名空间`的方式指向待新建的模型。
 	```php
     <?php
     namespace app\api\controller\v2;

@@ -2,9 +2,6 @@
 
 ## 系统常量
 ```php
-APP_PUBLIC_PATH             // 共有静态文件目录
-ADMIN_MODULE                // 后台管理入口
-
 AUTH_SUPER_ADMINISTRATOR    // 超级管理员
 AUTH_ADMINISTRATOR          // 普通管理员
 AUTH_CLIENT                 // 顾客组

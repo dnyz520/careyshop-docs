@@ -3,143 +3,155 @@
 框架默认占用`v1`版本号，当您对调用的接口需要进行二次开发时，我们建议不要直接修改`公共模块`内的成员函数，   
 而是另起一个版本号，将框架与二次开发所修改的内容区分开。
 
-下面将举例如何对`App`控制器进行「新增接口」、「修改接口」。
+下面将举例说明如何进行新增、修改、删除。
 
-**[ 新增接口 ]**
-1. 在`application\api\controller`目录下新建`v2`目录。
+## 管理控制器类
 
-2. 在`v2`目录下创建控制器类`App`，文件名为`App.php`，并且继承于`\app\api\controller\v1\App`。
-	```php
-    <?php
-    namespace app\api\controller\v2;
+1. 在`app/api/controller`目录下新建`v2`目录，也可以自主设计目录名称，例如叫“ver2.0”，但名称在 URL 访问与命名空间时必须一致（演示讲解时一律使用v2名称）。
 
-    class App extends \app\api\controller\v1\App
+2. 之后在`v2`目录下创建控制器类文件，如果是在某个控制器类的基础上进行二次开发，那么二者的文件名称必须一致，并且继承于对应的`v1`控制器类。
+如果是一个完全独立、新增的控制器类，那么必须继承于`\app\api\controller\CareyShop`。
+
+## 演示代码片段
+
+完成上面的操作后就可以实际写入代码，演示代码以`v1`版本下的`Index`控制器为例，对各种会运用到的状况都做了解释。
+
+```php
+<?php
+/**
+ * @copyright   Copyright (c) http://careyshop.cn All rights reserved.
+ *
+ * CareyShop    自定义接口版本号v2演示
+ *
+ * @author      zxm <252404501@qq.com>
+ * @date        2020/10/10
+ */
+
+namespace app\api\controller\v2;
+
+use app\common\service\Index as IndexService;
+
+class Index extends \app\api\controller\v1\Index
+{
+    /**
+     * 方法1:通过方法路由器
+     * 重写该成员函数,通过"self::$route"键名对应的值来改变请求方法的重定位
+     * 如果需要继承父类"self::$route"的初始值,则需要执行"parent::initMethod()"
+     * 不执行状态下,v1与v2属于完全独立的请求接口
+     *
+     * 如果选择不继承初始值,那么建议当前类从"\app\api\controller\CareyShop.php"继承
+     * 而不是从"\app\api\controller\v1\Index"继承
+     *
+     * @access protected
+     * @return void
+     */
+    protected static function initMethod()
     {
         /**
-        * 方法路由器
-        * @access protected
-        * @return array
-        */
-        protected static function initMethod()
-        {
-            return [
-                // 添加一个广告
-                'test.app.item'    => ['testAppItem', false],
-            ];
-        }
+         * 父类"self::$route"的初始值
+         * self::$route = [
+         * // API访问测试
+         * 'get.index.host'      => ['getIndexHost', false],
+         * // 清空所有缓存
+         * 'clear.cache.all'     => ['clearCacheAll', IndexService::class],
+         * // 调整最优状态(正式环境有效)
+         * 'set.system.optimize' => ['setSystemOptimize', IndexService::class],
+         * // 获取系统版本号
+         * 'get.system.version'  => ['getVersion', IndexService::class],
+         * ];
+         */
+        parent::initMethod();
 
-        public function testAppItem()
-        {
-            return 'v2新增接口调用成功';
-        }
-    }
-    ```
+        // 父方法路由器键名不存在"get.system.v2"方法,表示新增一个接口
+        self::$route['get.system.v2'] = ['getMethodV2', false];
 
-3. 调用并测试接口：`http://localhost:8080/api/v2/app/method/test.app.item`，返回请求结果。
-	```json
-    {
-        "data": "v2新增接口调用成功",
-        "message": "success",
-        "status": 200
-    }
-    ```
+        // 父方法路由器键名存在"get.system.version"方法,表示修改一个接口
+        self::$route['get.system.version'] = ['getVersion', false];
 
-4. 如果不是对已有接口进行操作而是新建的话，则应该继承`\app\api\controller\CareyShop`。
-	```php
-    <?php
-    namespace app\api\controller\v2;
+        // 删除从父方法路由器继承过来的"set.system.optimize"方法
+        unset(self::$route['set.system.optimize']);
 
-    use app\api\controller\CareyShop;
-
-    class NewApi extends CareyShop
-    {
         /**
-         * 方法路由器
-         * @access protected
-         * @return array
+         * 假设不执行"parent::initMethod()",那么"Index"控制器最终请求方法结果如下:
+         * "get.index.host"与"clear.cache.all" v1、v2都不可请求
+         * "set.system.optimize" v1可请求,v2不可请求
+         * "get.system.version" v1、v2都可请求,但返回内容不同
+         * "get.system.v2" v1不可请求,v2可请求
+         * 至于方法路由器中的键值含义请参考 https://doc.careyshop.cn/guide/controller/
          */
-        protected static function initMethod()
-        {
-            return [
-            ];
-        }
-    }
-    ```
 
-**[ 修改接口 ]**
-1. 在`application\api\controller`目录下新建`v2`目录。
-
-2. 在`v2`目录下创建控制器类`App`，文件名为`App.php`，并且继承于`\app\api\controller\CareyShop`。
-
-3. 修改控制器方法路由，以`命名空间`的方式指向待新建的模型。
-	```php
-    <?php
-    namespace app\api\controller\v2;
-
-    use app\api\controller\CareyShop;
-
-    class NewApi extends CareyShop
-    {
         /**
-         * 方法路由器
-         * @access protected
-         * @return array
+         * 假设执行过"parent::initMethod()",那么"Index"控制器最终请求方法结果如下:
+         * "get.index.host"与"clear.cache.all" v1、v2都可请求,且结果相同
+         * "set.system.optimize" v1可请求,v2不可请求
+         * "get.system.version" v1、v2都可请求,但返回内容不同
+         * "get.system.v2" v1不可请求,v2可请求
+         * 至于方法路由器中的键值含义请参考 https://doc.careyshop.cn/guide/controller/
          */
-        protected static function initMethod()
-        {
-            return [
-                // 获取应用列表
-                'get.app.list' => ['getAppList', 'app\api\model\App']
-            ];
-        }
     }
-    ```
 
-4. 新建一个模型后继承`\app\common\model\CareyShop`，或继承被修改的模型。
-    > 之所以新建一个模型是不建议对框架的模型进行改动，用新建或继承模型的方式比较稳妥。
-	```php
-    <?php
-    namespace app\api\model;
-
-    use app\common\model\CareyShop;
-
-    class App extends CareyShop
+    /**
+     * 方法2:通过自定义初始化
+     * 重写该成员函数,与方法1的区别是重写该成员函数不需要执行"parent::initMethod()"
+     * 默认状态下就已经继承父类"self::$route"的初始值
+     *
+     * @access protected
+     * @return void
+     */
+    protected static function init()
     {
-        /*
-         * 获取应用列表
-         * @access public
-         * @param  array $data 外部数据
-         * @return bool
+        // 父方法路由器键名不存在"get.system.v2"方法,表示新增一个接口
+        // self::$route['get.system.v2'] = ['getMethodV2', false];
+
+        // 父方法路由器键名存在"get.system.version"方法,表示修改一个接口
+        // self::$route['get.system.version'] = ['getVersion', false];
+
+        // 删除从父方法路由器继承过来的"set.system.optimize"方法
+        // unset(self::$route['set.system.optimize']);
+
+        /**
+         * 假设上方注释的代码段完成执行,那么"Index"控制器最终请求方法结果如下:
+         * "get.index.host"与"clear.cache.all" v1、v2都可请求,且结果相同
+         * "set.system.optimize" v1可请求,v2不可请求
+         * "get.system.version" v1、v2都可请求,但返回内容不同
+         * "get.system.v2" v1不可请求,v2可请求
+         * 至于方法路由器中的键值含义请参考 https://doc.careyshop.cn/guide/controller/
          */
-        public function getAppList($data)
-        {
-            return ['修改后的接口']
-        }
     }
-    ```
 
-5. 调用并测试接口：`http://localhost:8080/api/v2/app/method/get.app.list`，返回请求结果。
-	```json
+    /**
+     * 假设请求条件同为 "method": "get.system.v2"时,
+     * 访问 http://{{host}}/v1/index 会提示错误,原因是v1版本下不存在此接口
+     * 访问 http://{{host}}/v2/index 会正确返回执行结果
+     *
+     * @access public
+     * @return string
+     */
+    public function getMethodV2()
     {
-        "data": [
-            "修改后的接口"
-        ],
-        "message": "success",
-        "status": 200
+        return '基于CareyShop商城框架系统,新增v2接口数据返回';
     }
-    ```
 
-6. 确认 v1 版本号的接口是否也正常：`http://localhost:8080/api/v1/app/method/get.app.list`，返回请求结果。
-	```json
+    /**
+     * 假设请求条件同为 "method": "get.system.version"时,
+     * 访问 http://{{host}}/v1/index 返回:
+     * {"status":200,"message":"success","data":{"version":"1.3.0"}}
+     * 访问 http://{{host}}/v2/index 返回:
+     * {"status":200,"message":"success","data":{"version":"1.3.0","v2":"基于CareyShop商城框架系统,修改为v2接口后数据返回"}}
+     *
+     * @access public
+     * @return array
+     */
+    public function getVersion()
     {
-        "data": {
-            "app_id": 1,
-            "app_name": "admin"
-        },
-        "message": "success",
-        "status": 200
+        $indexService = new IndexService();
+        $data = $indexService->getVersion();
+        $data['v2'] = '基于CareyShop商城框架系统,修改为v2接口后数据返回';
+
+        return $data;
     }
-    ```
+}
+```
 
 **备注：**
 在示例中`方法路由器`的具体使用可以查阅，[接口控制器](../controller/ "接口控制器")。
