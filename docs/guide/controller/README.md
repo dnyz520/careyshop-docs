@@ -31,6 +31,7 @@ public function getCategorySon()
 namespace app\api\controller\v1;
 
 use app\api\controller\CareyShop;
+use app\common\service\App as AppService;
 
 class App extends CareyShop
 {
@@ -47,7 +48,7 @@ class App extends CareyShop
             // 编辑一个应用
             'set.app.item' => ['setAppItem', false],
             // 获取一个应用
-            'get.app.item' => ['getAppItem', 'app\common\model\AppName'],
+            'get.app.item' => ['getAppItem', AppService::class], // 也支持"'app\common\service\App'"写法，表示命名空间
         ];
     }
 
