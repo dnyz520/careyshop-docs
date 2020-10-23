@@ -24,7 +24,7 @@
 |account |string |否 |max:80 | |carey |账号或昵称 |
 |timeout |integer |否 |egt:0 | |3 |超时配送 单位:天 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |delivery_dist_id |state |排序字段 |
 

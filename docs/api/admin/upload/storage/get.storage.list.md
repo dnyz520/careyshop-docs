@@ -19,7 +19,7 @@
 |storage_id |integer |否 |egt:0 |0 |2 |资源编号 0=全部|
 |name |string |否 |max:255 | |//cover.jpg |资源名称 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size | integer|否 |between:1,40 |15 |15 |每页数量 |
+|page_size | integer|否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |asc |desc |排序方式 |
 |order_field |string |否 |见附属 A |storage_id |create_time |排序字段 |
 

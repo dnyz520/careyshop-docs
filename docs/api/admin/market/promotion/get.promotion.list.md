@@ -21,7 +21,7 @@
 |begin_time |datetime |否 |beforeTime:end_time | |2018-06-01 00:00:00 |促销开始时间 |
 |end_time |datetime |否 |afterTime:begin_time | |2018-06-30 00:00:00 |促销结束时间 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |promotion_id |status |排序字段 |
 

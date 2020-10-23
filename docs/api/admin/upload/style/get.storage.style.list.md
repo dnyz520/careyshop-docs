@@ -21,7 +21,7 @@
 |platform |integer |否 |between:-128,127 | |0 |资源样式平台(自定义) |
 |status |integer |否 |in:0,1 | |1 |资源样式状态 0=禁用 1=启用 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |storage_style_id |status |排序字段 |
 

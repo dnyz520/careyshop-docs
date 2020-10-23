@@ -28,7 +28,7 @@
 |status |integer |否 |in:0,1 | |0 |是否已读 0=否 1=是 |
 |goods_spec |array |否 |min[]:0 | |[&#34;1_3&#34;,&#34;1_2&#34;] |商品规格 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |goods_comment_id |status |排序字段 |
 

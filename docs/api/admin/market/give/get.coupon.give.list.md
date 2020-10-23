@@ -20,7 +20,7 @@
 |type |integer |否 |in:normal,used,invalid,delete | |used |优惠劵状态，详见`附属 A` |
 |account |string |否 |max:80 | |carey |账号或昵称 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 
 > 附属 A：
 normal=正常状态优惠劵；used=已使用优惠劵；invalid=无效优惠劵；delete=回收站优惠劵；

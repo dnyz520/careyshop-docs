@@ -21,7 +21,7 @@
 |brand_id |integer |否 |egt:0 | |1 |商品品牌编号 |
 |shop_price |array |否 |length:2 | |[50,100] |商品价格区间 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 
 > 附属 A：
 in:integral,recommend,new,hot

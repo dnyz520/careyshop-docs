@@ -21,7 +21,7 @@
 |type |integer |否 |between:0,3 | |0 |快递公司类型 0=热门 1=国内 2=国外 3=转运 |
 |company_all |integer |否 |in:0,1 |0 |0 |是否获取已删除 0=否 1=是 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |asc |desc |排序方式 |
 |order_field |string |否 |见附属 A |delivery_item_id |phonetic |排序字段 |
 

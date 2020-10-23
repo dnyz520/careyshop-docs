@@ -25,7 +25,7 @@
 |begin_time |datetiem |否 |beforeTime:end_time | |2018-05-01 00:00:00 |开始投放时间 |
 |end_time |datetiem |否 |afterTime:begin_time | |2018-05-30 23:59:59 |投放结束时间 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |ads_id |status |排序字段 |
 

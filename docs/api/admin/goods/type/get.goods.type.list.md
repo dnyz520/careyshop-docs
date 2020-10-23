@@ -18,7 +18,7 @@
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |type_name |string |否 |max:60 | |笔记本 |商品模型名称 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |goods_type_id |type_name |排序字段 |
 

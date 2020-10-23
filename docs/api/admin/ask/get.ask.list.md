@@ -20,7 +20,7 @@
 |status |integer |否 |in:0,1 | |0 |是否回答 0=待回答 1=已回答 |
 |account |string |否 |max:80 | |carey |账号或昵称 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |ask_id |status |排序字段 |
 

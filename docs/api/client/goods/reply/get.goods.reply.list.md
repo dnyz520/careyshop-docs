@@ -18,7 +18,7 @@
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |goods_comment_id |integer |是 |gt:0 | |1 |商品评价编号 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|

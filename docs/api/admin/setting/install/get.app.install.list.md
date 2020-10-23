@@ -19,7 +19,7 @@
 |user_agent |string |否 |max:64 | |iphone |系统标识 |
 |name |string |否 |max:32 | |IPhone |应用安装包名称 |
 |page_no |integer |否 |gt:0 |1 |1 |页码 |
-|page_size |integer |否 |between:1,40 |15 |15 |每页数量 |
+|page_size |integer |否 |gt:0 |15 |15 |每页数量 |
 |order_type |string |否 |in:asc,desc |desc |asc |排序方式 |
 |order_field |string |否 |见附属 A |app_install_id |count |排序字段 |
 
