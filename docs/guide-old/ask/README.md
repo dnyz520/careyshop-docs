@@ -34,7 +34,7 @@
 出现此情况的原因是 Apache 将头信息`authorization`进行了隐藏，从而导致 oss 组件对回调源进行验证时缺少必要数据。解决此问题有二种方法：
 
 1、打开项目中的“.htaccess”文件将其修改为如下。
-``` {7-9}
+``` {9-11}
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks -Multiviews
   RewriteEngine On
