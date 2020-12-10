@@ -26,3 +26,40 @@
 4.微信支付证书路径如何设置？
 
 微信支付证书的路径必须使用绝对路径，否则会报错。
+
+------------
+
+5.使用 oss 组件（七牛云KODO、阿里云OSS）时报错“xxx 模块异常访问!”？
+
+出现此情况的原因是 Apache 将头信息`authorization`进行了隐藏，从而导致 oss 组件对回调源进行验证时缺少必要数据。解决此问题有二种方法：
+
+1、打开项目中的“.htaccess”文件将其修改为如下。
+``` {7-9}
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks -Multiviews
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+
+  # Handle Authorization Header
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+```
+
+2、全局或单独对某个站点进行 Apache 配置项修改，修改或增加配置项`CGIPassAuth on`，保存后重启服务，修改后如下。
+``` apacheconf{9}
+<VirtualHost _default_:80>
+DocumentRoot "web/careyshop/public"
+  <Directory "web/careyshop/public">
+    Options -Indexes +FollowSymLinks +ExecCGI
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+    Require all granted
+    CGIPassAuth on
+  </Directory>
+</VirtualHost>
+```
