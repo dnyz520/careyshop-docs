@@ -6,8 +6,8 @@ API 接口（内部调用除外）的所有入口 URL 路由都是`api/:version/
 所有的控制器都直接或间接的继承于`\app\api\controller\CareyShop`。
 
 ## 控制器
-每一个控制器默认都会有一个对应绑定模型，模型的存放目录是`app/common/model`，并且控制器与模型的文件名是一致的。   
-比如`App`控制器对应的模型也叫`App`，导入的类文件是`app/common/model/App.php`，可以在控制器中通过`static::$model`调用绑定模型的成员方法。
+每一个控制器默认都会有一个对应绑定模型，模型的存放目录是`app/careyshop/model`，并且控制器与模型的文件名是一致的。   
+比如`App`控制器对应的模型也叫`App`，导入的类文件是`app/careyshop/model/App.php`，可以在控制器中通过`static::$model`调用绑定模型的成员方法。
 
 注意：通过继承所创建的控制器必须要有对应模型，否则会报错。
 
@@ -31,7 +31,7 @@ public function getCategorySon()
 namespace app\api\controller\v1;
 
 use app\api\controller\CareyShop;
-use app\common\service\App as AppService;
+use app\careyshop\service\App as AppService;
 
 class App extends CareyShop
 {
@@ -48,7 +48,7 @@ class App extends CareyShop
             // 编辑一个应用
             'set.app.item' => ['setAppItem', false],
             // 获取一个应用
-            'get.app.item' => ['getAppItem', AppService::class], // 也支持"'app\common\service\App'"写法，表示命名空间
+            'get.app.item' => ['getAppItem', AppService::class], // 也支持"'app\careyshop\service\App'"写法，表示命名空间
         ];
     }
 

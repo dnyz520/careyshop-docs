@@ -29,7 +29,7 @@
 
 namespace app\api\controller\v2;
 
-use app\common\service\Index as IndexService;
+use app\careyshop\service\Index as IndexService;
 
 class Index extends \app\api\controller\v1\Index
 {

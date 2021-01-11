@@ -19,7 +19,7 @@ careyshop
 │    │    ├─ view                                   模块视图目录
 │    │    │    └─ index                                 视图首页目录
 │    │    └─ provider.php                           API 容器绑定定义
-│    ├─ common                                  公共模块
+│    ├─ careyshop                               公共模块
 │    │    ├─ model                                  模型目录
 │    │    ├─ service                                服务层目录
 │    │    ├─ validate                               验证器目录
