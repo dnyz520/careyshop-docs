@@ -668,6 +668,7 @@ function getGuideSidebar() {
             title: '二次开发',
             children: ['common/', 'debug/', 'version/', 'controller/']
         },
+        'auth/',
         'safety/',
         'hijack/',
         'enter/',
