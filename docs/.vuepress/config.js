@@ -13,11 +13,9 @@ module.exports = {
     ],
     themeConfig: {
         logo: '/assets/img/logo@2x.png',
-        repo: 'https://github.com/dnyz520',
-        repoLabel: 'Github',
         docsRepo: 'dnyz520/careyshop-docs',
         docsDir: 'docs',
-        editLinks: true,
+        editLinks: false,
         editLinkText: '帮助我们改善此页面',
         lastUpdated: '上次更新',
         algolia: {
