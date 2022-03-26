@@ -39,14 +39,6 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 ## 文档
 [文档中心](https://doc.careyshop.cn "CareyShop文档中心")
 
-## 仓库
-[Github 仓库](https://github.com/dnyz520/careyshop-admin "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-admin "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-admin.git "Coding 仓库")
-
-## 生态
-CareyShop 商城框架系统 [Github 仓库](https://github.com/dnyz520/careyshop "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop.git "Coding 仓库")
-
-CareyShop Rest接口调试 [Github 仓库](https://github.com/dnyz520/careyshop-rest "Github 仓库") | [码云仓库](https://gitee.com/careyshop/careyshop-rest "码云仓库") | [Coding 仓库](https://e.coding.net/careyshop/careyshop-rest.git "Coding 仓库")
-
 ## 准备
 在您使用本项目前，请先安装好 [node](https://nodejs.org "node")。项目技术栈基于 [es2015+](http://es6.ruanyifeng.com/ "es2015+")、[vue](https://cn.vuejs.org/ "vue")、[vuex](https://vuex.vuejs.org/ "vuex")、[vue-router](https://router.vuejs.org/ "vue-router") 、[vue-cli4](https://cli.vuejs.org/ "vue-cli") 、[axios](https://github.com/axios/axios "axios") 和 [element-ui](https://element.eleme.io/ "element-ui")，所有的请求数据都基于 rest 协议。
 

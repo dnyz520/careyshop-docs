@@ -13,26 +13,6 @@
 	* 更新：
 	`composer update dnyz520/careyshop`
 
-3. **git 仓库：**
-	* github：
-	https://github.com/dnyz520/careyshop.git
-
-	* gitee：
-	https://gitee.com/careyshop/careyshop.git
-
-	* coding：
-	https://git.coding.net/careyshop/careyshop.git
-
-4. **zip 包下载：**
-	* github：
-	https://github.com/dnyz520/careyshop/releases
-
-	* gitee：
-	https://gitee.com/careyshop/careyshop/releases
-
-	* coding：
-	https://coding.net/u/careyshop/p/careyshop/git/releases
-
 ## 安装
 必须将项目下的`public`目录设为`web访问`目录，第一次访问首页时会进入`安装向导`，务必请通过向导完成安装。
 
