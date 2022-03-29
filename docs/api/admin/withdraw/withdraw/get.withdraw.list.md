@@ -86,7 +86,7 @@ in:withdraw_id,withdraw_no,create_time,update_time,status
         "update_time": "2017-06-23 10:09:21",
         "status": 2,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }
@@ -106,7 +106,7 @@ in:withdraw_id,withdraw_no,create_time,update_time,status
         "update_time": "2017-06-23 16:28:49",
         "status": 3,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }
@@ -126,7 +126,7 @@ in:withdraw_id,withdraw_no,create_time,update_time,status
         "update_time": "2017-06-23 17:12:04",
         "status": 4,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }
@@ -146,7 +146,7 @@ in:withdraw_id,withdraw_no,create_time,update_time,status
         "update_time": "2017-06-30 14:50:24",
         "status": 0,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }
@@ -166,7 +166,7 @@ in:withdraw_id,withdraw_no,create_time,update_time,status
         "update_time": "2017-07-07 11:08:10",
         "status": 0,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }

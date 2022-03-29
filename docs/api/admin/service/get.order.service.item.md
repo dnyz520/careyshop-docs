@@ -138,7 +138,7 @@
     "create_time": "2018-06-13 23:02:17",
     "update_time": "2018-06-13 23:14:28",
     "get_user": {
-      "username": "dnyz520",
+      "username": "careyshop",
       "nickname": "careya",
       "head_pic": "//host/head_pic.jpg"
     },

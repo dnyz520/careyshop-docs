@@ -14,13 +14,13 @@
 - 否
 
 #### 业务参数：
-|参数名|类型|是否必须|范围值|默认值|示例值|描述|
-|:----|:---|:---:|:-----|:-----|:-----|-----|
-|code |integer |是 |max:6 | |908602 |验证码 |
-|username |string |是 |length:4,20 | |dnyz520 |账号 |
-|mobile |number |是 |length:7,15 | |15867430426 |手机号 |
-|password |string |是 |min:6 | |123456 |密码 |
-|password_confirm |string |是 |min:6 | |123456 |确认密码 |
+|参数名|类型|是否必须|范围值|默认值| 示例值         |描述|
+|:----|:---|:---:|:-----|:-----|:------------|-----|
+|code |integer |是 |max:6 | | 908602      |验证码 |
+|username |string |是 |length:4,20 | | careyshop   |账号 |
+|mobile |number |是 |length:7,15 | | 15867430426 |手机号 |
+|password |string |是 |min:6 | | 123456      |密码 |
+|password_confirm |string |是 |min:6 | | 123456      |确认密码 |
 
 #### 响应参数：
 |参数名|类型|是否返回|示例值|描述|

@@ -85,7 +85,7 @@ in:payment_log_id,payment_time,create_time,status
         "update_time": "2018-04-03 09:39:09",
         "status": 1,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }
@@ -103,7 +103,7 @@ in:payment_log_id,payment_time,create_time,status
         "update_time": "2018-01-04 00:06:18",
         "status": 1,
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }

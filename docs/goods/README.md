@@ -4,35 +4,11 @@
 
 <h1 align="center">CareyShop 商城框架系统</h1>
 
-<p align="center">
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/badge/website-CareyShop-yellow.svg" />
-    </a>
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/license/dnyz520/careyshop.svg" />
-    </a>
-    <a href="https://www.careyshop.cn/download.html">
-        <img src="https://img.shields.io/github/release/dnyz520/careyshop.svg" />
-    </a>
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/last-commit/dnyz520/careyshop.svg" />
-    </a>
-</p>
-
 ## 介绍
 CareyShop（简称 CS）是一套基于 ThinkPHP6.0 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多个终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
 ## 在线体验
 [后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [RestAPI 接口调试](https://demo.careyshop.cn/api "RestAPI 接口调试") | [经典配套款](https://doc.careyshop.cn/guide/white/) | [深灰商务款](https://doc.careyshop.cn/guide/gray/)
-
-## 商业授权
-现在订购“B2C单商户商城”获赠“uniapp小程序”编译版
-
-|后台管理模板|B2C单商户商城|uniapp小程序|
-| ------------ | ------------ | ------------ |
-|原价 ￥6890 优惠价 **￥2680**|原价 ￥9890 优惠价 **￥2880**|原价 ￥18800 优惠价 **￥3980**|
-|基于Vue构建的商城后台管理模板，适合自有后端，并且是前后端分离的系统搭配使用。|单商户商城完整版，包含后端(php)、后台(vue)、前端(uniapp)，适合全新部署。|开源版，所见所得界面布局，多终端小程序一步全通。现在众筹预约享优惠，过时恢复原价。|
-|√ 免费更新<br>√ 永久授权<br>√ 二次开发<br>√ 去除版权<br>√ 商业用途<br>√ 授权域名绑定（1个域名）<br>√ 高级技术支持（1年）<br>√ 升级服务支持（1年）<br>√ 快速技术响应（7*12小时）<br>√ 项目定制服务（另计）<br>√ 项目二次定制（另计）| √ 免费更新<br>√ 永久授权<br>√ 二次开发<br>√ 去除版权<br>√ 商业用途<br>√ 授权域名绑定（1个顶级域名）<br>√ 高级技术支持（1年）<br>√ 升级服务支持（1年）<br>√ 快速技术响应（7*12小时）<br>√ 项目定制服务（另计）<br>√ 项目二次定制（另计）|开发结束，内测中...<br>接受众筹预约提前购<br>正式发布后恢复正常授权价<br>含"后台管理系统"、"商城框架系统"|
 
 ## 功能列表
 * 微信公众号（开发中）

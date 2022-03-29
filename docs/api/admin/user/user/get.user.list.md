@@ -116,7 +116,7 @@ in:user_id,username,mobile,nickname,sex,birthday,user_level_id,status,create_tim
       },
       {
         "user_id": 16,
-        "username": "Dnyz520888",
+        "username": "careyshop",
         "mobile": "15867430655",
         "is_mobile": 1,
         "email": "",

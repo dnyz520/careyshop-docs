@@ -17,7 +17,7 @@
 |参数名|类型|是否必须|范围值|默认值|示例值|描述|
 |:----|:---|:---:|:-----|:-----|:-----|-----|
 |coupon_id |integer |是 |gt:0 | |3 |优惠劵编号 |
-|username |string |否 |min[]:0 | |[&quot;carey&quot;, &quot;dnyz520&quot;] |账号 |
+|username |string |否 |min[]:0 | |[&quot;carey&quot;, &quot;careyshop&quot;] |账号 |
 |user_level_id |integer |否 |egt[]:0 | |[1,2,3] |等级编号 |
 
 #### 响应参数：

@@ -64,7 +64,7 @@ in:transaction_id,type,create_time
 
 |get_user|类型|是否返回|示例值|描述|
 |:-----|:-----|:---:|:-----|-----|
-|username |string |是 |dnyz520 |账号 |
+|username |string |是 |careyshop |账号 |
 |nickname |string |是 |careya |昵称 |
 |head_pic |string |是 |//host/head_pic.jpg |头像 |
 
@@ -90,7 +90,7 @@ in:transaction_id,type,create_time
         "card_number": "",
         "create_time": "2018-01-04 15:17:53",
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }
@@ -110,7 +110,7 @@ in:transaction_id,type,create_time
         "card_number": "9971564621172962",
         "create_time": "2018-01-04 15:17:53",
         "get_user": {
-          "username": "dnyz520",
+          "username": "careyshop",
           "nickname": "careya",
           "head_pic": "//host/head_pic.jpg"
         }

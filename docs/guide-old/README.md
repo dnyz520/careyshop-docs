@@ -7,25 +7,13 @@ title: 商城框架系统开发手册 - 基于 ThinkPHP5.0 旧版文档
 
 <h1 align="center">CareyShop 商城框架系统</h1>
 
-<p align="center">
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/badge/website-CareyShop-yellow.svg" alt="careyshop"/>
-    </a>
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/license/dnyz520/careyshop.svg" alt="careyshop_license"/>
-    </a>
-    <a href="https://www.careyshop.cn/download.html">
-        <img src="https://img.shields.io/github/release/dnyz520/careyshop.svg" alt="careyshop_release"/>
-    </a>
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/last-commit/dnyz520/careyshop.svg" alt="careyshop_last-commit"/>
-    </a>
-</p>
-
 ## 介绍
 CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
-**CareyShop（QQ）交流群：714593455**
+**严正声明：**   
+**为配合国家打击跨境赌博、电信诈骗、断卡等行动，本源码仅限中国大陆地区使用，且！使用站点必须有ICP备案与网安备案，否则一律上报至公安机关！**
+
+**CareyShop（QQ）交流1群：714593455 交流2群：817814861**
 
 ## 预览
 [后台 Demo 预览](https://demo.careyshop.cn/admin "后台 Demo 预览") | [RestAPI 接口调试](https://demo.careyshop.cn/api "RestAPI 接口调试") | [经典配套款](./white/) | [深灰商务款](./gray/)
@@ -148,5 +136,4 @@ CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源�
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E7%BC%A9%E7%95%A5%E5%9B%BE%E8%AE%BE%E8%AE%A1-%E7%81%B0.png)
 
 #### 声明
-CareyShop 原则上使用 AGPLv3 开源，请遵守 AGPLv3 的相关条款，或者与我们联系获取商业授权，   
-本项目包含的源码（包括第三方）和二进制文件存在版权信息另行标注的情况。
+CareyShop® 商标和著作权所有者为宁波互明科技有限公司。

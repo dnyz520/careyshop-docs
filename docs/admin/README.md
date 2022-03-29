@@ -8,25 +8,13 @@ title: 后台管理模板
 
 <h1 align="center">CareyShop 后台管理模板</h1>
 
-<p align="center">
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/badge/website-CareyShop-yellow.svg"  alt="careyshop"/>
-    </a>
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/license/dnyz520/careyshop-admin.svg"  alt="careyshop_license"/>
-    </a>
-    <a href="https://www.careyshop.cn/download.html">
-        <img src="https://img.shields.io/github/release/dnyz520/careyshop-admin.svg"  alt="careyshop_release"/>
-    </a>
-    <a href="https://www.careyshop.cn">
-        <img src="https://img.shields.io/github/last-commit/dnyz520/careyshop-admin.svg"  alt="careyshop_last-commit"/>
-    </a>
-</p>
-
 ## 介绍
 CareyShop（简称 CS）是一套基于 ThinkPHP 框架开发的高性能开源商城框架系统，秉承极简、极速、极致的开发理念，采用前后端分离，支持分布式部署。框架内部使用面向对象模块化调用，在多终端、跨平台时采用 REST API 进行数据交互，可直接对接 PC、移动设备、小程序、云部署，构建 Android、IOS 的 APP。
 
-**CareyShop（QQ）交流群：714593455**
+**严正声明：**   
+**为配合国家打击跨境赌博、电信诈骗、断卡等行动，本源码仅限中国大陆地区使用，且！使用站点必须有ICP备案与网安备案，否则一律上报至公安机关！**
+
+**CareyShop（QQ）交流1群：714593455 交流2群：817814861**
 
 ## 前言
 放眼移动热潮、新零售概念、各类<abbr title="泛指各类终端机器或各类平台，终端机有IOS与Android为代表，平台以“微信小程序”为代表">终端</abbr>的增多，服务端会与各类前端进行交互，和第三方相互协作也更加紧密、频繁。出于这样的整体环境，我们摒弃传统开发方向，直接以 REST API 架构为基础，将各类业务处理层模块化。
@@ -65,7 +53,7 @@ npm install -g @vue/cli
 
 ### 克隆项目
 ```shell
-git clone https://github.com/dnyz520/careyshop-admin.git
+git clone xxx(xxx替换成第三方git镜像地址)
 ```
 
 ### 安装依赖
@@ -97,7 +85,7 @@ npm run test:unit
 之后将配置修改为您的环境，具体配置如下：
 ```js
 const serverConfig = {
-  BASE_API: '//careyshop.cn/api',                   // API 接口访问地址
+  BASE_API: '/api',                   // API 接口访问地址
   APP_KEY: '86757125',                              // 后端获取的 App应用 钥匙
   APP_SECRET: 'ea1bd533d001fd73b09944f04c96a6fc'    // 后端获取的 App应用 密钥
 }
@@ -127,9 +115,7 @@ const serverConfig = {
 ![](https://aliyun.oss.careyshop.cn/poster/gray/%E7%BC%A9%E7%95%A5%E5%9B%BE%E8%AE%BE%E8%AE%A1-%E7%81%B0.png)
 
 #### 声明
-CareyShop 原则上使用 AGPLv3 开源，请遵守 AGPLv3 的相关条款，或者与我们联系获取商业授权，
-
-本项目包含的源码（包括第三方）和二进制文件存在版权信息另行标注的情况。
+CareyShop® 商标和著作权所有者为宁波互明科技有限公司。
 
 #### 感谢
 <a href="https://github.com/d2-projects/d2-admin" target="_blank"><img src="/assets/img/d2-admin@2x.png" width="200"></a>

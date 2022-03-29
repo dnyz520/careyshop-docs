@@ -160,7 +160,7 @@
     "create_time": "2018-01-04 00:05:04",
     "update_time": "2018-06-12 09:33:13",
     "get_user": {
-      "username": "dnyz520",
+      "username": "careyshop",
       "nickname": "careya",
       "head_pic": "//host/head_pic.jpg"
     },
